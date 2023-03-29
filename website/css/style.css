@@ -284,3 +284,23 @@ html {
 /* **** */
 
 
+
+/* **** */
+/* Form */
+/* **** */
+
+form {
+
+}
+
+form fieldset {
+
+}
+
+form fieldset.visible {
+  display: visible;
+}
+
+form fieldset.hidden {
+  display: none;
+}

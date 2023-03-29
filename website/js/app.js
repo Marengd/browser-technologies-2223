@@ -1,1 +1,2 @@
-console.log("A- live");
+import './modules/form-button-handler.js';
+import './modules/split-form.js';
