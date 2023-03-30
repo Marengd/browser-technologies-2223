@@ -265,6 +265,10 @@ html {
 /* ***************** */
 
 :root {
+  --primary-background-color: white;
+  --secondary-background-color: black;
+  --tertiary-background-color: #f3f3f3;
+
   --primary-font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
   --primary-text-color: black;
@@ -296,6 +300,8 @@ html {
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --tertiary-background-color: #acacac;
+
     --primary-text-color: white;
     --secondary-text-color: black;
     --tertiary-text-color: #f3f3f3;
@@ -320,8 +326,6 @@ html, body {
 main {
   width: 100%;
   height: 100%;
-
-  background-color: blue;
 }
 
 
@@ -660,11 +664,47 @@ form fieldset button[type="submit"] {
   main > aside {
     flex-basis: 50%;
 
-    display: block;  
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
 
     width: 50%;
     height: auto;
   }
+
+  main > aside > section {
+    --aside-section-background-color: var(--tertiary-background-color);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 95%;
+    height: 95%;
+
+    border-radius: 1rem;
+
+    background-color: var(--aside-section-background-color);
+  }
+
+  main > aside > section article {
+    display: none;
+    flex-direction: column;
+  }
+
+  main > aside > section article h2 {
+    --aside-article-h2-font-family: var(--primary-font-family);
+    --aside-article-h2-font-size: 6rem;
+
+    font-family: var(--aside-article-h2-font-family);
+    font-size: vaR(--aside-article-h2-font-size);
+  }
+
+
 
   main > section {
     flex-basis: 50%;
@@ -680,28 +720,20 @@ form fieldset button[type="submit"] {
     }
 
     main aside {
-      display: block;
-
+      display: flex;
+    
+      align-items: center;
+      justify-content: center;
+  
       width: 100%;
       height: auto;
-
-      background-color: grey;
     }
 
   }
 
 }
 
-@supports (position: fixed) {
 
-  main > aside section {
-    position: fixed;
-    
-    width: 50%;
-    height: 100%;
-  }
-
-}
 
 
 
