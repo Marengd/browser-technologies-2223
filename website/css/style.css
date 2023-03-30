@@ -264,9 +264,44 @@ html {
 /* Custom Properties */
 /* ***************** */
 
+:root {
+  --primary-font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 
+  --primary-text-color: black;
+  --secondary-text-color: white;
+  --tertiary-text-color: #757575;
 
+
+  --form-heading-font-size: 3.2rem;
+
+  --heading-font-weight: 600;
+
+  --body-font-size: 1.6rem;
+  --body-font-weight: 400;
+
+  --XS-spacer: 1rem;
+  --S-spacer: 2rem;
+  --M-spacer: 4rem;
+  --L-spacer: 6rem;
+  --XL-spacer: 8rem;
+
+  --XS-font-size: 1.4rem;
+  --S-font-size: 1.6rem;
+  --M-font-size: 1.8rem;
+  --L-font-size: 2.4rem;
+  --XL-font-size: 3.2rem;
+  --XXL-font-size: 4rem;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-text-color: white;
+    --secondary-text-color: black;
+    --tertiary-text-color: #f3f3f3;
+  }
+}
 
 
 
@@ -274,6 +309,9 @@ html {
 /* Html, Body */
 /* ********** */
 
+html, body {
+  font-size: 62.5%;
+}
 
 
 
@@ -286,6 +324,39 @@ html {
 
 
 /* **** */
+/* Main */
+/* **** */
+
+
+
+
+/* ********* */
+/* Section 2 */
+/* ********* */
+
+main > section:nth-child(2) {
+
+}
+
+
+/* ************** */
+/* Step Indicator */
+/* ************** */
+
+main > section:nth-child(2) ol {
+
+}
+
+main > section:nth-child(2) ol li {
+
+}
+
+main > section:nth-child(2) ol li.current {
+  color: red;
+}
+
+
+/* **** */
 /* Form */
 /* **** */
 
@@ -294,7 +365,7 @@ form {
 }
 
 form fieldset {
-
+  border: none;
 }
 
 form fieldset.visible {
@@ -304,3 +375,225 @@ form fieldset.visible {
 form fieldset.hidden {
   display: none;
 }
+
+form fieldset legend {
+  --legend-font-family: var(--primary-font-family);
+  --legend-font-size: var(--form-heading-font-size);
+
+  --legend-text-color: var(--primary-text-color);
+
+
+  font-family: var(--primary-font-family);
+  font-size: var(--legend-font-size);
+
+  color: var(--legend-text-color);
+}
+
+form fieldset h2 {
+  --form-h2-font-family: var(--primary-font-family);
+  --form-h2-font-size: var(--form-heading-font-size);
+
+  --form-h2-text-color: var(--primary-text-color);
+  
+
+  font-family: var(--form-h2-font-family);
+  font-size: var(--form-h2-font-size);
+
+  line-height: 1.4;
+  
+  color: var(--form-h2-text-color);
+}
+
+form fieldset p {
+  --p-font-family: var(--primary-font-family);
+  --p-font-size: var(--body-font-size);
+  --p-font-weight: var(--body-font-weight);
+
+  --p-text-color: var(--primary-text-color);
+
+
+  font-family: var(--p-font-family);
+  font-size: var(--p-font-size);
+  font-weight: var(--p-font-weight);
+
+  color: var(--p-text-color);
+}
+
+
+
+
+
+form fieldset > section {
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  gap: .4rem;
+
+  width: 100%;
+}
+
+form fieldset input[type="radio"] {
+  display: none;
+}
+
+/* ************************ */
+/* Rating Teaching Material */
+/* ************************ */
+
+form fieldset section label[for^="rating-tm"] {
+  --rating-ul-padding: .8rem;
+
+  --rating-ul-font-family: var(--primary-font-family);
+  --rating-ul-font-size: 1.6rem;
+
+  --rating-ul-border-color: black;
+  --rating-ul-border-thickness: .1rem;
+
+  --rating-ul-border: var(--rating-ul-border-thickness) solid var(--rating-ul-border-color);
+  --rating-ul-border-radius: .4rem;
+
+  --rating-ul-background-color: transparent;
+
+
+  padding: var(--rating-ul-padding);
+
+  aspect-ratio: 1;
+
+  display: inline-flex;
+  
+  align-items: center;
+  justify-content: center;
+
+  font-family: var(--rating-ul-font-family);
+  font-size: var(--rating-ul-font-size);
+
+  border: var(--rating-ul-border);
+  border-radius: var(--rating-ul-border-radius);
+
+  background-color: var(--rating-ul-background-color);
+}
+
+form fieldset label:has(input[type="radio"][id^="rating-tm"]:checked) {
+  color: blue;
+}
+
+form fieldset label:has(input[type="radio"][id^="rating-tm"]:not(:checked)) {
+  background-color: red;
+}
+
+
+
+
+/* *************************************** */
+/* Rating Explanation of Teaching Material */
+/* *************************************** */
+
+form fieldset section label[for^="rating-ex"] {
+  --rating-ul-padding: .8rem;
+
+  --rating-ul-font-family: var(--primary-font-family);
+  --rating-ul-font-size: 1.6rem;
+
+  --rating-ul-border-color: black;
+  --rating-ul-border-thickness: .1rem;
+
+  --rating-ul-border: var(--rating-ul-border-thickness) solid var(--rating-ul-border-color);
+  --rating-ul-border-radius: .4rem;
+
+  --rating-ul-background-color: transparent;
+
+
+  padding: var(--rating-ul-padding);
+
+  aspect-ratio: 1;
+
+  display: inline-flex;
+  
+  align-items: center;
+  justify-content: center;
+
+  font-family: var(--rating-ul-font-family);
+  font-size: var(--rating-ul-font-size);
+
+  border: var(--rating-ul-border);
+  border-radius: var(--rating-ul-border-radius);
+
+  background-color: var(--rating-ul-background-color);
+}
+
+form fieldset label:has(input[type="radio"][id^="rating-ex"]:checked) {
+  color: blue;
+}
+
+form fieldset label:has(input[type="radio"][id^="rating-ex"]:not(:checked)) {
+  background-color: red;
+}
+
+
+
+
+/* ************************** */
+/* Rating Understanding Level */
+/* ************************** */
+
+form fieldset section label[for^="rating-ul"] {
+  --rating-ul-padding: .8rem;
+
+  --rating-ul-font-family: var(--primary-font-family);
+  --rating-ul-font-size: 1.6rem;
+
+  --rating-ul-border-color: black;
+  --rating-ul-border-thickness: .1rem;
+
+  --rating-ul-border: var(--rating-ul-border-thickness) solid var(--rating-ul-border-color);
+  --rating-ul-border-radius: .4rem;
+
+  --rating-ul-background-color: transparent;
+
+
+  padding: var(--rating-ul-padding);
+
+  display: inline-flex;
+  
+  align-items: center;
+  justify-content: center;
+
+  font-family: var(--rating-ul-font-family);
+  font-size: var(--rating-ul-font-size);
+
+  border: var(--rating-ul-border);
+  border-radius: var(--rating-ul-border-radius);
+
+  background-color: var(--rating-ul-background-color);
+}
+
+form fieldset label:has(input[type="radio"][id^="rating-ul"]:checked) {
+  color: blue;
+}
+
+form fieldset label:has(input[type="radio"][id^="rating-ul"]:not(:checked)) {
+  background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+form fieldset button {
+  font-size: 2rem;
+}
+
+
+
+
+
+
+

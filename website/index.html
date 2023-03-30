@@ -35,199 +35,240 @@
       <section>
          <h2>Rechts</h2>
 
+         <ol>
+            <li>Step 1</li>
+            <li>Step 2</li>
+            <li>Step 3</li>
+            <li>Step 4</li>
+            <li>Step 5</li>
+            <li>Step 6</li>
+            <li>Step 7</li>
+            <li>Finish</li>
+         </ol>
+
          <!-- Form -->
          <form>
             <!-- Personal Information -->
             <fieldset>
                <legend>Personal Details</legend>
                <p>Name, Student Number, E-mail address.</p>
+
+               <label for="personal-details-name">Name:
+                  <input type="text" id="personal-details-name" name="personal-details-name">
+               </label>
+
+               <label for="personal-details-student-number">Student Number:
+                  <input type="text" inputmode="numeric" id="personal-details-student-number"
+                     name="personal-details-student-number">
+               </label>
+
+               <label for="personal-details-email">E-mail:
+                  <input type="email" inputmode="email" id="personal-details-email" name="personal-details-email"
+                     autocapitalize="off">
+               </label>
             </fieldset>
+
 
             <!-- Course 1 -->
             <fieldset>
 
                <!-- Course Name -->
-               <legend>Course 1</legend>
+               <legend>Web- app from scratch</legend>
 
                <!-- Course Description -->
                <p>Description of Course 1</p>
 
 
-               <!-- Start Week Course -->
-               <label for="start-date-wafs-1a">Start Week:
-                  <input type="week" id="start-date-wafs-1a" name="start-date-wafs">
-               </label>
+               <section>
+                  <!-- Start Week Course -->
+                  <label for="start-date-wafs-1a">Start Week:
+                     <input type="week" id="start-date-wafs-1a" name="start-date-wafs">
+                  </label>
 
-               <!-- End Week Course -->
-               <label for="end-date-wafs-1a">End Week:
-                  <input type="week" id="end-date-wafs-1a" name="end-date-wafs">
-               </label>
+                  <!-- End Week Course -->
+                  <label for="end-date-wafs-1a">End Week:
+                     <input type="week" id="end-date-wafs-1a" name="end-date-wafs">
+                  </label>
+               </section>
 
 
                <!-- Rating Teaching Material -->
-               <h3>Uitleg Hoe Moeilijk Is Het Op Een Schaal Van 1 – 10</h3>
-               <p>Aanvullende Beschrijving</p>
+               <section>
+                  <article>
+                     <h2>Hoe moeilijk was het voor mij?</h2>
+                     <p>Aanvullende Beschrijving</p>
+                  </article>
 
-               <label for="rating-tm-wafs-1a">
-                  1
-                  <input type="radio" id="rating-tm-wafs-1a" name="teaching-material-wafs" value="1">
-               </label>
+                  <label for="rating-tm-wafs-1a">
+                     1
+                     <input type="radio" id="rating-tm-wafs-1a" name="teaching-material-wafs" value="1">
+                  </label>
 
-               <label for="rating-tm-wafs-2a">
-                  2
-                  <input type="radio" id="rating-tm-wafs-2a" name="teaching-material-wafs" value="2">
-               </label>
+                  <label for="rating-tm-wafs-2a">
+                     2
+                     <input type="radio" id="rating-tm-wafs-2a" name="teaching-material-wafs" value="2">
+                  </label>
 
-               <label for="rating-tm-wafs-3a">
-                  3
-                  <input type="radio" id="rating-tm-wafs-3a" name="teaching-material-wafs" value="3">
-               </label>
+                  <label for="rating-tm-wafs-3a">
+                     3
+                     <input type="radio" id="rating-tm-wafs-3a" name="teaching-material-wafs" value="3">
+                  </label>
 
-               <label for="rating-tm-wafs-4a">
-                  4
-                  <input type="radio" id="rating-tm-wafs-4a" name="teaching-material-wafs" value="4">
-               </label>
+                  <label for="rating-tm-wafs-4a">
+                     4
+                     <input type="radio" id="rating-tm-wafs-4a" name="teaching-material-wafs" value="4">
+                  </label>
 
-               <label for="rating-tm-wafs-5a">
-                  5
-                  <input type="radio" id="rating-tm-wafs-5a" name="teaching-material-wafs" value="5">
-               </label>
+                  <label for="rating-tm-wafs-5a">
+                     5
+                     <input type="radio" id="rating-tm-wafs-5a" name="teaching-material-wafs" value="5">
+                  </label>
 
-               <label for="rating-tm-wafs-6a">
-                  6
-                  <input type="radio" id="rating-tm-wafs-6a" name="teaching-material-wafs" value="6">
-               </label>
+                  <label for="rating-tm-wafs-6a">
+                     6
+                     <input type="radio" id="rating-tm-wafs-6a" name="teaching-material-wafs" value="6">
+                  </label>
 
-               <label for="rating-tm-wafs-7a">
-                  7
-                  <input type="radio" id="rating-tm-wafs-7a" name="teaching-material-wafs" value="7">
-               </label>
+                  <label for="rating-tm-wafs-7a">
+                     7
+                     <input type="radio" id="rating-tm-wafs-7a" name="teaching-material-wafs" value="7">
+                  </label>
 
-               <label for="rating-tm-wafs-8a">
-                  8
-                  <input type="radio" id="rating-tm-wafs-8a" name="teaching-material-wafs" value="8">
-               </label>
+                  <label for="rating-tm-wafs-8a">
+                     8
+                     <input type="radio" id="rating-tm-wafs-8a" name="teaching-material-wafs" value="8">
+                  </label>
 
-               <label for="rating-tm-wafs-9a">
-                  9
-                  <input type="radio" id="rating-tm-wafs-9a" name="teaching-material-wafs" value="9">
-               </label>
+                  <label for="rating-tm-wafs-9a">
+                     9
+                     <input type="radio" id="rating-tm-wafs-9a" name="teaching-material-wafs" value="9">
+                  </label>
 
-               <label for="rating-tm-wafs-10a">
-                  10
-                  <input type="radio" id="rating-tm-wafs-10a" name="teaching-material-wafs" value="10">
-               </label>
+                  <label for="rating-tm-wafs-10a">
+                     10
+                     <input type="radio" id="rating-tm-wafs-10a" name="teaching-material-wafs" value="10">
+                  </label>
+               </section>
 
 
                <!-- Rating Explaination Of Teaching Material -->
-               <h3>Uitleg Hoe Duidelijk Is Het Uitgelegd Op Een Schaal Van 1 – 10</h3>
-               <p>Aanvullende Beschrijving</p>
+               <section>
+                  <article>
+                     <h2>Hoe duidelijk is de stof uitgelegd?</h2>
+                     <p>Aanvullende Beschrijving</p>
+                  </article>
 
-               <label for="rating-ex-wafs-1a">
-                  😰
-                  <input type="radio" id="rating-ex-wafs-1a" name="explanation-wafs" value="1">
-               </label>
+                  <label for="rating-ex-wafs-1a">
+                     1
+                     <input type="radio" id="rating-ex-wafs-1a" name="explanation-wafs" value="1">
+                  </label>
 
-               <label for="rating-ex-wafs-2a">
-                  😔
-                  <input type="radio" id="rating-ex-wafs-2a" name="explanation-wafs" value="2">
-               </label>
+                  <label for="rating-ex-wafs-2a">
+                     2
+                     <input type="radio" id="rating-ex-wafs-2a" name="explanation-wafs" value="2">
+                  </label>
 
-               <label for="rating-ex-wafs-3a">
-                  😕
-                  <input type="radio" id="rating-ex-wafs-3a" name="explanation-wafs" value="3">
-               </label>
+                  <label for="rating-ex-wafs-3a">
+                     3
+                     <input type="radio" id="rating-ex-wafs-3a" name="explanation-wafs" value="3">
+                  </label>
 
-               <label for="rating-ex-wafs-4a">
-                  😐
-                  <input type="radio" id="rating-ex-wafs-4a" name="explanation-wafs" value="4">
-               </label>
+                  <label for="rating-ex-wafs-4a">
+                     4
+                     <input type="radio" id="rating-ex-wafs-4a" name="explanation-wafs" value="4">
+                  </label>
 
-               <label for="rating-ex-wafs-5a">
-                  😊
-                  <input type="radio" id="rating-ex-wafs-5a" name="explanation-wafs" value="5">
-               </label>
+                  <label for="rating-ex-wafs-5a">
+                     5
+                     <input type="radio" id="rating-ex-wafs-5a" name="explanation-wafs" value="5">
+                  </label>
 
-               <label for="rating-ex-wafs-6a">
-                  😀
-                  <input type="radio" id="rating-ex-wafs-6a" name="explanation-wafs" value="6">
-               </label>
+                  <label for="rating-ex-wafs-6a">
+                     6
+                     <input type="radio" id="rating-ex-wafs-6a" name="explanation-wafs" value="6">
+                  </label>
 
-               <label for="rating-ex-wafs-7a">
-                  😃
-                  <input type="radio" id="rating-ex-wafs-7a" name="explanation-wafs" value="7">
-               </label>
+                  <label for="rating-ex-wafs-7a">
+                     7
+                     <input type="radio" id="rating-ex-wafs-7a" name="explanation-wafs" value="7">
+                  </label>
 
-               <label for="rating-ex-wafs-8a">
-                  😍
-                  <input type="radio" id="rating-ex-wafs-8a" name="explanation-wafs" value="8">
-               </label>
+                  <label for="rating-ex-wafs-8a">
+                     8
+                     <input type="radio" id="rating-ex-wafs-8a" name="explanation-wafs" value="8">
+                  </label>
 
-               <label for="rating-ex-wafs-9a">
-                  🤩
-                  <input type="radio" id="rating-ex-wafs-9a" name="explanation-wafs" value="9">
-               </label>
+                  <label for="rating-ex-wafs-9a">
+                     9
+                     <input type="radio" id="rating-ex-wafs-9a" name="explanation-wafs" value="9">
+                  </label>
 
-               <label for="rating-ex-wafs-10a">
-                  🌟
-                  <input type="radio" id="rating-ex-wafs-10a" name="explanation-wafs" value="10">
-               </label>
+                  <label for="rating-ex-wafs-10a">
+                     10
+                     <input type="radio" id="rating-ex-wafs-10a" name="explanation-wafs" value="10">
+                  </label>
+               </section>
 
 
+               <section>
+                  <!-- Rating Understanding Level -->
 
-               <!-- Rating Understanding Level -->
-               <h3>Hoe Goed Heb Ik Het Begrepen Op Een Schaal Van 1 – 10</h3>
-               <p>Aanvullende Beschrijving</p>
+                  <article>
+                     <h2>Hoe goed snap ik het noú écht ?</h2>
+                     <p>Korte beschrijving</p>
+                  </article>
 
-            <label for="rating-ul-wafs-1a">
-                  1
-                  <input type="radio" id="rating-ul-wafs-1a" name="understanding-level-1" value="1">
-               </label>
 
-               <label for="rating-ul-wafs-2a">
-                  2
-                  <input type="radio" id="rating-ul-wafs-2a" name="understanding-level-1" value="2">
-               </label>
+                  <label for="rating-ul-wafs-1a">
+                     😕 Verward
+                     <input type="radio" id="rating-ul-wafs-1a" name="understanding-level-1" value="1">
+                  </label>
 
-               <label for="rating-ul-wafs-3a">
-                  3
-                  <input type="radio" id="rating-ul-wafs-3a" name="understanding-level-1" value="3">
-               </label>
+                  <label for="rating-ul-wafs-2a">
+                     🤨 Onzeker
+                     <input type="radio" id="rating-ul-wafs-2a" name="understanding-level-1" value="2">
+                  </label>
 
-               <label for="rating-ul-wafs-4a">
-                  4
-                  <input type="radio" id="rating-ul-wafs-4a" name="understanding-level-1" value="4">
-               </label>
+                  <label for="rating-ul-wafs-3a">
+                     😐 Mwah
+                     <input type="radio" id="rating-ul-wafs-3a" name="understanding-level-1" value="3">
+                  </label>
 
-               <label for="rating-ul-wafs-5a">
-                  5
-                  <input type="radio" id="rating-ul-wafs-5a" name="understanding-level-1" value="5">
-               </label>
+                  <label for="rating-ul-wafs-4a">
+                     😶 Nauw'lijks
+                     <input type="radio" id="rating-ul-wafs-4a" name="understanding-level-1" value="4">
+                  </label>
 
-               <label for="rating-ul-wafs-6a">
-                  6
-                  <input type="radio" id="rating-ul-wafs-6a" name="understanding-level-1" value="6">
-               </label>
+                  <label for="rating-ul-wafs-5a">
+                     🙂 Enigszins
+                     <input type="radio" id="rating-ul-wafs-5a" name="understanding-level-1" value="5">
+                  </label>
 
-               <label for="rating-ul-wafs-7a">
-                  7
-                  <input type="radio" id="rating-ul-wafs-7a" name="understanding-level-1" value="7">
-               </label>
+                  <label for="rating-ul-wafs-6a">
+                     😊 Redelijk
+                     <input type="radio" id="rating-ul-wafs-6a" name="understanding-level-1" value="6">
+                  </label>
 
-               <label for="rating-ul-wafs-8a">
-                  8
-                  <input type="radio" id="rating-ul-wafs-8a" name="understanding-level-1" value="8">
-               </label>
+                  <label for="rating-ul-wafs-7a">
+                     😃 Goed
+                     <input type="radio" id="rating-ul-wafs-7a" name="understanding-level-1" value="7">
+                  </label>
 
-               <label for="rating-ul-wafs-9a">
-                  9
-                  <input type="radio" id="rating-ul-wafs-9a" name="understanding-level-1" value="9">
-               </label>
+                  <label for="rating-ul-wafs-8a">
+                     😁 Erg goed
+                     <input type="radio" id="rating-ul-wafs-8a" name="understanding-level-1" value="8">
+                  </label>
 
-               <label for="rating-ul-wafs-10a">
-                  10
-                  <input type="radio" id="rating-ul-wafs-10a" name="understanding-level-1" value="10">
-               </label>
+                  <label for="rating-ul-wafs-9a">
+                     🤓 Uitstekend
+                     <input type="radio" id="rating-ul-wafs-9a" name="understanding-level-1" value="9">
+                  </label>
+
+                  <label for="rating-ul-wafs-10a">
+                     🧠 Beheerst
+                     <input type="radio" id="rating-ul-wafs-10a" name="understanding-level-1" value="10">
+                  </label>
+               </section>
 
             </fieldset>
 
@@ -265,7 +306,7 @@
             <fieldset>
                <legend>Submit</legend>
                <p>Submit Description</p>
-            
+
                <button type="submit" aria-label="finish">Finish</button>
             </fieldset>
 
