@@ -334,22 +334,19 @@ html, body {
 /* Section 2 */
 /* ********* */
 
-main > section:nth-child(2) {
-
-}
 
 
 /* ************** */
 /* Step Indicator */
 /* ************** */
 
-main > section nav {
+main > section > nav {
   padding-bottom: var(--L-spacer);
 
   width: 100%;
 }
 
-main > section nav ol {
+main > section > nav ol {
   padding: 0;
   margin: 0;
 
@@ -362,7 +359,7 @@ main > section nav ol {
   width: 100%;
 }
 
-main > section nav ol li {
+main > section > nav ol li {
   --step-indicator-font-family: var(--primary-font-family);
   --step-indicator-font-size: 1.6rem;
   
@@ -376,7 +373,7 @@ main > section nav ol li {
   color: var(--step-indicator-text-color);
 }
 
-main > section nav ol li.current {
+main > section > nav ol li.current {
   color: red;
 }
 
@@ -390,6 +387,13 @@ form {
 }
 
 form fieldset {
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+
+  flex-direction: column;
+  
   border: none;
 }
 
@@ -449,6 +453,8 @@ form fieldset p {
 
 
 form fieldset > section {
+  padding-bottom: var(--XL-spacer);
+
   display: flex;
 
   flex-direction: row;
@@ -607,17 +613,22 @@ form fieldset label:has(input[type="radio"][id^="rating-ul"]:not(:checked)) {
 
 
 
+form fieldset > nav {
+  padding-bottom: var(--M-spacer);
 
+  display: flex;
 
-
-
-
-form fieldset button {
-  font-size: 2rem;
+  justify-content: space-between;
 }
 
 
+form fieldset > nav button {
+  font-size: 2.4rem;
+}
 
+form fieldset button[type="submit"] {
+  font-size: 2.4rem;
+}
 
 
 
