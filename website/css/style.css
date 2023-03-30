@@ -303,30 +303,35 @@ html {
 }
 
 
-
 /* ********** */
 /* Html, Body */
 /* ********** */
 
 html, body {
   font-size: 62.5%;
+
+  height: 100%;
 }
-
-
-
-
-
-/* **** */
-/* Body */
-/* **** */
-
-
 
 /* **** */
 /* Main */
 /* **** */
 
+main {
+  width: 100%;
+  height: 100%;
 
+  background-color: blue;
+}
+
+
+/* ***** */
+/* Aside */
+/* ***** */
+
+aside {
+  display: none;
+}
 
 
 /* ********* */
@@ -456,12 +461,18 @@ form fieldset > section {
 
   display: flex;
 
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 
   gap: .4rem;
 
   width: 100%;
+}
+
+form fieldset > section section {
+  display: flex;
+
+  flex-wrap: wrap;
 }
 
 form fieldset input[type="radio"] {
@@ -629,6 +640,68 @@ form fieldset button[type="submit"] {
   font-size: 2.4rem;
 }
 
+
+
+
+
+
+
+
+
+
+@media (min-width: 786px) {
+
+  main {
+    display: flex;
+
+    flex-direction: row;
+  }
+
+  main > aside {
+    flex-basis: 50%;
+
+    display: block;  
+
+    width: 50%;
+    height: auto;
+  }
+
+  main > section {
+    flex-basis: 50%;
+  }
+
+
+  @supports (display: grid) {
+
+    main {
+      display: grid;
+
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    main aside {
+      display: block;
+
+      width: 100%;
+      height: auto;
+
+      background-color: grey;
+    }
+
+  }
+
+}
+
+@supports (position: fixed) {
+
+  main > aside section {
+    position: fixed;
+    
+    width: 50%;
+    height: 100%;
+  }
+
+}
 
 
 
