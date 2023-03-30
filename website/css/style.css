@@ -343,15 +343,40 @@ main > section:nth-child(2) {
 /* Step Indicator */
 /* ************** */
 
-main > section:nth-child(2) ol {
+main > section nav {
+  padding-bottom: var(--L-spacer);
 
+  width: 100%;
 }
 
-main > section:nth-child(2) ol li {
+main > section nav ol {
+  padding: 0;
+  margin: 0;
 
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+
+  width: 100%;
 }
 
-main > section:nth-child(2) ol li.current {
+main > section nav ol li {
+  --step-indicator-font-family: var(--primary-font-family);
+  --step-indicator-font-size: 1.6rem;
+  
+  --step-indicator-text-color: var(--primary-text-color);
+
+  list-style: none;
+
+  font-family: var(--step-indicator-font-family);
+  font-size: var(--step-indicator-font-size);
+
+  color: var(--step-indicator-text-color);
+}
+
+main > section nav ol li.current {
   color: red;
 }
 
