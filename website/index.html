@@ -6,7 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <meta name="color-scheme" content="dark light">
+   <!-- <meta name="color-scheme" content="dark light"> -->
 
    <title>Enquete</title>
 
@@ -46,37 +46,48 @@
       <section>
          <nav>
             <ol>
-              <li><a href="#field-personal">Step 1</a></li>
-              <li><a href="#field-prj-1">Step 2</a></li>
-              <li><a href="#field-wafs">Step 3</a></li>
-              <li><a href="#field-cttr">Step 4</a></li>
-              <li><a href="#field-prjct-2">Step 5</a></li>
-              <li><a href="#field-bt">Step 6</a></li>
-              <li><a href="#field-pwa">Step 7</a></li>
-              <li><a href="#field-submit">Step 8</a></li>
+               <li><a href="#field-personal">Step 1</a></li>
+               <li><a href="#field-prj-1">Step 2</a></li>
+               <li><a href="#field-wafs">Step 3</a></li>
+               <li><a href="#field-cttr">Step 4</a></li>
+               <li><a href="#field-prjct-2">Step 5</a></li>
+               <li><a href="#field-bt">Step 6</a></li>
+               <li><a href="#field-pwa">Step 7</a></li>
+               <li><a href="#field-submit">Step 8</a></li>
             </ol>
-          </nav>
+         </nav>
 
 
          <!-- Form -->
          <form>
             <!-- Personal Information -->
             <fieldset id="field-personal">
-               <legend>Personal Details</legend>
-               <p>Name, Student Number, E-mail address.</p>
+               <legend>Persoonlijke gegevens</legend>
+               <p>
+                  Vul je naam, studentnummer en e- mailadres in om deel te nemen aan de enquête.
+               </p>
 
-               <label for="personal-details-name">Name:
-                  <input type="text" id="personal-details-name" name="personal-details-name">
+               <label for="personal-details-name">
+                  <span>Naam</span>
+                  <div>
+                     <input type="text" id="personal-details-name" name="personal-details-name" placeholder="Voornaam Achternaam" required>
+                  </div>
                </label>
 
-               <label for="personal-details-student-number">Student Number:
-                  <input type="text" inputmode="numeric" id="personal-details-student-number"
-                     name="personal-details-student-number">
+               <label for="personal-details-student-number">
+                  <span>Studentnummer</span>
+                  <div>
+                     <input type="text" inputmode="numeric" id="personal-details-student-number"
+                     name="personal-details-student-number" placeholder="000 000 000" required>
+                  </div>
                </label>
 
-               <label for="personal-details-email">E-mail:
-                  <input type="email" inputmode="email" id="personal-details-email" name="personal-details-email"
-                     autocapitalize="off">
+               <label for="personal-details-email">
+                  <span>E- mailadres</span>
+                  <div>
+                     <input type="text" inputmode="email" id="personal-details-email" name="personal-details-email"
+                        autocapitalize="off" placeholder="naam@hva.nl" required>
+                  </div>
                </label>
             </fieldset>
 
@@ -107,10 +118,10 @@
                      <label for="start-week">Start Week:
 
                      </label>
-   
-   
+
+
                      <label for="end-week">End Week:
-   
+
                      </label>
                   </section>
                </section>
@@ -128,47 +139,47 @@
                         1
                         <input type="radio" id="rating-tm-wafs-1a" name="teaching-material-wafs" value="1">
                      </label>
-   
+
                      <label for="rating-tm-wafs-2a">
                         2
                         <input type="radio" id="rating-tm-wafs-2a" name="teaching-material-wafs" value="2">
                      </label>
-   
+
                      <label for="rating-tm-wafs-3a">
                         3
                         <input type="radio" id="rating-tm-wafs-3a" name="teaching-material-wafs" value="3">
                      </label>
-   
+
                      <label for="rating-tm-wafs-4a">
                         4
                         <input type="radio" id="rating-tm-wafs-4a" name="teaching-material-wafs" value="4">
                      </label>
-   
+
                      <label for="rating-tm-wafs-5a">
                         5
                         <input type="radio" id="rating-tm-wafs-5a" name="teaching-material-wafs" value="5">
                      </label>
-   
+
                      <label for="rating-tm-wafs-6a">
                         6
                         <input type="radio" id="rating-tm-wafs-6a" name="teaching-material-wafs" value="6">
                      </label>
-   
+
                      <label for="rating-tm-wafs-7a">
                         7
                         <input type="radio" id="rating-tm-wafs-7a" name="teaching-material-wafs" value="7">
                      </label>
-   
+
                      <label for="rating-tm-wafs-8a">
                         8
                         <input type="radio" id="rating-tm-wafs-8a" name="teaching-material-wafs" value="8">
                      </label>
-   
+
                      <label for="rating-tm-wafs-9a">
                         9
                         <input type="radio" id="rating-tm-wafs-9a" name="teaching-material-wafs" value="9">
                      </label>
-   
+
                      <label for="rating-tm-wafs-10a">
                         10
                         <input type="radio" id="rating-tm-wafs-10a" name="teaching-material-wafs" value="10">
@@ -189,47 +200,47 @@
                         1
                         <input type="radio" id="rating-ex-wafs-1a" name="explanation-wafs" value="1">
                      </label>
-   
+
                      <label for="rating-ex-wafs-2a">
                         2
                         <input type="radio" id="rating-ex-wafs-2a" name="explanation-wafs" value="2">
                      </label>
-   
+
                      <label for="rating-ex-wafs-3a">
                         3
                         <input type="radio" id="rating-ex-wafs-3a" name="explanation-wafs" value="3">
                      </label>
-   
+
                      <label for="rating-ex-wafs-4a">
                         4
                         <input type="radio" id="rating-ex-wafs-4a" name="explanation-wafs" value="4">
                      </label>
-   
+
                      <label for="rating-ex-wafs-5a">
                         5
                         <input type="radio" id="rating-ex-wafs-5a" name="explanation-wafs" value="5">
                      </label>
-   
+
                      <label for="rating-ex-wafs-6a">
                         6
                         <input type="radio" id="rating-ex-wafs-6a" name="explanation-wafs" value="6">
                      </label>
-   
+
                      <label for="rating-ex-wafs-7a">
                         7
                         <input type="radio" id="rating-ex-wafs-7a" name="explanation-wafs" value="7">
                      </label>
-   
+
                      <label for="rating-ex-wafs-8a">
                         8
                         <input type="radio" id="rating-ex-wafs-8a" name="explanation-wafs" value="8">
                      </label>
-   
+
                      <label for="rating-ex-wafs-9a">
                         9
                         <input type="radio" id="rating-ex-wafs-9a" name="explanation-wafs" value="9">
                      </label>
-   
+
                      <label for="rating-ex-wafs-10a">
                         10
                         <input type="radio" id="rating-ex-wafs-10a" name="explanation-wafs" value="10">
@@ -250,47 +261,47 @@
                         😕 Verward
                         <input type="radio" id="rating-ul-wafs-1a" name="understanding-level-1" value="1">
                      </label>
-   
+
                      <label for="rating-ul-wafs-2a">
                         🤨 Onzeker
                         <input type="radio" id="rating-ul-wafs-2a" name="understanding-level-1" value="2">
                      </label>
-   
+
                      <label for="rating-ul-wafs-3a">
                         😐 Mwah
                         <input type="radio" id="rating-ul-wafs-3a" name="understanding-level-1" value="3">
                      </label>
-   
+
                      <label for="rating-ul-wafs-4a">
                         😶 Nauw'lijks
                         <input type="radio" id="rating-ul-wafs-4a" name="understanding-level-1" value="4">
                      </label>
-   
+
                      <label for="rating-ul-wafs-5a">
                         🙂 Enigszins
                         <input type="radio" id="rating-ul-wafs-5a" name="understanding-level-1" value="5">
                      </label>
-   
+
                      <label for="rating-ul-wafs-6a">
                         😊 Redelijk
                         <input type="radio" id="rating-ul-wafs-6a" name="understanding-level-1" value="6">
                      </label>
-   
+
                      <label for="rating-ul-wafs-7a">
                         😃 Goed
                         <input type="radio" id="rating-ul-wafs-7a" name="understanding-level-1" value="7">
                      </label>
-   
+
                      <label for="rating-ul-wafs-8a">
                         😁 Erg goed
                         <input type="radio" id="rating-ul-wafs-8a" name="understanding-level-1" value="8">
                      </label>
-   
+
                      <label for="rating-ul-wafs-9a">
                         🤓 Uitstekend
                         <input type="radio" id="rating-ul-wafs-9a" name="understanding-level-1" value="9">
                      </label>
-   
+
                      <label for="rating-ul-wafs-10a">
                         🧠 Beheerst
                         <input type="radio" id="rating-ul-wafs-10a" name="understanding-level-1" value="10">

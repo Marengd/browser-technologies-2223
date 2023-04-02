@@ -259,12 +259,13 @@ html {
 
 
 
-
 /* ***************** */
 /* Custom Properties */
 /* ***************** */
 
 :root {
+  --primary-color: #3C37FF;
+
   --primary-background-color: white;
   --secondary-background-color: black;
   --tertiary-background-color: #f3f3f3;
@@ -273,7 +274,7 @@ html {
 
   --primary-text-color: black;
   --secondary-text-color: white;
-  --tertiary-text-color: #757575;
+  --tertiary-text-color: #8A8A8A;
 
 
   --form-heading-font-size: 3.2rem;
@@ -298,7 +299,7 @@ html {
 
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --tertiary-background-color: #acacac;
 
@@ -306,6 +307,12 @@ html {
     --secondary-text-color: black;
     --tertiary-text-color: #f3f3f3;
   }
+} */
+
+
+
+*, *::after, *::before {
+  box-sizing:border-box;  
 }
 
 
@@ -338,10 +345,17 @@ aside {
 }
 
 
-/* ********* */
-/* Section 2 */
-/* ********* */
+/* ******* */
+/* Section */
+/* ******* */
 
+main > section {
+  display: flex;
+
+  flex-direction: column;
+  
+  align-items: center;
+}
 
 
 /* ************** */
@@ -391,7 +405,9 @@ main > section > nav ol li.current {
 /* **** */
 
 form {
+  display: flex;
 
+  width: 80%;
 }
 
 form fieldset {
@@ -403,6 +419,8 @@ form fieldset {
   flex-direction: column;
   
   border: none;
+
+  width: 100%;
 }
 
 form fieldset.visible {
@@ -413,6 +431,7 @@ form fieldset.hidden {
   display: none;
 }
 
+
 form fieldset legend {
   --legend-font-family: var(--primary-font-family);
   --legend-font-size: var(--form-heading-font-size);
@@ -422,19 +441,38 @@ form fieldset legend {
 
   font-family: var(--primary-font-family);
   font-size: var(--legend-font-size);
+  font-weight: var(--heading-font-weight);
 
   color: var(--legend-text-color);
+}
+
+form fieldset legend + p {
+  --p-font-family: var(--primary-font-family);
+  --p-font-size: var(--body-font-size);
+  --p-font-weight: var(--body-font-weight);
+
+  --p-text-color: var(--tertiary-text-color);
+
+  padding-bottom: var(--M-spacer);
+
+  font-family: var(--p-font-family);
+  font-size: var(--p-font-size);
+  font-weight: var(--p-font-weight);
+
+  color: var(--p-text-color);
 }
 
 form fieldset h2 {
   --form-h2-font-family: var(--primary-font-family);
   --form-h2-font-size: var(--form-heading-font-size);
+  --form-h2-font-weight: var(--heading-font-weight);
 
   --form-h2-text-color: var(--primary-text-color);
   
 
   font-family: var(--form-h2-font-family);
   font-size: var(--form-h2-font-size);
+  font-weight: var(--form-h2-font-weight);
 
   line-height: 1.4;
   
@@ -460,6 +498,8 @@ form fieldset p {
 
 
 
+
+
 form fieldset > section {
   padding-bottom: var(--XL-spacer);
 
@@ -478,6 +518,115 @@ form fieldset > section section {
 
   flex-wrap: wrap;
 }
+
+
+
+
+
+/*  */
+
+form fieldset label[for^="personal-details"] {
+  --form-label-font-family: var(--primary-font-family);
+  --form-label-font-size: 1.4rem;
+
+  --form-label-text-color: var(--primary-text-color);
+
+  padding-bottom: var(--L-spacer);
+
+  display: flex;
+  flex-direction: column;
+
+  font-family: var(--form-label-font-family);
+  font-size: var(--form-label-font-size);
+
+  font-weight: 500;
+
+  color: var(--form-label-text-color);
+
+  width: 100%;
+}
+
+form fieldset label span {
+  padding-bottom: var(--XS-spacer);
+}
+
+
+/* *************** */
+/* Input Type Text */
+/* *************** */
+
+form fieldset label input[type="text"] {
+  --form-text-input-border-thickness: 0.1rem;
+  --form-text-input-border-color: #8A8A8A;
+
+  --form-text-input-border: var(--form-text-input-border-color) var(--form-text-input-border-thickness) solid;
+  --form-text-input-border-radius: .4rem;
+
+  --form-text-input-font-family: var(--primary-font-family);
+  --form-text-input-font-size: var(--body-font-size);
+
+  padding: 0;
+  margin: 0;
+
+  padding-left: var(--S-spacer);
+
+  font-family: var(--form-text-input-font-family);
+  font-size: var(--form-text-input-font-size);
+
+  width: 100%;
+  height: 6rem;
+
+  border: var(--form-text-input-border);
+  border-radius: var(--form-text-input-border-radius);
+}
+
+
+
+form fieldset label input[type="text"]:focus {
+  --form-text-input-border-thickness: 0.1rem;
+  --form-text-input-border-color: var(--primary-color);
+
+  --form-text-input-border: var(--form-text-input-border-color) var(--form-text-input-border-thickness) solid;
+  --form-text-input-border-radius: .4rem;
+
+  outline: var(--form-text-input-border);
+
+  background-color: rgba(60, 55, 255, 0.05);
+}
+
+
+
+
+/* Detail */
+
+form fieldset label:has(input[type="text"]:required) span::after {
+  --form-label-accent-color: var(--primary-color);
+  --form-label-accent-font-family: var(--primary-font-family);
+  --form-label-accent-font-size: 1.4rem;
+
+  padding-left: var(--XS-spacer);
+
+  content:'*';
+
+  font-family: var(--primary-font-family);
+  font-size: var(--form-label-accent-font-size);
+  
+  color: var(--form-label-accent-color);
+}
+
+
+
+
+/* Met icoon */
+
+form fieldset label div {
+
+}
+
+
+
+
+
 
 form fieldset input[type="radio"] {
   display: none;
@@ -631,13 +780,35 @@ form fieldset > nav {
   padding-bottom: var(--M-spacer);
 
   display: flex;
-
-  justify-content: space-between;
 }
 
 
+
 form fieldset > nav button {
-  font-size: 2.4rem;
+  --form-primary-button-padding: 2rem 4rem;
+  --form-primary-button-font-family: var(--primary-font-family);
+  --form-primary-button-font-size: 1.6rem;
+
+  --form-primary-button-text-color: var(--secondary-text-color);
+
+  --form-primary-button-background-color: var(--primary-color);
+
+  padding: var(--form-primary-button-padding);
+  margin: 0;
+
+  font-family: var(--form-primary-button-font-family);
+  font-size: var(--form-primary-button-font-size);
+
+  color: var(--form-primary-button-text-color);
+
+  border: none;
+  border-radius: .4rem;
+
+  background-color: var(--form-primary-button-background-color);
+}
+
+form fieldset > nav button:hover {
+  cursor: pointer;
 }
 
 form fieldset button[type="submit"] {
