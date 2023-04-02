@@ -551,7 +551,7 @@ form fieldset h2 {
 
   --form-h2-text-color: var(--primary-text-color);
 
-  padding-bottom: var(--XS-spacer);
+  padding-bottom: 1.6rem;
   margin: 0;
   
 
@@ -562,6 +562,17 @@ form fieldset h2 {
   line-height: 1.4;
   
   color: var(--form-h2-text-color);
+}
+
+form fieldset h2 span {
+  padding: .6rem 1.2rem;
+  margin-right: var(--XS-spacer);
+
+  color: var(--secondary-text-color);
+
+  border-radius: 50%;
+
+  background-color: var(--primary-color);
 }
 
 form fieldset p {
@@ -710,6 +721,105 @@ form fieldset label:has(input[type="text"]:required) span::after {
 }
 
 
+
+/* ************ */
+/* Inputs Range */
+/* ************ */
+
+form fieldset section section {
+  width: 100%;
+  height: auto;
+}
+
+form fieldset section section label[for^="rating-tm"] ,form fieldset section section label[for^="rating-ex"]  {
+  width: 100%;
+  height: 20rem;
+}
+
+/* form fieldset section section label[for^="rating-tm"] input[type="range"], form fieldset section section label[for^="rating-ex"] input[type="range"] {
+  --slider-fill: calc(10% * attr(data-fill number));
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  position: relative;
+
+  width: 100%;
+  height: 10px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin-bottom: 20px;
+}
+
+form fieldset section section label[for^="rating-tm"] input[type="range"]::before, form fieldset section section label[for^="rating-ex-wafs"] input[type="range"]::before {
+  position: relative;
+
+  content: '';
+  display: block;
+  height: 10px;
+  background-color: #4CAF50;
+  position: absolute;
+  width: var(--slider-fill);
+}
+
+
+form fieldset section section label[for^="rating-tm"] input[type="range"]::-webkit-slider-thumb, form fieldset section section label[for^="rating-ex"] input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+form fieldset section section label[for^="rating-tm"] input[type="range"]::-moz-range-thumb, form fieldset section section label[for^="rating-ex"] input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+form fieldset section section label[for^="rating-tm"] #slider-value, form fieldset section section label[for^="rating-ex"] #slider-value  {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #4CAF50;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************* */
+/* Inputs radio. */
+/* ************* */
 
 
 /* Met icoon */
