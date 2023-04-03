@@ -97,13 +97,14 @@
             <fieldset id="field-prj-1">
 
                <!-- Course Name -->
-               <legend>Project 1</legend>
+               <legend>Title of course 1</legend>
 
                <!-- Course Description -->
                <p>Description of Course 1</p>
 
 
                <h2>Docenten</h2>
+               <p>De docenten die betrokken zijn bij het geven van dit vak.</p>
 
                <ul>
                   <li>
@@ -131,14 +132,15 @@
                   </article>
 
                   <!-- Start Week Course -->
-                  <section>
-                     <label for="start-week">Start Week:
-                        <input type="date" id="start-date" name="start-date">
+                  <section id="course-date">
+                     <label for="course-start-date">
+                        <span>Startdatum</span>
+                        <input type="text" id="course-start-date" name="course-start-date" placeholder="dd- mm- jj" required>
                      </label>
 
-
-                     <label for="end-week">End Week:
-                        <input type="date" id="end-date" name="end-date">
+                     <label for="course-end-date">
+                        <span>Einddatum</span>
+                        <input type="text" id="course-end-date" name="course-end-date" placeholder="dd- mm- jj" required>
                      </label>
                   </section>
                </section>
@@ -152,10 +154,65 @@
                   </article>
 
                   <section>
-                     <label for="rating-tm-wafs">
-                        <input type="range" id="rating-ex-wafs" name="explanation-wafs" min="1" max="10" step="1" value="1" data-fill="10">
-                        <!-- <div id="slider-value"></div> -->
-                     </label>    
+
+                     <!-- Radio Buttons -->
+                     <div>
+                        <label for="rating-tm-wafs-1a">
+                           1
+                           <input type="radio" id="rating-tm-wafs-1a" name="teaching-material-wafs" value="1">
+                        </label>
+         
+                        <label for="rating-tm-wafs-2a">
+                           2
+                           <input type="radio" id="rating-tm-wafs-2a" name="teaching-material-wafs" value="2">
+                        </label>
+         
+                        <label for="rating-tm-wafs-3a">
+                           3
+                           <input type="radio" id="rating-tm-wafs-3a" name="teaching-material-wafs" value="3">
+                        </label>
+         
+                        <label for="rating-tm-wafs-4a">
+                           4
+                           <input type="radio" id="rating-tm-wafs-4a" name="teaching-material-wafs" value="4">
+                        </label>
+         
+                        <label for="rating-tm-wafs-5a">
+                           5
+                           <input type="radio" id="rating-tm-wafs-5a" name="teaching-material-wafs" value="5">
+                        </label>
+         
+                        <label for="rating-tm-wafs-6a">
+                           6
+                           <input type="radio" id="rating-tm-wafs-6a" name="teaching-material-wafs" value="6">
+                        </label>
+         
+                        <label for="rating-tm-wafs-7a">
+                           7
+                           <input type="radio" id="rating-tm-wafs-7a" name="teaching-material-wafs" value="7">
+                        </label>
+         
+                        <label for="rating-tm-wafs-8a">
+                           8
+                           <input type="radio" id="rating-tm-wafs-8a" name="teaching-material-wafs" value="8">
+                        </label>
+         
+                        <label for="rating-tm-wafs-9a">
+                           9
+                           <input type="radio" id="rating-tm-wafs-9a" name="teaching-material-wafs" value="9">
+                        </label>
+         
+                        <label for="rating-tm-wafs-10a">
+                           10
+                           <input type="radio" id="rating-tm-wafs-10a" name="teaching-material-wafs" value="10">
+                        </label>
+                     </div>
+
+                     <ul>
+                        <li>Erg makkelijk 🥱</li>
+                        <li>Heel moeilijk! 🤯</li>
+                     </ul>
+
                   </section>
                </section>
 
@@ -168,9 +225,68 @@
                   </article>
 
                   <section>
-                     <label for="rating-ex-wafs">
+
+                     <!-- Input Radio Buttons -->
+                     <div>
+                        <label for="rating-ex-wafs-1a">
+                           1
+                           <input type="radio" id="rating-ex-wafs-1a" name="explanation-wafs" value="1">
+                        </label>
+         
+                        <label for="rating-ex-wafs-2a">
+                           2
+                           <input type="radio" id="rating-ex-wafs-2a" name="explanation-wafs" value="2">
+                        </label>
+         
+                        <label for="rating-ex-wafs-3a">
+                           3
+                           <input type="radio" id="rating-ex-wafs-3a" name="explanation-wafs" value="3">
+                        </label>
+         
+                        <label for="rating-ex-wafs-4a">
+                           4
+                           <input type="radio" id="rating-ex-wafs-4a" name="explanation-wafs" value="4">
+                        </label>
+         
+                        <label for="rating-ex-wafs-5a">
+                           5
+                           <input type="radio" id="rating-ex-wafs-5a" name="explanation-wafs" value="5">
+                        </label>
+         
+                        <label for="rating-ex-wafs-6a">
+                           6
+                           <input type="radio" id="rating-ex-wafs-6a" name="explanation-wafs" value="6">
+                        </label>
+         
+                        <label for="rating-ex-wafs-7a">
+                           7
+                           <input type="radio" id="rating-ex-wafs-7a" name="explanation-wafs" value="7">
+                        </label>
+         
+                        <label for="rating-ex-wafs-8a">
+                           8
+                           <input type="radio" id="rating-ex-wafs-8a" name="explanation-wafs" value="8">
+                        </label>
+         
+                        <label for="rating-ex-wafs-9a">
+                           9
+                           <input type="radio" id="rating-ex-wafs-9a" name="explanation-wafs" value="9">
+                        </label>
+         
+                        <label for="rating-ex-wafs-10a">
+                           10
+                           <input type="radio" id="rating-ex-wafs-10a" name="explanation-wafs" value="10">
+                        </label>
+                     </div>
+
+                        <ul>
+                           <li>Erg onduidelijk 🤔</li>
+                           <li>Intens! 🤯</li>
+                        </ul>
+
+                     <!-- Input Range -->
+                     <label for="rating-ex-wafs" class="idle">
                         <input type="range" id="rating-ex-wafs" name="explanation-wafs" min="1" max="10" step="1" value="1" data-fill="10">
-                        <!-- <div id="slider-value"></div> -->
                      </label>                      
                   </section>
                </section>

@@ -289,6 +289,7 @@ html {
   --M-spacer: 4rem;
   --L-spacer: 6rem;
   --XL-spacer: 8rem;
+  --XXL-spacer: 12rem;
 
   --XS-font-size: 1.4rem;
   --S-font-size: 1.6rem;
@@ -477,7 +478,7 @@ form fieldset legend + p + h2 {
 
   --form-h2-text-color: var(--primary-text-color);
 
-  padding-bottom: var(--S-spacer);
+  padding-bottom: .8rem;
   margin: 0;
   
 
@@ -490,8 +491,21 @@ form fieldset legend + p + h2 {
   color: var(--form-h2-text-color);
 }
 
+form fieldset legend + p + h2 + p {
+  padding-bottom: var(--S-spacer);
+  margin: 0;
+  
 
-form fieldset legend + p + h2 + ul {
+  font-family: var(--primary-font-family);
+  font-size: 1.6rem;
+  font-weight: 400;
+
+  line-height: 1.4;
+  
+  color: var(--tertiary-text-color);
+}
+
+form fieldset legend + p + h2 + p + ul {
   padding: 0;
   margin: 0;
 
@@ -503,7 +517,7 @@ form fieldset legend + p + h2 + ul {
   width: 100%;
 }
 
-form fieldset legend + p + h2 +  ul li {
+form fieldset legend + p + h2 + p +  ul li {
   padding: 0;
   margin: 0;
 
@@ -517,12 +531,12 @@ form fieldset legend + p + h2 +  ul li {
 
   gap: var(--XS-spacer);
 
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 
 
-form fieldset legend + p + h2 + ul li figure {
+form fieldset legend + p + h2 + p + ul li figure {
   padding: 0;
   margin: 0;
 
@@ -536,12 +550,14 @@ form fieldset legend + p + h2 + ul li figure {
   background-color: #E9E9E9;
 }
 
-form fieldset legend + p + h2 + ul li figure img {
+form fieldset legend + p + h2 + p + ul li figure img {
   width: 100%;
   height: 100%;
 
   object-fit: cover;
 }
+
+
 
 
 form fieldset h2 {
@@ -600,7 +616,7 @@ form fieldset p {
 
 
 form fieldset > section {
-  padding-bottom: var(--XL-spacer);
+  padding-bottom: var(--XXL-spacer);
 
   display: flex;
 
@@ -616,6 +632,12 @@ form fieldset > section section {
   display: flex;
 
   flex-wrap: wrap;
+}
+
+form fieldset > section > section#course-date {
+  gap: var(--XS-spacer);
+
+  width: 100%;
 }
 
 form fieldset > section article {
@@ -655,6 +677,48 @@ form fieldset label[for^="personal-details"] {
 form fieldset label span {
   padding-bottom: var(--XS-spacer);
 }
+
+
+
+
+
+
+
+
+
+
+/* ******************** */
+/* Course Start And End */
+/* ******************** */
+
+form fieldset label[for^="course-start-date"], form fieldset label[for^="course-end-date"] {
+  --form-label-font-family: var(--primary-font-family);
+  --form-label-font-size: 1.4rem;
+
+  --form-label-text-color: var(--primary-text-color);
+
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  font-family: var(--form-label-font-family);
+  font-size: var(--form-label-font-size);
+
+  font-weight: 500;
+
+  color: var(--form-label-text-color);
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* *************** */
@@ -726,15 +790,15 @@ form fieldset label:has(input[type="text"]:required) span::after {
 /* Inputs Range */
 /* ************ */
 
-form fieldset section section {
+/* form fieldset section section {
   width: 100%;
   height: auto;
-}
+} */
 
-form fieldset section section label[for^="rating-tm"] ,form fieldset section section label[for^="rating-ex"]  {
+/* form fieldset section section label[for^="rating-tm"] ,form fieldset section section label[for^="rating-ex"]  {
   width: 100%;
   height: 20rem;
-}
+} */
 
 /* form fieldset section section label[for^="rating-tm"] input[type="range"], form fieldset section section label[for^="rating-ex"] input[type="range"] {
   --slider-fill: calc(10% * attr(data-fill number));
@@ -816,11 +880,14 @@ form fieldset section section label[for^="rating-tm"] #slider-value, form fields
 
 
 
-
 /* ************* */
 /* Inputs radio. */
 /* ************* */
 
+
+form fieldset section label[for^="rating-ex"].idle, form fieldset section label[for^="rating-tm"].idle {
+  display: none;
+}
 
 /* Met icoon */
 
@@ -831,47 +898,94 @@ form fieldset label div {
 
 
 form fieldset input[type="radio"] {
-  display: none;
+  appearance: none;
+
+  inset: 0;
+}
+
+form fieldset section section div {
+  padding-bottom: var(--S-spacer);
+
+  display: flex;
+
+  align-items: center;
+
+  gap: .8rem;
+
+  width: 100%;
+}
+
+/* ********* */
+/* Indicator */
+/* ********* */
+
+form fieldset section section div + ul {
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+form fieldset section section div + ul li {
+  margin: 0;
+
+  list-style: none;
+
+  font-family: var(--primary-font-family);
+  font-size: 1.4rem;
+
+  color: var(--tertiary-text-color);
 }
 
 /* ************************ */
 /* Rating Teaching Material */
 /* ************************ */
 
-form fieldset section label[for^="rating-tm"] {
-  --rating-ul-padding: .8rem;
+form fieldset section div label[for^="rating-tm"] {
+  --rating-tm-padding: 1.5rem 3rem;
 
-  --rating-ul-font-family: var(--primary-font-family);
-  --rating-ul-font-size: 1.6rem;
+  --rating-tm-font-family: var(--primary-font-family);
+  --rating-tm-font-size: 1.6rem;
 
-  --rating-ul-border-color: black;
-  --rating-ul-border-thickness: .1rem;
+  --rating-tm-border-color: #8a8a8a;
+  --rating-tm-border-thickness: .1rem;
 
-  --rating-ul-border: var(--rating-ul-border-thickness) solid var(--rating-ul-border-color);
-  --rating-ul-border-radius: .4rem;
-
-  --rating-ul-background-color: transparent;
+  --rating-tm-border: var(--rating-tm-border-thickness) solid var(--rating-tm-border-color);
+  --rating-tm-border-radius: .4rem;
 
 
-  padding: var(--rating-ul-padding);
+  padding: var(--rating-tm-padding);
 
-  aspect-ratio: 1;
-
-  display: inline-flex;
+  display: flex;
   
   align-items: center;
   justify-content: center;
 
-  font-family: var(--rating-ul-font-family);
-  font-size: var(--rating-ul-font-size);
+  font-family: var(--rating-tm-font-family);
+  font-size: var(--rating-tm-font-size);
 
-  border: var(--rating-ul-border);
-  border-radius: var(--rating-ul-border-radius);
+  color: var(--primary-text-color);
 
-  background-color: var(--rating-ul-background-color);
+  border: var(--rating-tm-border);
+  border-radius: var(--rating-tm-border-radius);
+
+  background-color: var(--rating-tm-background-color);
 }
 
 form fieldset label:has(input[type="radio"][id^="rating-tm"]:checked) {
+  filter: none;
+
+  color: #1A1AFF;
+
+  font-weight: 700;
+
+  border: 2px solid #1A1AFF;
+
+  background-color: rgba(120, 170, 255, 0.50);
 }
 
 form fieldset label:has(input[type="radio"][id^="rating-tm"]:not(:checked)) {
@@ -885,39 +999,46 @@ form fieldset label:has(input[type="radio"][id^="rating-tm"]:not(:checked)) {
 /* *************************************** */
 
 form fieldset section label[for^="rating-ex"] {
-  --rating-ul-padding: .8rem;
+  --rating-tm-padding: 1.5rem 3rem;
 
-  --rating-ul-font-family: var(--primary-font-family);
-  --rating-ul-font-size: 1.6rem;
+  --rating-tm-font-family: var(--primary-font-family);
+  --rating-tm-font-size: 1.6rem;
 
-  --rating-ul-border-color: black;
-  --rating-ul-border-thickness: .1rem;
+  --rating-tm-border-color: #8a8a8a;
+  --rating-tm-border-thickness: .1rem;
 
-  --rating-ul-border: var(--rating-ul-border-thickness) solid var(--rating-ul-border-color);
-  --rating-ul-border-radius: .4rem;
-
-  --rating-ul-background-color: transparent;
+  --rating-tm-border: var(--rating-tm-border-thickness) solid var(--rating-tm-border-color);
+  --rating-tm-border-radius: .4rem;
 
 
-  padding: var(--rating-ul-padding);
+  padding: var(--rating-tm-padding);
 
-  aspect-ratio: 1;
-
-  display: inline-flex;
+  display: flex;
   
   align-items: center;
   justify-content: center;
 
-  font-family: var(--rating-ul-font-family);
-  font-size: var(--rating-ul-font-size);
+  font-family: var(--rating-tm-font-family);
+  font-size: var(--rating-tm-font-size);
 
-  border: var(--rating-ul-border);
-  border-radius: var(--rating-ul-border-radius);
+  color: var(--primary-text-color);
 
-  background-color: var(--rating-ul-background-color);
+  border: var(--rating-tm-border);
+  border-radius: var(--rating-tm-border-radius);
+
+  background-color: var(--rating-tm-background-color);
 }
 
 form fieldset label:has(input[type="radio"][id^="rating-ex"]:checked) {
+  filter: none;
+
+  color: #1A1AFF;
+
+  font-weight: 700;
+
+  border: 2px solid #1A1AFF;
+
+  background-color: rgba(120, 170, 255, 0.50);
 }
 
 form fieldset label:has(input[type="radio"][id^="rating-ex"]:not(:checked)) {
@@ -957,56 +1078,13 @@ form fieldset section label[for^="rating-ul"] {
   --rating-ul-font-family: var(--primary-font-family);
   --rating-ul-font-size: 1.6rem;
 
-  --rating-ul-border-color: black;
-  --rating-ul-border-thickness: .1rem;
-
-  --rating-ul-border: var(--rating-ul-border-thickness) solid var(--rating-ul-border-color);
-  --rating-ul-border-radius: .4rem;
-
-  --rating-ul-background-color: transparent;
-
-
-  padding: var(--rating-ul-padding);
-
-  display: inline-flex;
-  
-  align-items: center;
-  justify-content: center;
-
-  font-family: var(--rating-ul-font-family);
-  font-size: var(--rating-ul-font-size);
-
-  border: var(--rating-ul-border);
-  border-radius: var(--rating-ul-border-radius);
-
-  background-color: var(--rating-ul-background-color);
-}
-
-form fieldset label:has(input[type="radio"][id^="rating-ul"]:checked) {
-  filter: none;
-
-  color: #3C37FF;
-
-  font-weight: 500;
-
-  border: .1rem solid #3C37FF;
-
-  background-color: rgba(60, 55, 255, 0.05);
-}
-
-form fieldset label:has(input[type="radio"][id^="rating-ul"]:not(:checked)) {
-  --rating-ul-padding: .8rem;
-
-  --rating-ul-font-family: var(--primary-font-family);
-  --rating-ul-font-size: 1.6rem;
-
   --rating-ul-border-color: #8a8a8a;
   --rating-ul-border-thickness: .1rem;
 
   --rating-ul-border: var(--rating-ul-border-thickness) solid var(--rating-ul-border-color);
   --rating-ul-border-radius: .4rem;
 
-  --rating-ul-background-color: transparent;
+  --rating-ul-background-color: white;
 
   filter:grayscale();
 
@@ -1026,6 +1104,21 @@ form fieldset label:has(input[type="radio"][id^="rating-ul"]:not(:checked)) {
   border-radius: var(--rating-ul-border-radius);
 
   background-color: var(--rating-ul-background-color);
+}
+
+form fieldset label:has(input[type="radio"][id^="rating-ul"]:checked) {
+  filter: none;
+
+  color: #1A1AFF;
+
+  font-weight: 700;
+
+  border: 2px solid #1A1AFF;
+
+  background-color: rgba(120, 170, 255, 0.50);
+}
+
+form fieldset label:has(input[type="radio"][id^="rating-ul"]:not(:checked)) {
 }
 
 
@@ -1061,6 +1154,16 @@ form fieldset > nav button {
   border: none;
   border-radius: .4rem;
 
+  background-color: var(--form-primary-button-background-color);
+}
+
+form fieldset > nav button#primary {
+  --form-primary-button-background-color: var(--primary-color);
+  background-color: var(--form-primary-button-background-color);
+}
+
+form fieldset > nav button#secondary {
+  --form-primary-button-background-color: black;
   background-color: var(--form-primary-button-background-color);
 }
 
