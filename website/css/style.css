@@ -3,258 +3,255 @@
 /* ***** */
 
 html {
-   line-height: 1.15; /* 1 */
-   -webkit-text-size-adjust: 100%; /* 2 */
- }
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
 
 /* 1. Remove the margin in all browsers. */
 
- body {
-   margin: 0;
- }
+body {
+  margin: 0;
+}
 
 /* 2. Render the main element consistently in IE. */
 
- main {
-   display: block;
- }
+main {
+  display: block;
+}
 
- /* 3. Correct the font size and margin on h1 elements within section and article contexts in Chrome, Firefox, and Safari. */
+/* 3. Correct the font size and margin on h1 elements within section and article contexts in Chrome, Firefox, and Safari. */
 
- h1 {
-   font-size: 2em;
-   margin: 0.67em 0;
- }
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
 
- /* 4. Add the correct box sizing in Firefox, and show the overflow in Edge and IE. */
+/* 4. Add the correct box sizing in Firefox, and show the overflow in Edge and IE. */
 
- hr {
-   box-sizing: content-box; /* 1 */
-   height: 0; /* 1 */
-   overflow: visible; /* 2 */
- }
- 
- /* 5. Correct the inheritance and scaling of font size in all browsers, and correct the odd em font sizing in all browsers. */
- 
- pre {
-   font-family: monospace, monospace; /* 1 */
-   font-size: 1em; /* 2 */
- }
- 
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
 
- /* 6. Remove the gray background on active links in IE 10. */
+/* 5. Correct the inheritance and scaling of font size in all browsers, and correct the odd em font sizing in all browsers. */
 
- a {
-   background-color: transparent;
- }
-
- /* 7. Remove the bottom border in Chrome 57-, and add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
-
- abbr[title] {
-   border-bottom: none; /* 1 */
-   text-decoration: underline; /* 2 */
-   text-decoration: underline dotted; /* 2 */
- }
-
- /* 8. Add the correct font weight in Chrome, Edge, and Safari. */
-
- b,
- strong {
-   font-weight: bolder;
- }
-
- /* 9. Correct the inheritance and scaling of font size in all browsers, and correct the odd em font sizing in all browsers. */
-
- code,
- kbd,
- samp {
-   font-family: monospace, monospace; /* 1 */
-   font-size: 1em; /* 2 */
- }
- 
- /* 10. Add the correct font size in all browsers. */
- 
- small {
-   font-size: 80%;
- }
-
- /* 11. Prevent sub and sup elements from affecting the line height in all browsers. */
-
- sub,
- sup {
-   font-size: 75%;
-   line-height: 0;
-   position: relative;
-   vertical-align: baseline;
- }
- 
- sub {
-   bottom: -0.25em;
- }
- 
- sup {
-   top: -0.5em;
- }
- 
- /* 12. Remove the border on images inside links in IE 10. */
- 
- img {
-   border-style: none;
- }
- 
- /* 13. Change the font styles in all browsers, and remove the margin in Firefox and Safari. */
-
- button,
- input,
- optgroup,
- select,
- textarea {
-   font-family: inherit; /* 1 */
-   font-size: 100%; /* 1 */
-   line-height: 1.15; /* 1 */
-   margin: 0; /* 2 */
- }
-
- /* 14. Show the overflow in Edge. */
-
- button,
- input {
-   /* 1 */
-   overflow: visible;
- }
-
- /* 15. Remove the inheritance of text transform in Firefox. */
-
- button,
- select {
-   /* 1 */
-   text-transform: none;
- }
-
- /* 16. Correct the inability to style clickable types in iOS and Safari. */
-
- button,
- [type='button'],
- [type='reset'],
- [type='submit'] {
-   -webkit-appearance: button;
- }
-
- /* 17. Remove the inner border and padding in Firefox. */
-
- button::-moz-focus-inner,
- [type='button']::-moz-focus-inner,
- [type='reset']::-moz-focus-inner,
- [type='submit']::-moz-focus-inner {
-   border-style: none;
-   padding: 0;
- }
-
- /* 18. Restore the focus styles unset by the previous rule. */
-
- button:-moz-focusring,
- [type='button']:-moz-focusring,
- [type='reset']:-moz-focusring,
- [type='submit']:-moz-focusring {
-   outline: 1px dotted ButtonText;
- }
-
- /* 19. Correct the padding in Firefox. */
-
- fieldset {
-   padding: 0.35em 0.75em 0.625em;
- }
-
- /* 20. Correct the text wrapping in Edge and IE. Correct the color inheritance from fieldset elements in IE. Remove the padding so developers are not caught out when they zero out fieldset elements in all browsers. */
-
- legend {
-   box-sizing: border-box; /* 1 */
-   color: inherit; /* 2 */
-   display: table; /* 1 */
-   max-width: 100%; /* 1 */
-   padding: 0; /* 3 */
-   white-space: normal; /* 1 */
- }
-
- /* 21. Add the correct vertical alignment in Chrome, Firefox, and Opera. */
-
- progress {
-   vertical-align: baseline;
- }
-
- /* 22. Remove the default vertical scrollbar in IE 10+. */
-
- textarea {
-   overflow: auto;
- }
-
- /* 23. Add the correct box sizing in IE 10. Remove the padding in IE 10. */
-
- [type='checkbox'],
- [type='radio'] {
-   box-sizing: border-box; /* 1 */
-   padding: 0; /* 2 */
- }
-
- /* 24. Correct the cursor style of increment and decrement buttons in Chrome. */
-
- [type='number']::-webkit-inner-spin-button,
- [type='number']::-webkit-outer-spin-button {
-   height: auto;
- }
-
- /* 25. Correct the odd appearance in Chrome and Safari. Correct the outline style in Safari. */
-
- [type='search'] {
-   -webkit-appearance: textfield; /* 1 */
-   outline-offset: -2px; /* 2 */
- }
-
- /* 26. Remove the inner padding in Chrome and Safari on macOS. */
-
- [type='search']::-webkit-search-decoration {
-   -webkit-appearance: none;
- }
-
- /* 27. Correct the inability to style clickable types in iOS and Safari. Change font properties to inherit in Safari. */
-
- ::-webkit-file-upload-button {
-   -webkit-appearance: button; /* 1 */
-   font: inherit; /* 2 */
- }
-
- /* 28. Add the correct display in Edge, IE 10+, and Firefox. */
-
- details {
-   display: block;
- }
-
- /* 29. Add the correct display in all browsers. */
-
- summary {
-   display: list-item;
- }
-
- /* 30. Add the correct display in IE 10+. */
-
- template {
-   display: none;
- }
-
- /* 31. Add the correct display in IE 10. */
-
- [hidden] {
-   display: none;
- }
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
 
 
+/* 6. Remove the gray background on active links in IE 10. */
 
+a {
+  background-color: transparent;
+}
 
+/* 7. Remove the bottom border in Chrome 57-, and add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
 
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
 
+/* 8. Add the correct font weight in Chrome, Edge, and Safari. */
 
+b,
+strong {
+  font-weight: bolder;
+}
 
+/* 9. Correct the inheritance and scaling of font size in all browsers, and correct the odd em font sizing in all browsers. */
 
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* 10. Add the correct font size in all browsers. */
+
+small {
+  font-size: 80%;
+}
+
+/* 11. Prevent sub and sup elements from affecting the line height in all browsers. */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* 12. Remove the border on images inside links in IE 10. */
+
+img {
+  border-style: none;
+}
+
+/* 13. Change the font styles in all browsers, and remove the margin in Firefox and Safari. */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/* 14. Show the overflow in Edge. */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/* 15. Remove the inheritance of text transform in Firefox. */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/* 16. Correct the inability to style clickable types in iOS and Safari. */
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+
+/* 17. Remove the inner border and padding in Firefox. */
+
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/* 18. Restore the focus styles unset by the previous rule. */
+
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/* 19. Correct the padding in Firefox. */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/* 20. Correct the text wrapping in Edge and IE. Correct the color inheritance from fieldset elements in IE. Remove the padding so developers are not caught out when they zero out fieldset elements in all browsers. */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/* 21. Add the correct vertical alignment in Chrome, Firefox, and Opera. */
+
+progress {
+  vertical-align: baseline;
+}
+
+/* 22. Remove the default vertical scrollbar in IE 10+. */
+
+textarea {
+  overflow: auto;
+}
+
+/* 23. Add the correct box sizing in IE 10. Remove the padding in IE 10. */
+
+[type='checkbox'],
+[type='radio'] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/* 24. Correct the cursor style of increment and decrement buttons in Chrome. */
+
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* 25. Correct the odd appearance in Chrome and Safari. Correct the outline style in Safari. */
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/* 26. Remove the inner padding in Chrome and Safari on macOS. */
+
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* 27. Correct the inability to style clickable types in iOS and Safari. Change font properties to inherit in Safari. */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* 28. Add the correct display in Edge, IE 10+, and Firefox. */
+
+details {
+  display: block;
+}
+
+/* 29. Add the correct display in all browsers. */
+
+summary {
+  display: list-item;
+}
+
+/* 30. Add the correct display in IE 10+. */
+
+template {
+  display: none;
+}
+
+/* 31. Add the correct display in IE 10. */
+
+[hidden] {
+  display: none;
+}
+
+/* 32. To make sure that the width and height of elements include the padding and border. */
+
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
 
 
 
@@ -300,21 +297,24 @@ html {
 
 }
 
+
 /* @media (prefers-color-scheme: dark) {
+
   :root {
+    --primary-color: #3C37FF;
+
+    --primary-background-color: white;
+    --secondary-background-color: black;
     --tertiary-background-color: #acacac;
 
     --primary-text-color: white;
     --secondary-text-color: black;
-    --tertiary-text-color: #f3f3f3;
+    --tertiary-text-color: #acacac;
   }
+
 } */
 
 
-
-*, *::after, *::before {
-  box-sizing:border-box;  
-}
 
 
 /* ********** */
@@ -337,18 +337,20 @@ main {
 }
 
 
-/* ***** */
-/* Aside */
-/* ***** */
+/* ********** */
+/* Main Aside */
+/* ********** */
 
-aside {
+main > aside {
   display: none;
 }
 
 
-/* ******* */
-/* Section */
-/* ******* */
+
+
+/* ************ */
+/* Main Section */
+/* ************ */
 
 main > section {
   display: flex;
@@ -357,6 +359,11 @@ main > section {
   
   align-items: center;
 }
+
+
+/* **************** */
+/* Main Section Nav */
+/* **************** */
 
 
 /* ************** */
@@ -377,16 +384,22 @@ main > section > nav ol {
 
   align-items: center;
   justify-content: space-between;
-
-
-  width: 100%;
 }
 
+/* ******************** */
+/* Step Indicator Links */
+/* ******************** */
+
 main > section > nav ol li {
+  list-style: none;
+}
+
+main > section > nav ol li a {
   --step-indicator-font-family: var(--primary-font-family);
   --step-indicator-font-size: 1.6rem;
   
   --step-indicator-text-color: var(--primary-text-color);
+
 
   list-style: none;
 
@@ -396,23 +409,32 @@ main > section > nav ol li {
   color: var(--step-indicator-text-color);
 }
 
-main > section > nav ol li.current {
+main > section > nav ol li.current a {
   color: red;
 }
 
 
-/* **** */
-/* Form */
-/* **** */
+
+
+/* ***************** */
+/* Main Section Form */
+/* ***************** */
 
 form {
   display: flex;
   flex-direction: column;
 
-  width: 80%;
+  width: 100%;
 }
 
+
+/* ************* */
+/* Form Fieldset */
+/* ************* */
+
 form fieldset {
+  min-inline-size: 0;
+
   padding: 0;
   margin: 0;
 
@@ -434,16 +456,18 @@ form fieldset.hidden {
 }
 
 
-
-
-
-
+/* ******************** */
+/* Form Fieldset Legend */
+/* ******************** */
 
 form fieldset legend {
   --legend-font-family: var(--primary-font-family);
   --legend-font-size: var(--form-heading-font-size);
 
   --legend-text-color: var(--primary-text-color);
+
+  padding: 0;
+  margin: 0;
 
   padding-bottom: var(--S-spacer);
 
@@ -453,6 +477,11 @@ form fieldset legend {
 
   color: var(--legend-text-color);
 }
+
+
+/* ****************** */
+/* Course Description */
+/* ****************** */
 
 form fieldset legend + p {
   --p-font-family: var(--primary-font-family);
@@ -471,6 +500,10 @@ form fieldset legend + p {
 }
 
 
+/* ******************** */
+/* Course Teacher Title */
+/* ******************** */
+
 form fieldset legend + p + h2 {
   --form-h2-font-family: var(--primary-font-family);
   --form-h2-font-size: 1.8rem;
@@ -478,10 +511,10 @@ form fieldset legend + p + h2 {
 
   --form-h2-text-color: var(--primary-text-color);
 
+
   padding-bottom: .8rem;
   margin: 0;
   
-
   font-family: var(--form-h2-font-family);
   font-size: var(--form-h2-font-size);
   font-weight: var(--form-h2-font-weight);
@@ -491,11 +524,15 @@ form fieldset legend + p + h2 {
   color: var(--form-h2-text-color);
 }
 
+
+/* *************************** */
+/* Course Teacher Description  */
+/* *************************** */
+
 form fieldset legend + p + h2 + p {
   padding-bottom: var(--S-spacer);
   margin: 0;
   
-
   font-family: var(--primary-font-family);
   font-size: 1.6rem;
   font-weight: 400;
@@ -504,6 +541,11 @@ form fieldset legend + p + h2 + p {
   
   color: var(--tertiary-text-color);
 }
+
+
+/* ******************* */
+/* Course Teacher List */
+/* ******************* */
 
 form fieldset legend + p + h2 + p + ul {
   padding: 0;
@@ -516,6 +558,11 @@ form fieldset legend + p + h2 + p + ul {
 
   width: 100%;
 }
+
+
+/* *************************** */
+/* Course Teacher List Content */
+/* *************************** */
 
 form fieldset legend + p + h2 + p +  ul li {
   padding: 0;
@@ -534,7 +581,9 @@ form fieldset legend + p + h2 + p +  ul li {
   font-size: 1.4rem;
 }
 
-
+/* ************* */
+/* Teacher Image */
+/* ************* */
 
 form fieldset legend + p + h2 + p + ul li figure {
   padding: 0;
@@ -558,9 +607,31 @@ form fieldset legend + p + h2 + p + ul li figure img {
 }
 
 
+/* ********************* */
+/* Form Fieldset Section */
+/* ********************* */
 
+form fieldset > section {
+  padding-bottom: var(--XXL-spacer);
 
-form fieldset h2 {
+  display: flex;
+
+  flex-direction: column;
+}
+
+/* ******************************* */
+/* Form Fieldset Section Questions */
+/* ******************************* */
+
+form fieldset > section article {
+  padding-bottom: var(--M-spacer);
+}
+
+/* ************* */
+/* Form Question */
+/* ************* */
+
+form fieldset > section article h2 {
   --form-h2-font-family: var(--primary-font-family);
   --form-h2-font-size: 1.8rem;
   --form-h2-font-weight: var(--heading-font-weight);
@@ -570,7 +641,6 @@ form fieldset h2 {
   padding-bottom: 1.6rem;
   margin: 0;
   
-
   font-family: var(--form-h2-font-family);
   font-size: var(--form-h2-font-size);
   font-weight: var(--form-h2-font-weight);
@@ -580,27 +650,27 @@ form fieldset h2 {
   color: var(--form-h2-text-color);
 }
 
-form fieldset h2 span {
-  padding: .6rem 1.2rem;
+/* **********************/
+/* Form Question Number */
+/* ******************** */
+
+form fieldset > section article h2 span {
   margin-right: var(--XS-spacer);
-
-  color: var(--secondary-text-color);
-
-  border-radius: 50%;
-
-  background-color: var(--primary-color);
 }
 
-form fieldset p {
+/* ************************* */
+/* Form Question Description */
+/* ************************* */
+
+form fieldset > section article p {
   --p-font-family: var(--primary-font-family);
   --p-font-size: var(--body-font-size);
   --p-font-weight: var(--body-font-weight);
 
-  --p-text-color: var(--primary-text-color);
+  --p-text-color: var(--tertiary-text-color);
 
   padding: 0;
   margin: 0;
-
 
   font-family: var(--p-font-family);
   font-size: var(--p-font-size);
@@ -610,48 +680,179 @@ form fieldset p {
 }
 
 
-
-
-
-
+/* **************************** */
+/* Form Fieldset Section Inputs */
+/* **************************** */
 
 form fieldset > section {
-  padding-bottom: var(--XXL-spacer);
+  max-width: 78rem;
+}
 
-  display: flex;
+form fieldset > section section#grading {
+  overflow-x: scroll;
+  overflow-y: hidden;
 
-  flex-direction: column;
-  flex-wrap: wrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 
-  gap: .4rem;
+  -webkit-overflow-scrolling: touch;
+
+  display: inline-block;
+  white-space: nowrap;
+
+  width: 100%;
+  max-width: 100%;
+
+  background-color: red;
+}
+
+form fieldset > section section#grading div {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+
+
+form fieldset > section section::-webkit-scrollbar{
+  display: none;
+}
+
+
+/* ****** */
+/* Inputs */
+/* ****** */
+
+form fieldset > section section#grading div section {
+  padding-bottom: var(--XS-spacer);
+
+  display: inline-block;
+
+  justify-content: space-between;
 
   width: 100%;
 }
 
-form fieldset > section section {
+
+/* ********* */
+/* Indicator */
+/* ********* */
+
+form fieldset > section section#grading div ul {
+  padding: 0;
+  margin: 0;
+
   display: flex;
-
-  flex-wrap: wrap;
+  
+  justify-content: space-between;
 }
 
-form fieldset > section > section#course-date {
-  gap: var(--XS-spacer);
+form fieldset > section section#grading div ul li {
+  list-style: none;
 
-  width: 100%;
-}
+  font-family: var(--primary-font-family);
+  font-size: 1.4rem;
 
-form fieldset > section article {
-  padding-bottom: var(--M-spacer);
-}
-
-form fieldset > section article p {
   color: var(--tertiary-text-color);
 }
 
 
 
 
-/*  */
+
+
+
+
+/* *************** */
+/* Input Type Text */
+/* *************** */
+
+form fieldset label input[type="text"] {
+  --form-text-input-border-thickness: 0.1rem;
+  --form-text-input-border-color: #8A8A8A;
+
+  --form-text-input-border: var(--form-text-input-border-color) var(--form-text-input-border-thickness) solid;
+  --form-text-input-border-radius: .4rem;
+
+  --form-text-input-font-family: var(--primary-font-family);
+  --form-text-input-font-size: var(--body-font-size);
+
+  padding: 0;
+  margin: 0;
+
+  padding-left: var(--S-spacer);
+
+  font-family: var(--form-text-input-font-family);
+  font-size: var(--form-text-input-font-size);
+
+  width: 100%;
+  height: 6rem;
+
+  border: var(--form-text-input-border);
+  border-radius: var(--form-text-input-border-radius);
+}
+
+
+/* *************************** */
+/* Input Type Text Focus State */
+/* *************************** */
+
+form fieldset label input[type="text"]:focus {
+  --form-text-input-border-thickness: 0.1rem;
+  --form-text-input-border-color: var(--primary-color);
+
+  --form-text-input-border: var(--form-text-input-border-color) var(--form-text-input-border-thickness) solid;
+  --form-text-input-border-radius: .4rem;
+
+  outline: var(--form-text-input-border);
+
+  background-color: rgba(60, 55, 255, 0.05);
+}
+
+
+/* ******************* */
+/* Input Type Required */
+/* ******************* */
+
+form fieldset label:has(input[type="text"]:required) span::after {
+  --form-label-accent-color: var(--primary-color);
+  --form-label-accent-font-family: var(--primary-font-family);
+  --form-label-accent-font-size: 1.4rem;
+
+  padding-left: var(--XS-spacer);
+
+  content:'*';
+
+  font-family: var(--primary-font-family);
+  font-size: var(--form-label-accent-font-size);
+  
+  color: var(--form-label-accent-color);
+}
+
+
+/* ***************** */
+/* Input Course Date */
+/* ***************** */
+
+form fieldset > section > section#course-date {
+  display: flex;
+
+  gap: var(--XS-spacer);
+
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Personal Details */
 
 form fieldset label[for^="personal-details"] {
   --form-label-font-family: var(--primary-font-family);
@@ -721,150 +922,6 @@ form fieldset label[for^="course-start-date"], form fieldset label[for^="course-
 
 
 
-/* *************** */
-/* Input Type Text */
-/* *************** */
-
-form fieldset label input[type="text"] {
-  --form-text-input-border-thickness: 0.1rem;
-  --form-text-input-border-color: #8A8A8A;
-
-  --form-text-input-border: var(--form-text-input-border-color) var(--form-text-input-border-thickness) solid;
-  --form-text-input-border-radius: .4rem;
-
-  --form-text-input-font-family: var(--primary-font-family);
-  --form-text-input-font-size: var(--body-font-size);
-
-  padding: 0;
-  margin: 0;
-
-  padding-left: var(--S-spacer);
-
-  font-family: var(--form-text-input-font-family);
-  font-size: var(--form-text-input-font-size);
-
-  width: 100%;
-  height: 6rem;
-
-  border: var(--form-text-input-border);
-  border-radius: var(--form-text-input-border-radius);
-}
-
-
-
-form fieldset label input[type="text"]:focus {
-  --form-text-input-border-thickness: 0.1rem;
-  --form-text-input-border-color: var(--primary-color);
-
-  --form-text-input-border: var(--form-text-input-border-color) var(--form-text-input-border-thickness) solid;
-  --form-text-input-border-radius: .4rem;
-
-  outline: var(--form-text-input-border);
-
-  background-color: rgba(60, 55, 255, 0.05);
-}
-
-
-
-
-/* Detail */
-
-form fieldset label:has(input[type="text"]:required) span::after {
-  --form-label-accent-color: var(--primary-color);
-  --form-label-accent-font-family: var(--primary-font-family);
-  --form-label-accent-font-size: 1.4rem;
-
-  padding-left: var(--XS-spacer);
-
-  content:'*';
-
-  font-family: var(--primary-font-family);
-  font-size: var(--form-label-accent-font-size);
-  
-  color: var(--form-label-accent-color);
-}
-
-
-
-/* ************ */
-/* Inputs Range */
-/* ************ */
-
-/* form fieldset section section {
-  width: 100%;
-  height: auto;
-} */
-
-/* form fieldset section section label[for^="rating-tm"] ,form fieldset section section label[for^="rating-ex"]  {
-  width: 100%;
-  height: 20rem;
-} */
-
-/* form fieldset section section label[for^="rating-tm"] input[type="range"], form fieldset section section label[for^="rating-ex"] input[type="range"] {
-  --slider-fill: calc(10% * attr(data-fill number));
-
-  appearance: none;
-  -webkit-appearance: none;
-
-  position: relative;
-
-  width: 100%;
-  height: 10px;
-  background: #d3d3d3;
-  outline: none;
-  opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
-  margin-bottom: 20px;
-}
-
-form fieldset section section label[for^="rating-tm"] input[type="range"]::before, form fieldset section section label[for^="rating-ex-wafs"] input[type="range"]::before {
-  position: relative;
-
-  content: '';
-  display: block;
-  height: 10px;
-  background-color: #4CAF50;
-  position: absolute;
-  width: var(--slider-fill);
-}
-
-
-form fieldset section section label[for^="rating-tm"] input[type="range"]::-webkit-slider-thumb, form fieldset section section label[for^="rating-ex"] input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  background: #4CAF50;
-  cursor: pointer;
-}
-
-form fieldset section section label[for^="rating-tm"] input[type="range"]::-moz-range-thumb, form fieldset section section label[for^="rating-ex"] input[type="range"]::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
-  background: #4CAF50;
-  cursor: pointer;
-}
-
-form fieldset section section label[for^="rating-tm"] #slider-value, form fieldset section section label[for^="rating-ex"] #slider-value  {
-  position: absolute;
-  top: -35px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #4CAF50;
-  color: #fff;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-}
- */
-
-
-
 
 
 
@@ -889,63 +946,21 @@ form fieldset section label[for^="rating-ex"].idle, form fieldset section label[
   display: none;
 }
 
-/* Met icoon */
-
-form fieldset label div {
-
-}
-
 
 
 form fieldset input[type="radio"] {
+  position: absolute;
+
   appearance: none;
-
-  inset: 0;
 }
 
-form fieldset section section div {
-  padding-bottom: var(--S-spacer);
 
-  display: flex;
-
-  align-items: center;
-
-  gap: .8rem;
-
-  width: 100%;
-}
-
-/* ********* */
-/* Indicator */
-/* ********* */
-
-form fieldset section section div + ul {
-  padding: 0;
-  margin: 0;
-
-  display: flex;
-
-  justify-content: space-between;
-
-  width: 100%;
-}
-
-form fieldset section section div + ul li {
-  margin: 0;
-
-  list-style: none;
-
-  font-family: var(--primary-font-family);
-  font-size: 1.4rem;
-
-  color: var(--tertiary-text-color);
-}
 
 /* ************************ */
 /* Rating Teaching Material */
 /* ************************ */
 
-form fieldset section div label[for^="rating-tm"] {
+form fieldset section label[for^="rating-tm"] {
   --rating-tm-padding: 1.5rem 3rem;
 
   --rating-tm-font-family: var(--primary-font-family);
@@ -960,7 +975,7 @@ form fieldset section div label[for^="rating-tm"] {
 
   padding: var(--rating-tm-padding);
 
-  display: flex;
+  display: inline-flex;
   
   align-items: center;
   justify-content: center;
@@ -1013,7 +1028,7 @@ form fieldset section label[for^="rating-ex"] {
 
   padding: var(--rating-tm-padding);
 
-  display: flex;
+  display: inline-flex;
   
   align-items: center;
   justify-content: center;
@@ -1061,11 +1076,7 @@ form fieldset label:has(input[type="radio"][id^="rating-ex"]:not(:checked)) {
 
 
 
-form fieldset > section section#emojis {
-  display: flex;
 
-  gap: .8rem;
-}
 
 
 /* ************************** */
@@ -1073,7 +1084,7 @@ form fieldset > section section#emojis {
 /* ************************** */
 
 form fieldset section label[for^="rating-ul"] {
-  --rating-ul-padding: .8rem;
+  --rating-ul-padding: 1.5rem 3rem;
 
   --rating-ul-font-family: var(--primary-font-family);
   --rating-ul-font-size: 1.6rem;
@@ -1130,6 +1141,8 @@ form fieldset > nav {
   padding-bottom: var(--M-spacer);
 
   display: flex;
+
+  width: 100%;
 }
 
 
@@ -1174,6 +1187,16 @@ form fieldset > nav button:hover {
 form fieldset button[type="submit"] {
   font-size: 2.4rem;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
