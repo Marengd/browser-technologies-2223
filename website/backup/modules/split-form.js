@@ -1,4 +1,4 @@
-import { isValidEmail } from './formValidation.js';
+import { allRequiredFieldsFilled, isValidEmail } from './formValidation.js';
 import StepIndicator from './step-indicator.js';
 import { saveFormData, getSavedFormData, clearFormData } from './formStateStorage.js';
 
@@ -33,7 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // Rest of the script
-  // Rest of the script
   fieldsets.forEach((fieldset, index) => {
     const nextButtons = fieldset.querySelectorAll("button[type='button']");
     nextButtons.forEach((button) => {
@@ -42,6 +41,17 @@ document.addEventListener('DOMContentLoaded', function () {
           button.textContent.toLowerCase() === 'volgende' ||
           button.textContent.toLowerCase() === 'next'
         ) {
+          const emailField = fieldset.querySelector('#personal-details-email');
+          if (emailField && !isValidEmail(emailField.value)) {
+            alert('Please enter a valid email address.');
+            return;
+          }
+
+          if (!allRequiredFieldsFilled(fieldset)) {
+            alert('Please fill in all required fields before proceeding.');
+            return;
+          }
+
           // Save form data to localStorage before proceeding
           const formData = new FormData(document.querySelector('form'));
           const formDataObject = {};
@@ -65,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else if (
           button.textContent.toLowerCase() === 'previous' ||
           button.textContent.toLowerCase() === 'vorige'
-        ) {
+          ) {
           currentFieldsetIndex--;
         }
 
@@ -75,11 +85,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Add the event listener for the step indicator links
+  // Update the step indicator when the anchor in the step indicator is clicked
   stepIndicator.olElement.addEventListener('click', (event) => {
     const target = event.target;
     if (target.tagName === 'A') {
-      event.preventDefault();
       const fieldsetId = target.getAttribute('href').substr(1);
       const fieldsetIndex = Array.from(fieldsets).findIndex(
         (fs) => fs.id === fieldsetId
@@ -91,12 +100,28 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   });
-
-  // ...
+  
+    // Restore saved form data when the page loads
+    const savedFormData = getSavedFormData();
+    if (savedFormData) {
+      const form = document.querySelector('form');
+      Object.entries(savedFormData).forEach(([key, value]) => {
+        const input = form.querySelector(`[name="${key}"]`);
+        if (input && input.type !== 'radio') {
+          input.value = value;
+        } else if (input && input.type === 'radio') {
+          const radioInput = form.querySelector(`input[name="${key}"][value="${value}"]`);
+          if (radioInput) {
+            radioInput.checked = true;
+          }
+        }
+      });
+    }
+  });
 
   // Clear form data from localStorage when the form is submitted
   const form = document.querySelector('form');
   form.addEventListener('submit', (event) => {
     clearFormData();
   });
-});
+

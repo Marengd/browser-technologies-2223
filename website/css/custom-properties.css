@@ -1,0 +1,40 @@
+/* ***************** */
+/* Custom Properties */
+/* ***************** */
+
+:root {
+    --primary-color: #3C37FF;
+  
+    --primary-background-color: white;
+    --secondary-background-color: black;
+    --tertiary-background-color: #f3f3f3;
+  
+    --primary-font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  
+    --primary-text-color: black;
+    --secondary-text-color: white;
+    --tertiary-text-color: #595959 ;
+  
+  
+    --form-heading-font-size: 3.2rem;
+  
+    --heading-font-weight: 600;
+  
+    --body-font-size: 1.6rem;
+    --body-font-weight: 400;
+  
+    --XS-spacer: 1rem;
+    --S-spacer: 2rem;
+    --M-spacer: 4rem;
+    --L-spacer: 6rem;
+    --XL-spacer: 8rem;
+    --XXL-spacer: 12rem;
+  
+    --XS-font-size: 1.4rem;
+    --S-font-size: 1.6rem;
+    --M-font-size: 1.8rem;
+    --L-font-size: 2.4rem;
+    --XL-font-size: 3.2rem;
+    --XXL-font-size: 4rem;
+    
+  }

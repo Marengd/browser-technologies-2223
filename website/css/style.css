@@ -1,324 +1,5 @@
-/* ***** */
-/* Reset */
-/* ***** */
-
-html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-}
-
-/* 1. Remove the margin in all browsers. */
-
-body {
-  margin: 0;
-}
-
-/* 2. Render the main element consistently in IE. */
-
-main {
-  display: block;
-}
-
-/* 3. Correct the font size and margin on h1 elements within section and article contexts in Chrome, Firefox, and Safari. */
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/* 4. Add the correct box sizing in Firefox, and show the overflow in Edge and IE. */
-
-hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
-}
-
-/* 5. Correct the inheritance and scaling of font size in all browsers, and correct the odd em font sizing in all browsers. */
-
-pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-
-/* 6. Remove the gray background on active links in IE 10. */
-
-a {
-  background-color: transparent;
-}
-
-/* 7. Remove the bottom border in Chrome 57-, and add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
-
-abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
-}
-
-/* 8. Add the correct font weight in Chrome, Edge, and Safari. */
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-/* 9. Correct the inheritance and scaling of font size in all browsers, and correct the odd em font sizing in all browsers. */
-
-code,
-kbd,
-samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/* 10. Add the correct font size in all browsers. */
-
-small {
-  font-size: 80%;
-}
-
-/* 11. Prevent sub and sup elements from affecting the line height in all browsers. */
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/* 12. Remove the border on images inside links in IE 10. */
-
-img {
-  border-style: none;
-}
-
-/* 13. Change the font styles in all browsers, and remove the margin in Firefox and Safari. */
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
-}
-
-/* 14. Show the overflow in Edge. */
-
-button,
-input {
-  /* 1 */
-  overflow: visible;
-}
-
-/* 15. Remove the inheritance of text transform in Firefox. */
-
-button,
-select {
-  /* 1 */
-  text-transform: none;
-}
-
-/* 16. Correct the inability to style clickable types in iOS and Safari. */
-
-button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
-  -webkit-appearance: button;
-}
-
-/* 17. Remove the inner border and padding in Firefox. */
-
-button::-moz-focus-inner,
-[type='button']::-moz-focus-inner,
-[type='reset']::-moz-focus-inner,
-[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/* 18. Restore the focus styles unset by the previous rule. */
-
-button:-moz-focusring,
-[type='button']:-moz-focusring,
-[type='reset']:-moz-focusring,
-[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/* 19. Correct the padding in Firefox. */
-
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-/* 20. Correct the text wrapping in Edge and IE. Correct the color inheritance from fieldset elements in IE. Remove the padding so developers are not caught out when they zero out fieldset elements in all browsers. */
-
-legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
-}
-
-/* 21. Add the correct vertical alignment in Chrome, Firefox, and Opera. */
-
-progress {
-  vertical-align: baseline;
-}
-
-/* 22. Remove the default vertical scrollbar in IE 10+. */
-
-textarea {
-  overflow: auto;
-}
-
-/* 23. Add the correct box sizing in IE 10. Remove the padding in IE 10. */
-
-[type='checkbox'],
-[type='radio'] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
-}
-
-/* 24. Correct the cursor style of increment and decrement buttons in Chrome. */
-
-[type='number']::-webkit-inner-spin-button,
-[type='number']::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/* 25. Correct the odd appearance in Chrome and Safari. Correct the outline style in Safari. */
-
-[type='search'] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
-}
-
-/* 26. Remove the inner padding in Chrome and Safari on macOS. */
-
-[type='search']::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/* 27. Correct the inability to style clickable types in iOS and Safari. Change font properties to inherit in Safari. */
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
-}
-
-/* 28. Add the correct display in Edge, IE 10+, and Firefox. */
-
-details {
-  display: block;
-}
-
-/* 29. Add the correct display in all browsers. */
-
-summary {
-  display: list-item;
-}
-
-/* 30. Add the correct display in IE 10+. */
-
-template {
-  display: none;
-}
-
-/* 31. Add the correct display in IE 10. */
-
-[hidden] {
-  display: none;
-}
-
-/* 32. To make sure that the width and height of elements include the padding and border. */
-
-*, *::after, *::before {
-  box-sizing:border-box;  
-}
-
-
-
-
-/* ***************** */
-/* Custom Properties */
-/* ***************** */
-
-:root {
-  --primary-color: #3C37FF;
-
-  --primary-background-color: white;
-  --secondary-background-color: black;
-  --tertiary-background-color: #f3f3f3;
-
-  --primary-font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
-  --primary-text-color: black;
-  --secondary-text-color: white;
-  --tertiary-text-color: #8A8A8A;
-
-
-  --form-heading-font-size: 3.2rem;
-
-  --heading-font-weight: 600;
-
-  --body-font-size: 1.6rem;
-  --body-font-weight: 400;
-
-  --XS-spacer: 1rem;
-  --S-spacer: 2rem;
-  --M-spacer: 4rem;
-  --L-spacer: 6rem;
-  --XL-spacer: 8rem;
-  --XXL-spacer: 12rem;
-
-  --XS-font-size: 1.4rem;
-  --S-font-size: 1.6rem;
-  --M-font-size: 1.8rem;
-  --L-font-size: 2.4rem;
-  --XL-font-size: 3.2rem;
-  --XXL-font-size: 4rem;
-
-}
-
-
-/* @media (prefers-color-scheme: dark) {
-
-  :root {
-    --primary-color: #3C37FF;
-
-    --primary-background-color: white;
-    --secondary-background-color: black;
-    --tertiary-background-color: #acacac;
-
-    --primary-text-color: white;
-    --secondary-text-color: black;
-    --tertiary-text-color: #acacac;
-  }
-
-} */
-
-
-
-
 /* ********** */
-/* Html, Body */
+/* HTML, Body */
 /* ********** */
 
 html, body {
@@ -327,13 +8,14 @@ html, body {
   height: 100%;
 }
 
+
 /* **** */
 /* Main */
 /* **** */
 
 main {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
 }
 
 
@@ -344,8 +26,6 @@ main {
 main > aside {
   display: none;
 }
-
-
 
 
 /* ************ */
@@ -360,15 +40,9 @@ main > section {
   align-items: center;
 }
 
-
 /* **************** */
 /* Main Section Nav */
 /* **************** */
-
-
-/* ************** */
-/* Step Indicator */
-/* ************** */
 
 main > section > nav {
   padding-bottom: var(--L-spacer);
@@ -420,7 +94,7 @@ main > section > nav ol li.current a {
 /* Main Section Form */
 /* ***************** */
 
-form {
+main > section > form {
   display: flex;
   flex-direction: column;
 
@@ -485,16 +159,21 @@ form fieldset legend {
 
 form fieldset legend + p {
   --p-font-family: var(--primary-font-family);
-  --p-font-size: var(--body-font-size);
+  --p-font-size: 1.6rem;
   --p-font-weight: var(--body-font-weight);
 
   --p-text-color: var(--tertiary-text-color);
 
-  padding-bottom: var(--M-spacer);
+  padding: 0;
+  margin: 0;
+
+  padding-bottom: var(--L-spacer);
 
   font-family: var(--p-font-family);
   font-size: var(--p-font-size);
   font-weight: var(--p-font-weight);
+
+  line-height: 1.6;
 
   color: var(--p-text-color);
 }
@@ -530,14 +209,14 @@ form fieldset legend + p + h2 {
 /* *************************** */
 
 form fieldset legend + p + h2 + p {
-  padding-bottom: var(--S-spacer);
+  padding-bottom: var(--M-spacer);
   margin: 0;
   
   font-family: var(--primary-font-family);
   font-size: 1.6rem;
   font-weight: 400;
 
-  line-height: 1.4;
+  line-height: 1.6;
   
   color: var(--tertiary-text-color);
 }
@@ -612,11 +291,13 @@ form fieldset legend + p + h2 + p + ul li figure img {
 /* ********************* */
 
 form fieldset > section {
-  padding-bottom: var(--XXL-spacer);
+  padding-bottom: var(--XL-spacer);
 
   display: flex;
 
   flex-direction: column;
+
+  width: 100%;
 }
 
 /* ******************************* */
@@ -633,7 +314,7 @@ form fieldset > section article {
 
 form fieldset > section article h2 {
   --form-h2-font-family: var(--primary-font-family);
-  --form-h2-font-size: 1.8rem;
+  --form-h2-font-size: 2rem;
   --form-h2-font-weight: var(--heading-font-weight);
 
   --form-h2-text-color: var(--primary-text-color);
@@ -645,9 +326,11 @@ form fieldset > section article h2 {
   font-size: var(--form-h2-font-size);
   font-weight: var(--form-h2-font-weight);
 
+  font-size: 2rem;
+
   line-height: 1.4;
   
-  color: var(--form-h2-text-color);
+  color: var(--primary-text-color);
 }
 
 /* **********************/
@@ -655,8 +338,37 @@ form fieldset > section article h2 {
 /* ******************** */
 
 form fieldset > section article h2 span {
+  z-index: 99;
+
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+
+  text-align: center;
+
+  position: relative;
   margin-right: var(--XS-spacer);
+
+  color: white;
 }
+
+form fieldset > section article h2 span::before {
+  z-index: -1;
+  content: "";
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5em;
+  position: absolute;
+
+  inset: 0;
+}
+
 
 /* ************************* */
 /* Form Question Description */
@@ -676,183 +388,28 @@ form fieldset > section article p {
   font-size: var(--p-font-size);
   font-weight: var(--p-font-weight);
 
+  line-height: 1.6;
+
   color: var(--p-text-color);
 }
 
 
-/* **************************** */
-/* Form Fieldset Section Inputs */
-/* **************************** */
 
-form fieldset > section {
-  max-width: 78rem;
-}
 
-form fieldset > section section#grading {
-  overflow-x: scroll;
-  overflow-y: hidden;
 
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 
-  -webkit-overflow-scrolling: touch;
 
-  display: inline-block;
-  white-space: nowrap;
 
-  width: 100%;
-  max-width: 100%;
 
-  background-color: red;
-}
+/* *********** */
+/* Form Inputs */
+/* *********** */
 
-form fieldset > section section#grading div {
-  display: inline-block;
-  white-space: nowrap;
-}
 
 
-
-form fieldset > section section::-webkit-scrollbar{
-  display: none;
-}
-
-
-/* ****** */
-/* Inputs */
-/* ****** */
-
-form fieldset > section section#grading div section {
-  padding-bottom: var(--XS-spacer);
-
-  display: inline-block;
-
-  justify-content: space-between;
-
-  width: 100%;
-}
-
-
-/* ********* */
-/* Indicator */
-/* ********* */
-
-form fieldset > section section#grading div ul {
-  padding: 0;
-  margin: 0;
-
-  display: flex;
-  
-  justify-content: space-between;
-}
-
-form fieldset > section section#grading div ul li {
-  list-style: none;
-
-  font-family: var(--primary-font-family);
-  font-size: 1.4rem;
-
-  color: var(--tertiary-text-color);
-}
-
-
-
-
-
-
-
-
-/* *************** */
-/* Input Type Text */
-/* *************** */
-
-form fieldset label input[type="text"] {
-  --form-text-input-border-thickness: 0.1rem;
-  --form-text-input-border-color: #8A8A8A;
-
-  --form-text-input-border: var(--form-text-input-border-color) var(--form-text-input-border-thickness) solid;
-  --form-text-input-border-radius: .4rem;
-
-  --form-text-input-font-family: var(--primary-font-family);
-  --form-text-input-font-size: var(--body-font-size);
-
-  padding: 0;
-  margin: 0;
-
-  padding-left: var(--S-spacer);
-
-  font-family: var(--form-text-input-font-family);
-  font-size: var(--form-text-input-font-size);
-
-  width: 100%;
-  height: 6rem;
-
-  border: var(--form-text-input-border);
-  border-radius: var(--form-text-input-border-radius);
-}
-
-
-/* *************************** */
-/* Input Type Text Focus State */
-/* *************************** */
-
-form fieldset label input[type="text"]:focus {
-  --form-text-input-border-thickness: 0.1rem;
-  --form-text-input-border-color: var(--primary-color);
-
-  --form-text-input-border: var(--form-text-input-border-color) var(--form-text-input-border-thickness) solid;
-  --form-text-input-border-radius: .4rem;
-
-  outline: var(--form-text-input-border);
-
-  background-color: rgba(60, 55, 255, 0.05);
-}
-
-
-/* ******************* */
-/* Input Type Required */
-/* ******************* */
-
-form fieldset label:has(input[type="text"]:required) span::after {
-  --form-label-accent-color: var(--primary-color);
-  --form-label-accent-font-family: var(--primary-font-family);
-  --form-label-accent-font-size: 1.4rem;
-
-  padding-left: var(--XS-spacer);
-
-  content:'*';
-
-  font-family: var(--primary-font-family);
-  font-size: var(--form-label-accent-font-size);
-  
-  color: var(--form-label-accent-color);
-}
-
-
-/* ***************** */
-/* Input Course Date */
-/* ***************** */
-
-form fieldset > section > section#course-date {
-  display: flex;
-
-  gap: var(--XS-spacer);
-
-  width: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
+/* **************** */
 /* Personal Details */
+/* **************** */
 
 form fieldset label[for^="personal-details"] {
   --form-label-font-family: var(--primary-font-family);
@@ -879,6 +436,113 @@ form fieldset label span {
   padding-bottom: var(--XS-spacer);
 }
 
+#requirement-star {
+  color: var(--primary-color);
+}
+
+
+
+
+
+form fieldset label input[type="text"]:invalid {
+  /* outline: 1px solid red; */
+}
+
+form fieldset label input[type="text"]:valid {
+  /* outline: 1px solid green;
+
+  background-color: rgba(60, 55, 255, 0.05); */
+}
+
+
+
+form fieldset label input[type="text"]:focus {
+  filter: none;
+
+  color: black;
+
+  font-weight: 600;
+
+  outline: 2px solid #1A1AFF;
+
+  background-color: #78aaff80;
+}
+
+
+
+/* ****************** */
+/* Form Inputs Rating */
+/* ****************** */
+
+#rating {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Scroll Container */
+#rating > div {
+  display: flex;
+
+  flex-wrap: nowrap;
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+}
+
+#rating > div section {
+  padding-bottom: var(--S-spacer);
+}
+
+#rating > div::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Webkit browsers */
+}
+
+/* Sections */
+#rating section {
+  display: flex;
+
+  gap: 1rem;
+
+  width: 100%;
+}
+
+/* Labels */
+#rating label {
+}
+
+/* Input */
+#rating input[type="radio"] {
+
+}
+
+#rating div {
+  width: 100%;
+}
+
+#rating div section {
+  width: 100%;
+}
+
+/* Indicator */
+#rating ul {
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+#rating ul li {
+  font-family: var(--primary-font-family);
+  font-size: 1.6rem;
+}
 
 
 
@@ -888,17 +552,62 @@ form fieldset label span {
 
 
 
-/* ******************** */
-/* Course Start And End */
-/* ******************** */
+:root {
+  --form-text-input-border-thickness: 0.1rem;
+  --form-text-input-border-color: #8A8A8A;
 
-form fieldset label[for^="course-start-date"], form fieldset label[for^="course-end-date"] {
+  --form-text-input-border: var(--form-text-input-border-color) var(--form-text-input-border-thickness) solid;
+  --form-text-input-border-radius: .4rem;
+
+  --form-text-input-font-family: var(--primary-font-family);
+  --form-text-input-font-size: var(--body-font-size);
+}
+
+/* *************** */
+/* Input Type Text */
+/* *************** */
+
+form fieldset label input[type="text"] {
+  padding: 0;
+  margin: 0;
+
+  padding-left: var(--S-spacer);
+
+  font-family: var(--form-text-input-font-family);
+  font-size: var(--form-text-input-font-size);
+
+  width: 100%;
+  height: 6rem;
+
+  border: var(--form-text-input-border);
+  border-radius: var(--form-text-input-border-radius);
+}
+
+/* *************************** */
+/* Input Type Text Focus State */
+/* *************************** */
+
+form fieldset label input[type="text"]:focus {
+}
+
+
+
+
+/* **** */
+/* Date */
+/* **** */
+
+form fieldset section#course-date {
+  display: flex;
+
+  gap: var(--XS-spacer);
+}
+
+form fieldset section#course-date label[for^="course-start-date"], form fieldset label[for^="course-end-date"] {
   --form-label-font-family: var(--primary-font-family);
   --form-label-font-size: 1.4rem;
 
   --form-label-text-color: var(--primary-text-color);
-
-  flex: 1;
 
   display: flex;
   flex-direction: column;
@@ -911,54 +620,20 @@ form fieldset label[for^="course-start-date"], form fieldset label[for^="course-
   color: var(--form-label-text-color);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ************* */
-/* Inputs radio. */
-/* ************* */
-
-
-form fieldset section label[for^="rating-ex"].idle, form fieldset section label[for^="rating-tm"].idle {
-  display: none;
+form fieldset section#course-date label[for^="course-start-date"] span, form fieldset label[for^="course-end-date"] span {
+  padding-bottom: var(--XS-spacer);
 }
 
 
 
-form fieldset input[type="radio"] {
-  position: absolute;
-
-  appearance: none;
-}
+/* ****** */
+/* Rating */
+/* ****** */
 
 
-
-/* ************************ */
-/* Rating Teaching Material */
-/* ************************ */
+/* ******************************* */
+/* Rating Teaching Material Labels */
+/* ******************************* */
 
 form fieldset section label[for^="rating-tm"] {
   --rating-tm-padding: 1.5rem 3rem;
@@ -1003,15 +678,10 @@ form fieldset label:has(input[type="radio"][id^="rating-tm"]:checked) {
   background-color: rgba(120, 170, 255, 0.50);
 }
 
-form fieldset label:has(input[type="radio"][id^="rating-tm"]:not(:checked)) {
-}
 
-
-
-
-/* *************************************** */
-/* Rating Explanation of Teaching Material */
-/* *************************************** */
+/* ************************* */
+/* Rating Explanaition Label */
+/* ************************* */
 
 form fieldset section label[for^="rating-ex"] {
   --rating-tm-padding: 1.5rem 3rem;
@@ -1056,35 +726,84 @@ form fieldset label:has(input[type="radio"][id^="rating-ex"]:checked) {
   background-color: rgba(120, 170, 255, 0.50);
 }
 
-form fieldset label:has(input[type="radio"][id^="rating-ex"]:not(:checked)) {
+
+/* ******* */
+/* Grading */
+/* ******* */
+
+
+#grading {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
+/* Scroll Container */
+#grading > div {
+  display: flex;
 
+  flex-wrap: nowrap;
+  flex-direction: column;
 
+  justify-content: space-between;
 
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+}
 
+#grading > div::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Webkit browsers */
+}
 
+/* Sections */
+#grading section {
+  display: flex;
 
+  gap: 1rem;
 
+  width: 100%;
+}
 
+/* Labels */
+#grading label {
+}
 
+/* Input */
+#rating input[type="radio"] {
 
+}
 
+#rating div {
+  width: 100%;
+}
 
+#rating div section {
+  display: flex;
+}
 
+/* Indicator */
+#rating ul {
+  padding: 0;
+  margin: 0;
 
+  display: none;
+  justify-content: space-between;
+  list-style-type: none;
+}
 
+#rating ul li {
+  font-family: var(--primary-font-family);
+  font-size: 1.6rem;
+}
 
-
-
-
-
-/* ************************** */
-/* Rating Understanding Level */
-/* ************************** */
+/* *************************** */
+/* Grading Understanding Level */
+/* *************************** */
 
 form fieldset section label[for^="rating-ul"] {
-  --rating-ul-padding: 1.5rem 3rem;
+  --rating-ul-padding: 2rem 1rem;
 
   --rating-ul-font-family: var(--primary-font-family);
   --rating-ul-font-size: 1.6rem;
@@ -1117,6 +836,11 @@ form fieldset section label[for^="rating-ul"] {
   background-color: var(--rating-ul-background-color);
 }
 
+form fieldset section label[for^="rating-ul"] span {
+  padding-right: var(--XS-spacer);
+  padding-bottom: 0;
+}
+
 form fieldset label:has(input[type="radio"][id^="rating-ul"]:checked) {
   filter: none;
 
@@ -1129,23 +853,54 @@ form fieldset label:has(input[type="radio"][id^="rating-ul"]:checked) {
   background-color: rgba(120, 170, 255, 0.50);
 }
 
-form fieldset label:has(input[type="radio"][id^="rating-ul"]:not(:checked)) {
+form fieldset label.checked {
+  filter: none;
+
+  color: #1A1AFF;
+
+  font-weight: 700;
+
+  border: 2px solid #1A1AFF;
+
+  background-color: #78aaff80;
+}
+
+
+/* ************* */
+/* Radio Buttons */
+/* ************* */
+
+form fieldset input[type="radio"] {
+  appearance: none;
+
+  position: absolute;
 }
 
 
 
 
 
+
+
+
+
+/* ******** */
+/* Form Nav */
+/* ******** */
 
 form fieldset > nav {
   padding-bottom: var(--M-spacer);
 
   display: flex;
 
+  gap: 0.8rem;
+
   width: 100%;
 }
 
-
+/* **************** */
+/* Form Nav Buttons */
+/* **************** */
 
 form fieldset > nav button {
   --form-primary-button-padding: 2rem 4rem;
@@ -1162,6 +917,8 @@ form fieldset > nav button {
   font-family: var(--form-primary-button-font-family);
   font-size: var(--form-primary-button-font-size);
 
+  text-transform: capitalize;
+
   color: var(--form-primary-button-text-color);
 
   border: none;
@@ -1175,8 +932,20 @@ form fieldset > nav button#primary {
   background-color: var(--form-primary-button-background-color);
 }
 
+form fieldset > nav button#primary:focus {
+  outline: .5rem solid red;
+  background-color: var(--form-primary-button-background-color);
+}
+
+form fieldset > nav button#primary.active {
+  --form-primary-button-background-color: var(--primary-color);
+  background-color: var(--form-primary-button-background-color);
+}
+
 form fieldset > nav button#secondary {
-  --form-primary-button-background-color: black;
+  --form-primary-button-background-color: transparent;
+  color: black;
+  border: 1px solid #acacac;
   background-color: var(--form-primary-button-background-color);
 }
 
@@ -1195,6 +964,43 @@ form fieldset button[type="submit"] {
 
 
 
+/* Validation. */
+
+form fieldset label[for^="personal-details"] div {
+  position: relative;
+
+  background-color: blue;
+
+  width: 100%;
+}
+
+form fieldset label[for^="course-start-date-bt"] div, form fieldset label[for^="course-end-date-bt"] div {
+  position: relative;
+
+  background-color: blue;
+
+  width: 100%;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+.radio-error {
+  display: none;
+  color: red;
+  font-size: 12px;
+}
+
+.checkmark {
+  position: absolute;
+  font-size: 2rem;
+  bottom: 0;
+  right: 1rem;
+  display: none;
+}
 
 
 
@@ -1204,31 +1010,7 @@ form fieldset button[type="submit"] {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Viewport Rules And Support. */
 
 
 @media (min-width: 786px) {
@@ -1249,6 +1031,8 @@ form fieldset button[type="submit"] {
 
     width: 50%;
     height: auto;
+
+    max-height: 100vh;
   }
 
   main > aside > section {
@@ -1289,6 +1073,61 @@ form fieldset button[type="submit"] {
   }
 
 
+
+/* ********************* */
+/* Form Fieldset Section */
+/* ********************* */
+
+form fieldset > section {
+  padding-bottom: var(--XXL-spacer);
+
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+}
+
+form fieldset legend + p + h2 + p + ul {
+  padding-bottom: var(--XXL-spacer);
+}
+
+
+
+  #grading {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Scroll Container */
+  #grading > div {
+    display: block;
+  
+    flex-wrap: nowrap;
+    flex-direction: column;
+  
+    justify-content: space-between;
+  
+    overflow-x: none;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+  }
+  
+  #grading > div::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Webkit browsers */
+  }
+  
+  /* Sections */
+  #grading section {
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 1rem;
+  }
+
+
   @supports (display: grid) {
 
     main {
@@ -1310,8 +1149,3 @@ form fieldset button[type="submit"] {
   }
 
 }
-
-
-
-
-
