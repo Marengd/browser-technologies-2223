@@ -1157,6 +1157,14 @@ form fieldset label[for^="course-start-date-bt"] div, form fieldset label[for^="
 
 /* Viewport Rules And Support. */
 
+@supports not (gap: 1rem) {
+  input {
+    margin-right: 1rem;
+  }
+}
+
+
+
 
 @media (min-width: 786px) {
 
