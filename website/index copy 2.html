@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- <meta name="color-scheme" content="dark light"> -->
+
+   <title>Enquete</title>
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+
+
+   <link rel="stylesheet" href="./css/reset.css">
+   <link rel="stylesheet" href="./css/custom-properties.css">
+   <link rel="stylesheet" href="./css/style.css">
+   
+
+   <script type="module" src="./js/app.js"></script>
+</head>
+
+<body>
+
+   <!-- Main -->
+   <main>
+
+      <!-- Aside -->
+      <aside>
+         <section>
+            <figure>
+               <img src="" alt="">
+            </figure>
+
+            <article>
+               <h2>Titel.</h2>
+               <p>
+                  Korte beschrijving.
+               </p>
+            </article>
+         </section>
+      </aside>
+
+
+      <!-- Section Form -->
+      <section>
+
+         <!-- Step Indicator -->
+         <nav>
+            <ol>
+               <li><a href="#field-personal">Step 1</a></li>
+               <li><a href="#field-prj-1">Step 2</a></li>
+               <li><a href="#field-wafs">Step 3</a></li>
+               <li><a href="#field-cttr">Step 4</a></li>
+               <li><a href="#field-prjct-2">Step 5</a></li>
+               <li><a href="#field-bt">Step 6</a></li>
+               <li><a href="#field-pwa">Step 7</a></li>
+               <li><a href="#field-submit">Step 8</a></li>
+            </ol>
+         </nav>
+
+
+         <!-- Form -->
+         <form>
+            <!-- Personal Information -->
+            <fieldset id="field-personal">
+               <legend>Persoonlijke gegevens</legend>
+               <p>
+                  Vul je naam, studentnummer en e- mailadres in om deel te nemen aan de enquête.
+               </p>
+
+               <label for="personal-details-name">
+                  <span>Naam <span id="requirement-star">*</span></span>
+                  <div>
+                     <input type="text" id="personal-details-name" name="personal-details-name" placeholder="Voornaam Achternaam" required>
+                     <span class="checkmark">&#10003; Perfect!</span>
+                  </div>
+
+                  <p class="error-message">Please enter a valid name.</p>
+               </label>
+
+               <label for="personal-details-student-number">
+                  <span>Studentnummer <span id="requirement-star">*</span></span>
+                  <div>
+                     <input type="text" inputmode="numeric" id="personal-details-student-number"
+                        name="personal-details-student-number" placeholder="000 000 000" required
+                        pattern="^[56]\d{8}$" title="Studentnummer moet beginnen met een 5 of 6 en 9 cijfers lang zijn.">
+                        <span class="checkmark">&#10003; Perfect!</span>
+                  </div>
+
+                  <p class="error-message">Please enter a valid name.</p>
+               </label>
+               
+
+               <label for="personal-details-email">
+                  <span>E- mailadres <span id="requirement-star">*</span></span>
+                  <div>
+                     <input type="text" inputmode="email" id="personal-details-email" name="personal-details-email"
+                        autocapitalize="off" placeholder="naam@hva.nl" required>
+                        <span class="checkmark">&#10003; Perfect!</span>
+                  </div>
+                  <p class="error-message">Please enter a valid name.</p>
+               </label>
+            </fieldset>
+
+
+            <fieldset id="field-prj-1">
+            </fieldset>
+
+            <fieldset id="field-wafs">
+               <legend>Web- App From Scratch</legend>
+               <p>Description Of Course 2</p>
+            </fieldset>
+
+            <!-- Course 3 -->
+            <fieldset id="field-cttr">
+               <legend>Css To The Rescue</legend>
+               <p>Description Of Course 3</p>
+            </fieldset>
+
+            <!-- Project 1 -->
+            <fieldset id="field-prjct-2">
+               <legend>Project 2- Hackathon</legend>
+               <p>Description Of Project 1</p>
+            </fieldset>
+
+            <!-- Course 4 -->
+            <fieldset id="field-bt">
+
+               <!-- Course Name -->
+               <legend>Browser Technologies</legend>
+
+               <!-- Course Description -->
+               <p>
+                  Om de kwaliteit van het vak te verbeteren verzoeken we je om deze enquête in te vullen.
+               </p>
+
+               <!-- Course Teachers -->
+               <h2>Docenten</h2>
+               <p>De docenten die betrokken zijn bij het geven van het vak Browser Technologies.</p>
+
+               <ul>
+                  <!-- Teacher 1 -->
+                  <li>
+                     <figure>
+                        <img src="" alt="Portret foto van Joost Faber.">
+                     </figure>
+                     
+                     Joost Faber
+                  </li>
+
+                  <!-- Teacher 2 -->
+                  <li>
+                     <figure>
+                        <img src="" alt="Portret foto van Robert Spier.">
+                     </figure>
+                     
+                     Robert Spier
+                  </li>
+               </ul>
+
+               <!-- Form Course Questions -->
+               <section>
+
+                  <article>
+                     <h2><span>1</span>In welke weken heb je het vak Browser Technologies gevolgd ?</h2>
+                     <p>Vul de start- en einddatum van de periode in waarin je het vak hebt gevolgd.</p>
+                  </article>
+
+                  <!-- Start Week Course -->
+                  <section id="course-date">
+
+                     <!-- Start date input field -->
+                     <label for="course-start-date-bt">
+                        <span>Startdatum <span id="requirement-star">*</span></span>
+                        <div>
+                           <input type="text" inputmode="numeric" id="course-start-date" name="course-start-date" placeholder="dd- mm- jj" required>
+                           <span class="checkmark">&#10003;</span>
+                        </div>
+                        <p class="error-message">Please enter a valid start date.</p>
+                     </label>
+                     
+                     <!-- End date input field -->
+                     <label for="course-end-date-bt">
+                        <span>Einddatum <span id="requirement-star">*</span></span>
+                        <div>
+                           <input type="text" inputmode="numeric" id="course-end-date" name="course-end-date" placeholder="dd- mm- jj" required>
+                           <span class="checkmark">&#10003;</span>
+                        </div>
+                        <p class="error-message">Please enter a valid end date.</p>
+                     </label>
+
+                  </section>
+               </section>
+
+               <!-- Rating Teaching Material -->
+               <section>
+                  <article>
+                     <h2><span>2</span>Hoe uitdagend vond je de lesstof van het vak Browser Technologies ?</h2>
+                     <p>Beoordeel de moeilijkheidsgraad van de lesstof op een schaal van 1 tot 10. <span id="requirement-star">*</span></p>
+                  </article>
+
+                  <section id="rating">
+
+                     <!-- Scroll Container -->
+                     <div>
+                     
+                        <section>
+                           <label for="rating-tm-wafs-1a">
+                              1
+                              <input type="radio" id="rating-tm-wafs-1a" name="teaching-material-wafs" value="1" required>
+                           </label>
+
+                           <label for="rating-tm-wafs-2a">
+                              2
+                              <input type="radio" id="rating-tm-wafs-2a" name="teaching-material-wafs" value="2">
+                           </label>
+
+                           <label for="rating-tm-wafs-3a">
+                              3
+                              <input type="radio" id="rating-tm-wafs-3a" name="teaching-material-wafs" value="3">
+                           </label>
+
+                           <label for="rating-tm-wafs-4a">
+                              4
+                              <input type="radio" id="rating-tm-wafs-4a" name="teaching-material-wafs" value="4">
+                           </label>
+
+                           <label for="rating-tm-wafs-5a">
+                              5
+                              <input type="radio" id="rating-tm-wafs-5a" name="teaching-material-wafs" value="5">
+                           </label>
+
+                           <label for="rating-tm-wafs-6a">
+                              6
+                              <input type="radio" id="rating-tm-wafs-6a" name="teaching-material-wafs" value="6">
+                           </label>
+
+                           <label for="rating-tm-wafs-7a">
+                              7
+                              <input type="radio" id="rating-tm-wafs-7a" name="teaching-material-wafs" value="7">
+                           </label>
+
+                           <label for="rating-tm-wafs-8a">
+                              8
+                              <input type="radio" id="rating-tm-wafs-8a" name="teaching-material-wafs" value="8">
+                           </label>
+
+                           <label for="rating-tm-wafs-9a">
+                              9
+                              <input type="radio" id="rating-tm-wafs-9a" name="teaching-material-wafs" value="9">
+                           </label>
+
+                           <label for="rating-tm-wafs-10a">
+                              10
+                              <input type="radio" id="rating-tm-wafs-10a" name="teaching-material-wafs" value="10">
+                           </label>
+                        </section>
+                     
+                        <!-- Indicator -->
+
+                        <ul>
+                           <li>Appeltje Eitje 🥱</li>
+                           <li>Heel moeilijk! 🤯</li>
+                        </ul>
+
+                     </div>
+
+                     <span id="radio-error" style="display:none; color: red;"></span>
+
+                  </section>
+
+               </section>
+
+
+               <!-- Rating Explaination Of Teaching Material -->
+               <section>
+                  <article>
+                     <h2><span>3</span>Hoe duidelijk vond je de uitleg van de lesstof Browser Technologies ?</h2>
+                     <p>Geef aan hoe begrijpelijk je de uitleg van de lesstof vond op een schaal van 1 tot 10. <span id="requirement-star">*</span></p>
+                  </article>
+                  
+                  <section id="rating">
+                     
+                     <!-- Scroll Container -->
+                     <div>
+                        
+                     <section>
+                        <label for="rating-ex-wafs-1a">
+                        1
+                        <input type="radio" id="rating-ex-wafs-1a" name="explanation-wafs" value="1" required>
+                        </label>
+                  
+                        <label for="rating-ex-wafs-2a">
+                        2
+                        <input type="radio" id="rating-ex-wafs-2a" name="explanation-wafs" value="2">
+                        </label>
+                  
+                        <label for="rating-ex-wafs-3a">
+                        3
+                        <input type="radio" id="rating-ex-wafs-3a" name="explanation-wafs" value="3">
+                        </label>
+                  
+                        <label for="rating-ex-wafs-4a">
+                        4
+                        <input type="radio" id="rating-ex-wafs-4a" name="explanation-wafs" value="4">
+                        </label>
+                  
+                        <label for="rating-ex-wafs-5a">
+                        5
+                        <input type="radio" id="rating-ex-wafs-5a" name="explanation-wafs" value="5">
+                        </label>
+                  
+                        <label for="rating-ex-wafs-6a">
+                        6
+                        <input type="radio" id="rating-ex-wafs-6a" name="explanation-wafs" value="6">
+                        </label>
+                  
+                        <label for="rating-ex-wafs-7a">
+                        7
+                        <input type="radio" id="rating-ex-wafs-7a" name="explanation-wafs" value="7">
+                        </label>
+                  
+                        <label for="rating-ex-wafs-8a">
+                        8
+                        <input type="radio" id="rating-ex-wafs-8a" name="explanation-wafs" value="8">
+                        </label>
+                  
+                        <label for="rating-ex-wafs-9a">
+                        9
+                        <input type="radio" id="rating-ex-wafs-9a" name="explanation-wafs" value="9">
+                        </label>
+                  
+                        <label for="rating-ex-wafs-10a">
+                        10
+                        <input type="radio" id="rating-ex-wafs-10a" name="explanation-wafs" value="10">
+                        </label>
+                  
+                     </section>
+                  
+                     <!-- Indicator -->
+                     <ul>
+                        <li>Erg onduidelijk 🤔</li>
+                        <li>Heel duidelijk! 🤓</li>
+                     </ul>
+                        
+                     </div>
+
+                     <span id="radio-error" style="display:none; color: red;"></span>
+
+                  </section>
+                  
+               </section>
+
+
+               <!-- Grading Understanding Level -->
+               <section>
+                  <article>
+                     <h2><span>4</span>Hoe goed begreep je de lesstof aan het einde van het vak Browser Technologies?</h2>
+                     <p>Geef aan hoe goed je de lesstof begreep aan het einde van het vak. <span id="requirement-star">*</span></p>
+                  </article>
+
+                  <section id="grading">
+                     <div>
+                        <section>
+
+                        <label for="rating-ul-wafs-1a">
+                           <span>😕</span> <span>Helemaal</span>
+                           <input type="radio" id="rating-ul-wafs-1a" name="understanding-level-1" value="1" required>
+                        </label>
+
+                        <label for="rating-ul-wafs-2a">
+                           <span>🤨</span> <span>Niet</span>
+                           <input type="radio" id="rating-ul-wafs-2a" name="understanding-level-1" value="2">
+                        </label>
+
+                        <label for="rating-ul-wafs-3a">
+                           <span>😐</span> <span>Mwah</span>
+                           <input type="radio" id="rating-ul-wafs-3a" name="understanding-level-1" value="3">
+                        </label>
+
+                        <label for="rating-ul-wafs-4a">
+                           <span>😶</span> <span>Nauw'lijks</span>
+                           <input type="radio" id="rating-ul-wafs-4a" name="understanding-level-1" value="4">
+                        </label>
+
+                        <label for="rating-ul-wafs-5a">
+                           <span>🙂</span> <span>Enigszins</span>
+                           <input type="radio" id="rating-ul-wafs-5a" name="understanding-level-1" value="5">
+                        </label>
+
+                        <label for="rating-ul-wafs-6a">
+                           <span>😊</span> <span>Redelijk</span>
+                           <input type="radio" id="rating-ul-wafs-6a" name="understanding-level-1" value="6">
+                        </label>
+
+                        <label for="rating-ul-wafs-7a">
+                           <span>😃</span> <span>Goed</span>
+                           <input type="radio" id="rating-ul-wafs-7a" name="understanding-level-1" value="7">
+                        </label>
+
+                        <label for="rating-ul-wafs-8a">
+                           <span>😁</span> <span>Erg'goed</span>
+                           <input type="radio" id="rating-ul-wafs-8a" name="understanding-level-1" value="8">
+                        </label>
+
+                        <label for="rating-ul-wafs-9a">
+                           <span>🤓</span> <span>Uitstekend</span>
+                           <input type="radio" id="rating-ul-wafs-9a" name="understanding-level-1" value="9">
+                        </label>
+
+                        <label for="rating-ul-wafs-10a">
+                           <span>🧠</span> <span>Meesterlijk</span>
+                           <input type="radio" id="rating-ul-wafs-10a" name="understanding-level-1" value="10">
+                        </label>
+
+                        </section>
+                     
+                     </div>
+
+                     <span id="radio-error" style="display:none; color: red;"></span>
+
+                  </section>
+
+               </section>
+               
+            </fieldset>
+
+            <!-- Course 5 -->
+            <fieldset id="field-pwa">
+               <legend>Progressive Web- Apps</legend>
+               <p>Description Of Course 5</p>
+            </fieldset>
+
+            <!-- Submit -->
+            <fieldset id="field-submit">
+               <legend>Submit</legend>
+               <p>Submit Description</p>
+
+               <button type="submit" aria-label="finish">Finish</button>
+            </fieldset>
+
+
+
+
+         </form>
+
+
+      </section>
+
+   </main>
+
+</body>
+
+</html>
