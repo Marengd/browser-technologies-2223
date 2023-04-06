@@ -6,7 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <!-- <meta name="color-scheme" content="dark light"> -->
+   <meta name="color-scheme" content="dark light">
 
    <title>Enquete</title>
 
@@ -19,7 +19,7 @@
    <link rel="stylesheet" href="./css/reset.css">
    <link rel="stylesheet" href="./css/custom-properties.css">
    <link rel="stylesheet" href="./css/style.css">
-   
+
 
    <script type="module" src="./js/app.js"></script>
 </head>
@@ -30,7 +30,7 @@
    <main>
 
       <!-- Aside -->
-      <aside>
+      <!-- <aside>
          <section>
             <figure>
                <img src="" alt="">
@@ -43,7 +43,7 @@
                </p>
             </article>
          </section>
-      </aside>
+      </aside> -->
 
 
       <!-- Section Form -->
@@ -52,14 +52,14 @@
          <!-- Step Indicator -->
          <nav>
             <ol>
-               <li><a href="#field-personal">Step 1</a></li>
-               <li><a href="#field-prj-1">Step 2</a></li>
-               <li><a href="#field-wafs">Step 3</a></li>
-               <li><a href="#field-cttr">Step 4</a></li>
-               <li><a href="#field-prjct-2">Step 5</a></li>
-               <li><a href="#field-bt">Step 6</a></li>
-               <li><a href="#field-pwa">Step 7</a></li>
-               <li><a href="#field-submit">Step 8</a></li>
+               <li><a href="#field-personal">Stap 1</a></li>
+               <li><a href="#field-prj-1">Stap 2</a></li>
+               <li><a href="#field-wafs">Stap 3</a></li>
+               <li><a href="#field-cttr">Stap 4</a></li>
+               <li><a href="#field-prjct-2">Stap 5</a></li>
+               <li><a href="#field-bt">Stap 6</a></li>
+               <li><a href="#field-pwa">Stap 7</a></li>
+               <li><a href="#field-submit">Stap 8</a></li>
             </ol>
          </nav>
 
@@ -76,34 +76,35 @@
                <label for="personal-details-name">
                   <span>Naam <span id="requirement-star">*</span></span>
                   <div>
-                     <input type="text" id="personal-details-name" name="personal-details-name" placeholder="Voornaam Achternaam" required>
+                     <input type="text" id="personal-details-name" name="personal-details-name"
+                        placeholder="Voornaam Achternaam" pattern="^.{3,}$" required>
                      <span class="checkmark">&#10003; Perfect!</span>
                   </div>
 
-                  <p class="error-message">Please enter a valid name.</p>
+                  <p class="error-message">Vul een geldige naam in</p>
                </label>
 
                <label for="personal-details-student-number">
                   <span>Studentnummer <span id="requirement-star">*</span></span>
                   <div>
                      <input type="text" inputmode="numeric" id="personal-details-student-number"
-                        name="personal-details-student-number" placeholder="000 000 000" required
-                        pattern="^[56]\d{8}$" title="Studentnummer moet beginnen met een 5 of 6 en 9 cijfers lang zijn.">
-                        <span class="checkmark">&#10003; Perfect!</span>
+                        name="personal-details-student-number" placeholder="000 000 000" required pattern="^[56]\d{8}$"
+                        title="Studentnummer moet beginnen met een 5 of 6 en 9 cijfers lang zijn." maxlength="9">
+                     <span class="checkmark">&#10003; Perfect!</span>
                   </div>
 
-                  <p class="error-message">Please enter a valid name.</p>
+                  <p class="error-message">Psst, weet je zeker dat dit klopt?</p>
                </label>
-               
+
 
                <label for="personal-details-email">
                   <span>E- mailadres <span id="requirement-star">*</span></span>
                   <div>
                      <input type="text" inputmode="email" id="personal-details-email" name="personal-details-email"
                         autocapitalize="off" placeholder="naam@hva.nl" required>
-                        <span class="checkmark">&#10003; Perfect!</span>
+                     <span class="checkmark">&#10003; Perfect!</span>
                   </div>
-                  <p class="error-message">Please enter a valid name.</p>
+                  <p class="error-message">Psst, weet je zeker dat dit klopt?</p>
                </label>
             </fieldset>
 
@@ -118,178 +119,319 @@
 
             <!-- Project 1 -->
             <fieldset id="field-prj-1">
-                              <!-- Course Name -->
-                              <legend>Project 1</legend>
+               <!-- Course Name -->
+               <legend>Project 1</legend>
 
-                              <!-- Course Description -->
-                              <p>
-                                 Om de kwaliteit van het vak te verbeteren verzoeken we je om deze enquête in te vullen.
-                              </p>
-               
-                              <!-- Course Teachers -->
-                              <h2>Docenten</h2>
-                              <p>De docenten die betrokken zijn bij het geven van het vak Project 1.</p>
-               
-                              <ul>
-                                 <!-- Teacher 1 -->
-                                 <li>
-                                    <figure>
-                                       <img src="" alt="Portret foto van Joost Faber.">
-                                    </figure>
-                                    
-                                    Joost Faber
-                                 </li>
-               
-                                 <!-- Teacher 2 -->
-                                 <li>
-                                    <figure>
-                                       <img src="" alt="Portret foto van Robert Spier.">
-                                    </figure>
-                                    
-                                    Robert Spier
-                                 </li>
-                              </ul>
-               
-                              <!-- Form Course Questions -->
-                              <section>
-               
-                                 <article>
-                                    <h2><span>1</span>In welke weken heb je het vak ... gevolgd ?</h2>
-                                    <p>Vul de start- en einddatum van de periode in waarin je het vak hebt gevolgd.</p>
-                                 </article>
-               
-                                 <!-- Start Week Course -->
-                                 <section id="course-date">
-               
-                                    <!-- Start date input field -->
-                                    <label for="course-start-date-prj1">
-                                       <span>Startdatum <span id="requirement-star">*</span></span>
-                                       <div>
-                                          <input type="text" inputmode="numeric" id="course-start-date-prj1" name="course-start-date-prj1" placeholder="dd- mm- jj" required>
-                                          <span class="checkmark">&#10003;</span>
-                                       </div>
-                                       <p class="error-message">Please enter a valid start date.</p>
-                                    </label>
-                                    
-                                    <!-- End date input field -->
-                                    <label for="course-end-date-prj1">
-                                       <span>Einddatum <span id="requirement-star">*</span></span>
-                                       <div>
-                                          <input type="text" inputmode="numeric" id="course-end-date-prj1" name="course-end-date-prj1" placeholder="dd- mm- jj" required>
-                                          <span class="checkmark">&#10003;</span>
-                                       </div>
-                                       <p class="error-message">Please enter a valid end date.</p>
-                                    </label>
-               
-                                 </section>
-                              </section>
-               
-                              <!-- Rating Teaching Material -->
-                              <section>
-                                 <article>
-                                    <h2><span>2</span>Hoe uitdagend vond je de lesstof van het vak ... ?</h2>
-                                    <p>Beoordeel de moeilijkheidsgraad van de lesstof op een schaal van 1 tot 10. <span id="requirement-star">*</span></p>
-                                 </article>
-               
-                                 <section id="rating">
-               
-                                    <!-- Scroll Container -->
-                                    <div>
-                                    
-                                       <section>
-                                          <label for="rating-tm-prj1-1a">
-                                             1
-                                             <input type="radio" id="rating-tm-prj1-1a" name="teaching-material-prj1" value="1" required>
-                                          </label>
-               
-                                          <label for="rating-tm-prj1-2a">
-                                             2
-                                             <input type="radio" id="rating-tm-prj1-2a" name="teaching-material-prj1" value="2">
-                                          </label>
-               
-                                       </section>
-                                    
-                                       <!-- Indicator -->
-               
-                                       <ul>
-                                          <li>Appeltje Eitje 🥱</li>
-                                          <li>Heel moeilijk! 🤯</li>
-                                       </ul>
-               
-                                    </div>
-               
-                                    <span id="radio-error" style="display:none; color: red;"></span>
-               
-                                 </section>
-               
-                              </section>
-               
-                              <!-- Rating Explaination Of Teaching Material -->
-                              <section>
-                                 <article>
-                                    <h2><span>3</span>Hoe duidelijk vond je de uitleg van de lesstof ... ?</h2>
-                                    <p>Geef aan hoe begrijpelijk je de uitleg van de lesstof vond op een schaal van 1 tot 10. <span id="requirement-star">*</span></p>
-                                 </article>
-                                 
-                                 <section id="rating">
-                                    
-                                    <!-- Scroll Container -->
-                                    <div>
-                                       
-                                    <section>
-                                       <label for="rating-ex-prj1-1a">
-                                       1
-                                       <input type="radio" id="rating-ex-prj1-1a" name="explanation-prj1" value="1" required>
-                                       </label>
-                                 
-                                       <label for="rating-ex-prj1-2a">
-                                       2
-                                       <input type="radio" id="rating-ex-prj1-2a" name="explanation-prj1" value="2">
-                                       </label>
-                                 
-                                    </section>
-                                 
-                                    <!-- Indicator -->
-                                    <ul>
-                                       <li>Erg onduidelijk 🤔</li>
-                                       <li>Heel duidelijk! 🤓</li>
-                                    </ul>
-                                       
-                                    </div>
-               
-                                 </section>
-                                 
-                              </section>
-               
-               
-                              <!-- Grading Understanding Level -->
-                              <section>
-                                 <article>
-                                    <h2><span>4</span>Hoe goed begreep je de lesstof aan het einde van het vak .. ?</h2>
-                                    <p>Geef aan hoe goed je de lesstof begreep aan het einde van het vak. <span id="requirement-star">*</span></p>
-                                 </article>
-               
-                                 <section id="grading">
-                                    <div>
-                                       <section>
-               
-                                          <label for="rating-ul-prj1-1a">
-                                             <span>😕</span> <span>Helemaal</span>
-                                             <input type="radio" id="rating-ul-prj1-1a" name="understanding-level-prj" value="1" required>
-                                          </label>
-                  
-                                          <label for="rating-ul-prj1-2a">
-                                             <span>🤨</span> <span>Niet</span>
-                                             <input type="radio" id="rating-ul-prj1-2a" name="understanding-level-prj" value="2">
-                                          </label>
-                  
-                                       </section>
-                                    
-                                    </div>
-               
-                                 </section>
-               
-                              </section>
+               <!-- Course Description -->
+               <p>
+                  Om de kwaliteit van het vak te verbeteren verzoeken we je om deze enquête in te vullen.
+               </p>
+
+               <!-- Course Teachers -->
+               <h2>Docenten</h2>
+               <p>De docenten die betrokken zijn bij het geven van het vak Project 1.</p>
+
+               <ul>
+                  <!-- Teacher 1 -->
+                  <li>
+                     <figure>
+                        <!-- <img src="" alt="Portret foto van Joost Faber."> -->
+                     </figure>
+
+                     Joost Faber
+                  </li>
+
+                  <!-- Teacher 2 -->
+                  <li>
+                     <figure>
+                        <!-- <img src="" alt="Portret foto van Robert Spier."> -->
+                     </figure>
+
+                     Robert Spier
+                  </li>
+               </ul>
+
+               <!-- Form Course Questions -->
+               <section>
+
+                  <article>
+                     <h2><span>1</span>In welke weken heb je het vak ... gevolgd ?</h2>
+                     <p>Vul de start- en einddatum van de periode in waarin je het vak hebt gevolgd.</p>
+                  </article>
+
+                  <!-- Start Week Course -->
+                  <section id="course-date">
+
+                     <!-- Start date input field -->
+                     <label for="course-start-date-prj1">
+                        <span>Startdatum <span id="requirement-star">*</span></span>
+                        <div>
+                           <input type="text" inputmode="numeric" id="course-start-date-prj1"
+                              name="course-start-date-prj1" placeholder="dd- mm- jj" required>
+                           <span class="checkmark">&#10003;</span>
+                        </div>
+                        <p class="error-message">Please enter a valid start date.</p>
+                     </label>
+
+                     <!-- End date input field -->
+                     <label for="course-end-date-prj1">
+                        <span>Einddatum <span id="requirement-star">*</span></span>
+                        <div>
+                           <input type="text" inputmode="numeric" id="course-end-date-prj1" name="course-end-date-prj1"
+                              placeholder="dd- mm- jj" required>
+                           <span class="checkmark">&#10003;</span>
+                        </div>
+                        <p class="error-message">Please enter a valid end date.</p>
+                     </label>
+
+                  </section>
+               </section>
+
+               <!-- Rating Teaching Material -->
+               <section>
+                  <article>
+                     <h2><span>2</span>Hoe uitdagend vond je de lesstof van het vak ... ?</h2>
+                     <p>Beoordeel de moeilijkheidsgraad van de lesstof op een schaal van 1 tot 10. <span
+                           id="requirement-star">*</span></p>
+                  </article>
+
+                  <section id="rating">
+
+                     <!-- Scroll Container -->
+                     <div>
+
+                        <section>
+                           <label for="rating-tm-prj1-1a">
+                              1
+                              <input type="radio" id="rating-tm-prj1-1a" name="teaching-material-prj1" value="1"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-prj1-2a">
+                              2
+                              <input type="radio" id="rating-tm-prj1-2a" name="teaching-material-prj1" value="2">
+                           </label>
+
+                           <label for="rating-tm-prj1-3a">
+                              3
+                              <input type="radio" id="rating-tm-prj1-3a" name="teaching-material-prj1" value="3"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-prj1-4a">
+                              4
+                              <input type="radio" id="rating-tm-prj1-4a" name="teaching-material-prj1" value="4"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-prj1-5a">
+                              5
+                              <input type="radio" id="rating-tm-prj1-5a" name="teaching-material-prj1" value="5"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-prj1-6a">
+                              6
+                              <input type="radio" id="rating-tm-prj1-6a" name="teaching-material-prj1" value="6"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-prj1-7a">
+                              7
+                              <input type="radio" id="rating-tm-prj1-7a" name="teaching-material-prj1" value="7"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-prj1-8a">
+                              8
+                              <input type="radio" id="rating-tm-prj1-8a" name="teaching-material-prj1" value="8"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-prj1-9a">
+                              9
+                              <input type="radio" id="rating-tm-prj1-9a" name="teaching-material-prj1" value="9"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-prj1-10a">
+                              10
+                              <input type="radio" id="rating-tm-prj1-10a" name="teaching-material-prj1" value="10"
+                                 required>
+                           </label>
+
+                        </section>
+
+                        <!-- Indicator -->
+
+                        <ul>
+                           <li>Appeltje Eitje 🥱</li>
+                           <li>Heel moeilijk! 🤯</li>
+                        </ul>
+
+                     </div>
+
+                  </section>
+
+               </section>
+
+               <!-- Rating Explaination Of Teaching Material -->
+               <section>
+                  <article>
+                     <h2><span>3</span>Hoe duidelijk vond je de uitleg van de lesstof ... ?</h2>
+                     <p>Geef aan hoe begrijpelijk je de uitleg van de lesstof vond op een schaal van 1 tot 10. <span
+                           id="requirement-star">*</span></p>
+                  </article>
+
+                  <section id="rating">
+
+                     <!-- Scroll Container -->
+                     <div>
+
+                        <section>
+                           <label for="rating-ex-prj1-1a">
+                              1
+                              <input type="radio" id="rating-ex-prj1-1a" name="explanation-prj1" value="1" required>
+                           </label>
+
+                           <label for="rating-ex-prj1-2a">
+                              2
+                              <input type="radio" id="rating-ex-prj1-2a" name="explanation-prj1" value="2">
+                           </label>
+
+                           <label for="rating-ex-prj1-3a">
+                              3
+                              <input type="radio" id="rating-ex-prj1-3a" name="explanation-prj1" value="3" required>
+                           </label>
+
+                           <label for="rating-ex-prj1-4a">
+                              4
+                              <input type="radio" id="rating-ex-prj1-4a" name="explanation-prj1" value="4" required>
+                           </label>
+
+                           <label for="rating-ex-prj1-5a">
+                              5
+                              <input type="radio" id="rating-ex-prj1-5a" name="explanation-prj1" value="5" required>
+                           </label>
+
+                           <label for="rating-ex-prj1-6a">
+                              6
+                              <input type="radio" id="rating-ex-prj1-6a" name="explanation-prj1" value="6" required>
+                           </label>
+
+                           <label for="rating-ex-prj1-7a">
+                              7
+                              <input type="radio" id="rating-ex-prj1-7a" name="explanation-prj1" value="7" required>
+                           </label>
+
+                           <label for="rating-ex-prj1-8a">
+                              8
+                              <input type="radio" id="rating-ex-prj1-8a" name="explanation-prj1" value="8" required>
+                           </label>
+
+                           <label for="rating-ex-prj1-9a">
+                              9
+                              <input type="radio" id="rating-ex-prj1-9a" name="explanation-prj1" value="9" required>
+                           </label>
+
+                           <label for="rating-ex-prj1-10a">
+                              10
+                              <input type="radio" id="rating-ex-prj1-10a" name="explanation-prj1" value="10" required>
+                           </label>
+
+                        </section>
+
+                        <!-- Indicator -->
+                        <ul>
+                           <li>Erg onduidelijk 🤔</li>
+                           <li>Heel duidelijk! 🤓</li>
+                        </ul>
+
+                     </div>
+
+                  </section>
+
+               </section>
+
+
+               <!-- Grading Understanding Level -->
+               <section>
+                  <article>
+                     <h2><span>4</span>Hoe goed begreep je de lesstof aan het einde van het vak .. ?</h2>
+                     <p>Geef aan hoe goed je de lesstof begreep aan het einde van het vak. <span
+                           id="requirement-star">*</span></p>
+                  </article>
+
+                  <section id="grading">
+                     <div>
+                        <section>
+
+                           <label for="rating-ul-prj1-1a">
+                              <span>😕</span> <span>Helemaal</span>
+                              <input type="radio" id="rating-ul-prj1-1a" name="understanding-level-prj-2" value="1"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-prj1-2a">
+                              <span>🤨</span> <span>Niet</span>
+                              <input type="radio" id="rating-ul-prj1-2a" name="understanding-level-prj-2" value="2">
+                           </label>
+
+                           <label for="rating-ul-prj1-3a">
+                              <span>😐</span> <span>Mwah</span>
+                              <input type="radio" id="rating-ul-prj1-3a" name="understanding-level-prj-2" value="3"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-prj1-4a">
+                              <span>😶</span> <span>Nauw'lijks</span>
+                              <input type="radio" id="rating-ul-prj1-4a" name="understanding-level-prj-2" value="4"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-prj1-5a">
+                              <span>🙂</span> <span>Enigszins</span>
+                              <input type="radio" id="rating-ul-prj1-5a" name="understanding-level-prj-2" value="5"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-prj1-6a">
+                              <span>😊</span> <span>Redelijk</span>
+                              <input type="radio" id="rating-ul-prj1-6a" name="understanding-level-prj-2" value="6"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-prj1-7a">
+                              <span>😃</span> <span>Goed</span>
+                              <input type="radio" id="rating-ul-prj1-7a" name="understanding-level-prj-2" value="7"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-prj1-8a">
+                              <span>😁</span> <span>Erg'goed</span>
+                              <input type="radio" id="rating-ul-prj1-8a" name="understanding-level-prj-2" value="8"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-prj1-9a">
+                              <span>🤓</span> <span>Uitstekend</span>
+                              <input type="radio" id="rating-ul-prj1-9a" name="understanding-level-prj-2" value="9"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-prj1-10a">
+                              <span>🧠</span> <span>Meesterlijk</span>
+                              <input type="radio" id="rating-ul-prj1-10a" name="understanding-level-prj-2" value="10"
+                                 required>
+                           </label>
+
+                        </section>
+
+                     </div>
+
+                  </section>
+
+               </section>
             </fieldset>
 
 
@@ -303,8 +445,319 @@
 
 
             <fieldset id="field-wafs">
-               <legend>Web- App From Scratch</legend>
-               <p>Description Of Course 2</p>
+               <!-- Course Name -->
+               <legend>Web App From Scratch</legend>
+
+               <!-- Course Description -->
+               <p>
+                  Om de kwaliteit van het vak te verbeteren verzoeken we je om deze enquête in te vullen.
+               </p>
+
+               <!-- Course Teachers -->
+               <h2>Docenten</h2>
+               <p>De docenten die betrokken zijn bij het geven van het vak Project 1.</p>
+
+               <ul>
+                  <!-- Teacher 1 -->
+                  <li>
+                     <figure>
+                        <!-- <img src="" alt="Portret foto van Joost Faber."> -->
+                     </figure>
+
+                     Joost Faber
+                  </li>
+
+                  <!-- Teacher 2 -->
+                  <li>
+                     <figure>
+                        <!-- <img src="" alt="Portret foto van Robert Spier."> -->
+                     </figure>
+
+                     Robert Spier
+                  </li>
+               </ul>
+
+               <!-- Form Course Questions -->
+               <section>
+
+                  <article>
+                     <h2><span>1</span>In welke weken heb je het vak ... gevolgd ?</h2>
+                     <p>Vul de start- en einddatum van de periode in waarin je het vak hebt gevolgd.</p>
+                  </article>
+
+                  <!-- Start Week Course -->
+                  <section id="course-date">
+
+                     <!-- Start date input field -->
+                     <label for="course-start-date-wafs">
+                        <span>Startdatum <span id="requirement-star">*</span></span>
+                        <div>
+                           <input type="text" inputmode="numeric" id="course-start-date-wafs"
+                              name="course-start-date-wafs" placeholder="dd- mm- jj" required>
+                           <span class="checkmark">&#10003;</span>
+                        </div>
+                        <p class="error-message">Please enter a valid start date.</p>
+                     </label>
+
+                     <!-- End date input field -->
+                     <label for="course-end-date-wafs">
+                        <span>Einddatum <span id="requirement-star">*</span></span>
+                        <div>
+                           <input type="text" inputmode="numeric" id="course-end-date-wafs" name="course-end-date-wafs"
+                              placeholder="dd- mm- jj" required>
+                           <span class="checkmark">&#10003;</span>
+                        </div>
+                        <p class="error-message">Please enter a valid end date.</p>
+                     </label>
+
+                  </section>
+               </section>
+
+               <!-- Rating Teaching Material -->
+               <section>
+                  <article>
+                     <h2><span>2</span>Hoe uitdagend vond je de lesstof van het vak ... ?</h2>
+                     <p>Beoordeel de moeilijkheidsgraad van de lesstof op een schaal van 1 tot 10. <span
+                           id="requirement-star">*</span></p>
+                  </article>
+
+                  <section id="rating">
+
+                     <!-- Scroll Container -->
+                     <div>
+
+                        <section>
+                           <label for="rating-tm-wafs-1a">
+                              1
+                              <input type="radio" id="rating-tm-wafs-1a" name="teaching-material-wafs" value="1"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-wafs-2a">
+                              2
+                              <input type="radio" id="rating-tm-wafs-2a" name="teaching-material-wafs" value="2">
+                           </label>
+
+                           <label for="rating-tm-wafs-3a">
+                              3
+                              <input type="radio" id="rating-tm-wafs-3a" name="teaching-material-wafs" value="3"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-wafs-4a">
+                              4
+                              <input type="radio" id="rating-tm-wafs-4a" name="teaching-material-wafs" value="4"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-wafs-5a">
+                              5
+                              <input type="radio" id="rating-tm-wafs-5a" name="teaching-material-wafs" value="5"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-wafs-6a">
+                              6
+                              <input type="radio" id="rating-tm-wafs-6a" name="teaching-material-wafs" value="6"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-wafs-7a">
+                              7
+                              <input type="radio" id="rating-tm-wafs-7a" name="teaching-material-wafs" value="7"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-wafs-8a">
+                              8
+                              <input type="radio" id="rating-tm-wafs-8a" name="teaching-material-wafs" value="8"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-wafs-9a">
+                              9
+                              <input type="radio" id="rating-tm-wafs-9a" name="teaching-material-wafs" value="9"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-wafs-10a">
+                              10
+                              <input type="radio" id="rating-tm-wafs-10a" name="teaching-material-wafs" value="10"
+                                 required>
+                           </label>
+
+                        </section>
+
+                        <!-- Indicator -->
+
+                        <ul>
+                           <li>Appeltje Eitje 🥱</li>
+                           <li>Heel moeilijk! 🤯</li>
+                        </ul>
+
+                     </div>
+
+                  </section>
+
+               </section>
+
+               <!-- Rating Explaination Of Teaching Material -->
+               <section>
+                  <article>
+                     <h2><span>3</span>Hoe duidelijk vond je de uitleg van de lesstof ... ?</h2>
+                     <p>Geef aan hoe begrijpelijk je de uitleg van de lesstof vond op een schaal van 1 tot 10. <span
+                           id="requirement-star">*</span></p>
+                  </article>
+
+                  <section id="rating">
+
+                     <!-- Scroll Container -->
+                     <div>
+
+                        <section>
+                           <label for="rating-ex-wafs-1a">
+                              1
+                              <input type="radio" id="rating-ex-wafs-1a" name="explanation-wafs" value="1" required>
+                           </label>
+
+                           <label for="rating-ex-wafs-2a">
+                              2
+                              <input type="radio" id="rating-ex-wafs-2a" name="explanation-wafs" value="2">
+                           </label>
+
+                           <label for="rating-ex-wafs-3a">
+                              3
+                              <input type="radio" id="rating-ex-wafs-3a" name="explanation-wafs" value="3" required>
+                           </label>
+
+                           <label for="rating-ex-wafs-4a">
+                              4
+                              <input type="radio" id="rating-ex-wafs-4a" name="explanation-wafs" value="4" required>
+                           </label>
+
+                           <label for="rating-ex-wafs-5a">
+                              5
+                              <input type="radio" id="rating-ex-wafs-5a" name="explanation-wafs" value="5" required>
+                           </label>
+
+                           <label for="rating-ex-wafs-6a">
+                              6
+                              <input type="radio" id="rating-ex-wafs-6a" name="explanation-wafs" value="6" required>
+                           </label>
+
+                           <label for="rating-ex-wafs-7a">
+                              7
+                              <input type="radio" id="rating-ex-wafs-7a" name="explanation-wafs" value="7" required>
+                           </label>
+
+                           <label for="rating-ex-wafs-8a">
+                              8
+                              <input type="radio" id="rating-ex-wafs-8a" name="explanation-wafs" value="8" required>
+                           </label>
+
+                           <label for="rating-ex-wafs-9a">
+                              9
+                              <input type="radio" id="rating-ex-wafs-9a" name="explanation-wafs" value="9" required>
+                           </label>
+
+                           <label for="rating-ex-wafs-10a">
+                              10
+                              <input type="radio" id="rating-ex-wafs-10a" name="explanation-wafs" value="10" required>
+                           </label>
+
+                        </section>
+
+                        <!-- Indicator -->
+                        <ul>
+                           <li>Erg onduidelijk 🤔</li>
+                           <li>Heel duidelijk! 🤓</li>
+                        </ul>
+
+                     </div>
+
+                  </section>
+
+               </section>
+
+
+               <!-- Grading Understanding Level -->
+               <section>
+                  <article>
+                     <h2><span>4</span>Hoe goed begreep je de lesstof aan het einde van het vak .. ?</h2>
+                     <p>Geef aan hoe goed je de lesstof begreep aan het einde van het vak. <span
+                           id="requirement-star">*</span></p>
+                  </article>
+
+                  <section id="grading">
+                     <div>
+                        <section>
+
+                           <label for="rating-ul-wafs-1a">
+                              <span>😕</span> <span>Helemaal</span>
+                              <input type="radio" id="rating-ul-wafs-1a" name="understanding-level-wafs" value="1"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-wafs-2a">
+                              <span>🤨</span> <span>Niet</span>
+                              <input type="radio" id="rating-ul-wafs-2a" name="understanding-level-wafs" value="2">
+                           </label>
+
+                           <label for="rating-ul-wafs-3a">
+                              <span>😐</span> <span>Mwah</span>
+                              <input type="radio" id="rating-ul-wafs-3a" name="understanding-level-wafs" value="3"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-wafs-4a">
+                              <span>😶</span> <span>Nauw'lijks</span>
+                              <input type="radio" id="rating-ul-wafs-4a" name="understanding-level-wafs" value="4"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-wafs-5a">
+                              <span>🙂</span> <span>Enigszins</span>
+                              <input type="radio" id="rating-ul-wafs-5a" name="understanding-level-wafs" value="5"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-wafs-6a">
+                              <span>😊</span> <span>Redelijk</span>
+                              <input type="radio" id="rating-ul-wafs-6a" name="understanding-level-wafs" value="6"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-wafs-7a">
+                              <span>😃</span> <span>Goed</span>
+                              <input type="radio" id="rating-ul-wafs-7a" name="understanding-level-wafs" value="7"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-wafs-8a">
+                              <span>😁</span> <span>Erg'goed</span>
+                              <input type="radio" id="rating-ul-wafs-8a" name="understanding-level-wafs" value="8"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-wafs-9a">
+                              <span>🤓</span> <span>Uitstekend</span>
+                              <input type="radio" id="rating-ul-wafs-9a" name="understanding-level-wafs" value="9"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-wafs-10a">
+                              <span>🧠</span> <span>Meesterlijk</span>
+                              <input type="radio" id="rating-ul-wafs-10a" name="understanding-level-wafs" value="10"
+                                 required>
+                           </label>
+
+                        </section>
+
+                     </div>
+
+                  </section>
+
+               </section>
             </fieldset>
 
 
@@ -319,8 +772,319 @@
 
             <!-- Course 3 -->
             <fieldset id="field-cttr">
+               <!-- Course Name -->
                <legend>Css To The Rescue</legend>
-               <p>Description Of Course 3</p>
+
+               <!-- Course Description -->
+               <p>
+                  Om de kwaliteit van het vak te verbeteren verzoeken we je om deze enquête in te vullen.
+               </p>
+
+               <!-- Course Teachers -->
+               <h2>Docenten</h2>
+               <p>De docenten die betrokken zijn bij het geven van het vak Project 1.</p>
+
+               <ul>
+                  <!-- Teacher 1 -->
+                  <li>
+                     <figure>
+                        <!-- <img src="" alt="Portret foto van Joost Faber."> -->
+                     </figure>
+
+                     Sanne 't Hooft
+                  </li>
+
+                  <!-- Teacher 2 -->
+                  <li>
+                     <figure>
+                        <!-- <img src="" alt="Portret foto van Robert Spier."> -->
+                     </figure>
+
+                     Vasilis
+                  </li>
+               </ul>
+
+               <!-- Form Course Questions -->
+               <section>
+
+                  <article>
+                     <h2><span>1</span>In welke weken heb je het vak ... gevolgd ?</h2>
+                     <p>Vul de start- en einddatum van de periode in waarin je het vak hebt gevolgd.</p>
+                  </article>
+
+                  <!-- Start Week Course -->
+                  <section id="course-date">
+
+                     <!-- Start date input field -->
+                     <label for="course-start-date-cttr">
+                        <span>Startdatum <span id="requirement-star">*</span></span>
+                        <div>
+                           <input type="text" inputmode="numeric" id="course-start-date-cttr"
+                              name="course-start-date-cttr" placeholder="dd- mm- jj" required>
+                           <span class="checkmark">&#10003;</span>
+                        </div>
+                        <p class="error-message">Please enter a valid start date.</p>
+                     </label>
+
+                     <!-- End date input field -->
+                     <label for="course-end-date-cttr">
+                        <span>Einddatum <span id="requirement-star">*</span></span>
+                        <div>
+                           <input type="text" inputmode="numeric" id="course-end-date-cttr" name="course-end-date-cttr"
+                              placeholder="dd- mm- jj" required>
+                           <span class="checkmark">&#10003;</span>
+                        </div>
+                        <p class="error-message">Please enter a valid end date.</p>
+                     </label>
+
+                  </section>
+               </section>
+
+               <!-- Rating Teaching Material -->
+               <section>
+                  <article>
+                     <h2><span>2</span>Hoe uitdagend vond je de lesstof van het vak ... ?</h2>
+                     <p>Beoordeel de moeilijkheidsgraad van de lesstof op een schaal van 1 tot 10. <span
+                           id="requirement-star">*</span></p>
+                  </article>
+
+                  <section id="rating">
+
+                     <!-- Scroll Container -->
+                     <div>
+
+                        <section>
+                           <label for="rating-tm-cttr-1a">
+                              1
+                              <input type="radio" id="rating-tm-cttr-1a" name="teaching-material-cttr" value="1"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-cttr-2a">
+                              2
+                              <input type="radio" id="rating-tm-cttr-2a" name="teaching-material-cttr" value="2">
+                           </label>
+
+                           <label for="rating-tm-cttr-3a">
+                              3
+                              <input type="radio" id="rating-tm-cttr-3a" name="teaching-material-cttr" value="3"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-cttr-4a">
+                              4
+                              <input type="radio" id="rating-tm-cttr-4a" name="teaching-material-cttr" value="4"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-cttr-5a">
+                              5
+                              <input type="radio" id="rating-tm-cttr-5a" name="teaching-material-cttr" value="5"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-cttr-6a">
+                              6
+                              <input type="radio" id="rating-tm-cttr-6a" name="teaching-material-cttr" value="6"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-cttr-7a">
+                              7
+                              <input type="radio" id="rating-tm-cttr-7a" name="teaching-material-cttr" value="7"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-cttr-8a">
+                              8
+                              <input type="radio" id="rating-tm-cttr-8a" name="teaching-material-cttr" value="8"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-cttr-9a">
+                              9
+                              <input type="radio" id="rating-tm-cttr-9a" name="teaching-material-cttr" value="9"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-cttr-10a">
+                              10
+                              <input type="radio" id="rating-tm-cttr-10a" name="teaching-material-cttr" value="10"
+                                 required>
+                           </label>
+
+                        </section>
+
+                        <!-- Indicator -->
+
+                        <ul>
+                           <li>Appeltje Eitje 🥱</li>
+                           <li>Heel moeilijk! 🤯</li>
+                        </ul>
+
+                     </div>
+
+                  </section>
+
+               </section>
+
+               <!-- Rating Explaination Of Teaching Material -->
+               <section>
+                  <article>
+                     <h2><span>3</span>Hoe duidelijk vond je de uitleg van de lesstof ... ?</h2>
+                     <p>Geef aan hoe begrijpelijk je de uitleg van de lesstof vond op een schaal van 1 tot 10. <span
+                           id="requirement-star">*</span></p>
+                  </article>
+
+                  <section id="rating">
+
+                     <!-- Scroll Container -->
+                     <div>
+
+                        <section>
+                           <label for="rating-ex-cttr-1a">
+                              1
+                              <input type="radio" id="rating-ex-cttr-1a" name="explanation-cttr" value="1" required>
+                           </label>
+
+                           <label for="rating-ex-cttr-2a">
+                              2
+                              <input type="radio" id="rating-ex-cttr-2a" name="explanation-cttr" value="2">
+                           </label>
+
+                           <label for="rating-ex-cttr-3a">
+                              3
+                              <input type="radio" id="rating-ex-cttr-3a" name="explanation-cttr" value="3" required>
+                           </label>
+
+                           <label for="rating-ex-cttr-4a">
+                              4
+                              <input type="radio" id="rating-ex-cttr-4a" name="explanation-cttr" value="4" required>
+                           </label>
+
+                           <label for="rating-ex-cttr-5a">
+                              5
+                              <input type="radio" id="rating-ex-cttr-5a" name="explanation-cttr" value="5" required>
+                           </label>
+
+                           <label for="rating-ex-cttr-6a">
+                              6
+                              <input type="radio" id="rating-ex-cttr-6a" name="explanation-cttr" value="6" required>
+                           </label>
+
+                           <label for="rating-ex-cttr-7a">
+                              7
+                              <input type="radio" id="rating-ex-cttr-7a" name="explanation-cttr" value="7" required>
+                           </label>
+
+                           <label for="rating-ex-cttr-8a">
+                              8
+                              <input type="radio" id="rating-ex-cttr-8a" name="explanation-cttr" value="8" required>
+                           </label>
+
+                           <label for="rating-ex-cttr-9a">
+                              9
+                              <input type="radio" id="rating-ex-cttr-9a" name="explanation-cttr" value="9" required>
+                           </label>
+
+                           <label for="rating-ex-cttr-10a">
+                              10
+                              <input type="radio" id="rating-ex-cttr-10a" name="explanation-cttr" value="10" required>
+                           </label>
+
+                        </section>
+
+                        <!-- Indicator -->
+                        <ul>
+                           <li>Erg onduidelijk 🤔</li>
+                           <li>Heel duidelijk! 🤓</li>
+                        </ul>
+
+                     </div>
+
+                  </section>
+
+               </section>
+
+
+               <!-- Grading Understanding Level -->
+               <section>
+                  <article>
+                     <h2><span>4</span>Hoe goed begreep je de lesstof aan het einde van het vak .. ?</h2>
+                     <p>Geef aan hoe goed je de lesstof begreep aan het einde van het vak. <span
+                           id="requirement-star">*</span></p>
+                  </article>
+
+                  <section id="grading">
+                     <div>
+                        <section>
+
+                           <label for="rating-ul-cttr-1a">
+                              <span>😕</span> <span>Helemaal</span>
+                              <input type="radio" id="rating-ul-cttr-1a" name="understanding-level-cttr" value="1"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-cttr-2a">
+                              <span>🤨</span> <span>Niet</span>
+                              <input type="radio" id="rating-ul-cttr-2a" name="understanding-level-cttr" value="2">
+                           </label>
+
+                           <label for="rating-ul-cttr-3a">
+                              <span>😐</span> <span>Mwah</span>
+                              <input type="radio" id="rating-ul-cttr-3a" name="understanding-level-cttr" value="3"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-cttr-4a">
+                              <span>😶</span> <span>Nauw'lijks</span>
+                              <input type="radio" id="rating-ul-cttr-4a" name="understanding-level-cttr" value="4"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-cttr-5a">
+                              <span>🙂</span> <span>Enigszins</span>
+                              <input type="radio" id="rating-ul-cttr-5a" name="understanding-level-cttr" value="5"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-cttr-6a">
+                              <span>😊</span> <span>Redelijk</span>
+                              <input type="radio" id="rating-ul-cttr-6a" name="understanding-level-cttr" value="6"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-cttr-7a">
+                              <span>😃</span> <span>Goed</span>
+                              <input type="radio" id="rating-ul-cttr-7a" name="understanding-level-cttr" value="7"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-cttr-8a">
+                              <span>😁</span> <span>Erg'goed</span>
+                              <input type="radio" id="rating-ul-cttr-8a" name="understanding-level-cttr" value="8"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-cttr-9a">
+                              <span>🤓</span> <span>Uitstekend</span>
+                              <input type="radio" id="rating-ul-cttr-9a" name="understanding-level-cttr" value="9"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-cttr-10a">
+                              <span>🧠</span> <span>Meesterlijk</span>
+                              <input type="radio" id="rating-ul-cttr-10a" name="understanding-level-cttr" value="10"
+                                 required>
+                           </label>
+
+                        </section>
+
+                     </div>
+
+                  </section>
+
+               </section>
             </fieldset>
 
 
@@ -332,10 +1096,330 @@
 
 
 
-            <!-- Project 1 -->
+            <!-- Project 2 -->
             <fieldset id="field-prjct-2">
-               <legend>Project 2- Hackathon</legend>
-               <p>Description Of Project 1</p>
+               <!-- Course Name -->
+               <legend>Hackathon</legend>
+
+               <!-- Course Description -->
+               <p>
+                  Om de kwaliteit van het vak te verbeteren verzoeken we je om deze enquête in te vullen.
+               </p>
+
+               <!-- Course Teachers -->
+               <h2>Docenten</h2>
+               <p>De docenten die betrokken zijn bij het geven van het vak Project 1.</p>
+
+               <ul>
+                  <!-- Teacher 1 -->
+                  <li>
+                     <figure>
+                        <!-- <img src="" alt="Portret foto van Joost Faber."> -->
+                     </figure>
+
+                     Vasilis
+                  </li>
+
+                  <!-- Teacher 2 -->
+                  <li>
+                     <figure>
+                        <!-- <img src="" alt="Portret foto van Robert Spier."> -->
+                     </figure>
+
+                     Robert Spier
+                  </li>
+               </ul>
+
+               <!-- Form Course Questions -->
+               <section>
+
+                  <article>
+                     <h2><span>1</span>In welke weken heb je het vak ... gevolgd ?</h2>
+                     <p>Vul de start- en einddatum van de periode in waarin je het vak hebt gevolgd.</p>
+                  </article>
+
+                  <!-- Start Week Course -->
+                  <section id="course-date">
+
+                     <!-- Start date input field -->
+                     <label for="course-start-date-wafs">
+                        <span>Startdatum <span id="requirement-star">*</span></span>
+                        <div>
+                           <input type="text" inputmode="numeric" id="course-start-date-prjct-2"
+                              name="course-start-date-prjct-2" placeholder="dd- mm- jj" required>
+                           <span class="checkmark">&#10003;</span>
+                        </div>
+                        <p class="error-message">Please enter a valid start date.</p>
+                     </label>
+
+                     <!-- End date input field -->
+                     <label for="course-end-date-prjct-2">
+                        <span>Einddatum <span id="requirement-star">*</span></span>
+                        <div>
+                           <input type="text" inputmode="numeric" id="course-end-date-prjct-2"
+                              name="course-end-date-prjct-2" placeholder="dd- mm- jj" required>
+                           <span class="checkmark">&#10003;</span>
+                        </div>
+                        <p class="error-message">Please enter a valid end date.</p>
+                     </label>
+
+                  </section>
+               </section>
+
+               <!-- Rating Teaching Material -->
+               <section>
+                  <article>
+                     <h2><span>2</span>Hoe uitdagend vond je de lesstof van het vak ... ?</h2>
+                     <p>Beoordeel de moeilijkheidsgraad van de lesstof op een schaal van 1 tot 10. <span
+                           id="requirement-star">*</span></p>
+                  </article>
+
+                  <section id="rating">
+
+                     <!-- Scroll Container -->
+                     <div>
+
+                        <section>
+                           <label for="rating-tm-prjct-2-1a">
+                              1
+                              <input type="radio" id="rating-tm-prjct-2-1a" name="teaching-material-prjct-2" value="1"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-prjct-2-2a">
+                              2
+                              <input type="radio" id="rating-tm-prjct-2-2a" name="teaching-material-prjct-2" value="2">
+                           </label>
+
+                           <label for="rating-tm-prjct-2-3a">
+                              3
+                              <input type="radio" id="rating-tm-prjct-2-3a" name="teaching-material-prjct-2" value="3"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-prjct-2-4a">
+                              4
+                              <input type="radio" id="rating-tm-prjct-2-4a" name="teaching-material-prjct-2" value="4"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-prjct-2-5a">
+                              5
+                              <input type="radio" id="rating-tm-prjct-2-5a" name="teaching-material-prjct-2" value="5"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-prjct-2-6a">
+                              6
+                              <input type="radio" id="rating-tm-prjct-2-6a" name="teaching-material-prjct-2" value="6"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-prjct-2-7a">
+                              7
+                              <input type="radio" id="rating-tm-prjct-2-7a" name="teaching-material-prjct-2" value="7"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-prjct-2-8a">
+                              8
+                              <input type="radio" id="rating-tm-prjct-2-8a" name="teaching-material-prjct-2" value="8"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-prjct-2-9a">
+                              9
+                              <input type="radio" id="rating-tm-prjct-2-9a" name="teaching-material-prjct-2" value="9"
+                                 required>
+                           </label>
+
+                           <label for="rating-tm-prjct-2-10a">
+                              10
+                              <input type="radio" id="rating-tm-prjct-2-10a" name="teaching-material-prjct-2" value="10"
+                                 required>
+                           </label>
+
+                        </section>
+
+                        <!-- Indicator -->
+
+                        <ul>
+                           <li>Appeltje Eitje 🥱</li>
+                           <li>Heel moeilijk! 🤯</li>
+                        </ul>
+
+                     </div>
+
+                  </section>
+
+               </section>
+
+               <!-- Rating Explaination Of Teaching Material -->
+               <section>
+                  <article>
+                     <h2><span>3</span>Hoe duidelijk vond je de uitleg van de lesstof ... ?</h2>
+                     <p>Geef aan hoe begrijpelijk je de uitleg van de lesstof vond op een schaal van 1 tot 10. <span
+                           id="requirement-star">*</span></p>
+                  </article>
+
+                  <section id="rating">
+
+                     <!-- Scroll Container -->
+                     <div>
+
+                        <section>
+                           <label for="rating-ex-prjct-2-1a">
+                              1
+                              <input type="radio" id="rating-ex-prjct-2-1a" name="explanation-prjct-2" value="1"
+                                 required>
+                           </label>
+
+                           <label for="rating-ex-prjct-2-2a">
+                              2
+                              <input type="radio" id="rating-ex-prjct-2-2a" name="explanation-prjct-2" value="2">
+                           </label>
+
+                           <label for="rating-ex-prjct-2-3a">
+                              3
+                              <input type="radio" id="rating-ex-prjct-2-3a" name="explanation-prjct-2" value="3"
+                                 required>
+                           </label>
+
+                           <label for="rating-ex-prjct-2-4a">
+                              4
+                              <input type="radio" id="rating-ex-prjct-2-4a" name="explanation-prjct-2" value="4"
+                                 required>
+                           </label>
+
+                           <label for="rating-ex-prjct-2-5a">
+                              5
+                              <input type="radio" id="rating-ex-prjct-2-5a" name="explanation-prjct-2" value="5"
+                                 required>
+                           </label>
+
+                           <label for="rating-ex-prjct-2-6a">
+                              6
+                              <input type="radio" id="rating-ex-prjct-2-6a" name="explanation-prjct-2" value="6"
+                                 required>
+                           </label>
+
+                           <label for="rating-ex-prjct-2-7a">
+                              7
+                              <input type="radio" id="rating-ex-prjct-2-7a" name="explanation-prjct-2" value="7"
+                                 required>
+                           </label>
+
+                           <label for="rating-ex-prjct-2-8a">
+                              8
+                              <input type="radio" id="rating-ex-prjct-2-8a" name="explanation-prjct-2" value="8"
+                                 required>
+                           </label>
+
+                           <label for="rating-ex-prjct-2-9a">
+                              9
+                              <input type="radio" id="rating-ex-prjct-2-9a" name="explanation-prjct-2" value="9"
+                                 required>
+                           </label>
+
+                           <label for="rating-ex-prjct-2-10a">
+                              10
+                              <input type="radio" id="rating-ex-prjct-2-10a" name="explanation-prjct-2" value="10"
+                                 required>
+                           </label>
+
+                        </section>
+
+                        <!-- Indicator -->
+                        <ul>
+                           <li>Erg onduidelijk 🤔</li>
+                           <li>Heel duidelijk! 🤓</li>
+                        </ul>
+
+                     </div>
+
+                  </section>
+
+               </section>
+
+
+               <!-- Grading Understanding Level -->
+               <section>
+                  <article>
+                     <h2><span>4</span>Hoe goed begreep je de lesstof aan het einde van het vak .. ?</h2>
+                     <p>Geef aan hoe goed je de lesstof begreep aan het einde van het vak. <span
+                           id="requirement-star">*</span></p>
+                  </article>
+
+                  <section id="grading">
+                     <div>
+                        <section>
+
+                           <label for="rating-ul-prjct-2-1a">
+                              <span>😕</span> <span>Helemaal</span>
+                              <input type="radio" id="rating-ul-prjct-2-1a" name="understanding-level-prj-2" value="1"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-prjct-2-2a">
+                              <span>🤨</span> <span>Niet</span>
+                              <input type="radio" id="rating-ul-prjct-2-2a" name="understanding-level-prj-2" value="2">
+                           </label>
+
+                           <label for="rating-ul-prjct-2-3a">
+                              <span>😐</span> <span>Mwah</span>
+                              <input type="radio" id="rating-ul-prjct-2-3a" name="understanding-level-prj-2" value="3"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-prjct-2-4a">
+                              <span>😶</span> <span>Nauw'lijks</span>
+                              <input type="radio" id="rating-ul-prjct-2-4a" name="understanding-level-prj-2" value="4"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-prjct-2-5a">
+                              <span>🙂</span> <span>Enigszins</span>
+                              <input type="radio" id="rating-ul-prjct-2-5a" name="understanding-level-prj-2" value="5"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-prjct-2-6a">
+                              <span>😊</span> <span>Redelijk</span>
+                              <input type="radio" id="rating-ul-prjct-2-6a" name="understanding-level-prj-2" value="6"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-prjct-2-7a">
+                              <span>😃</span> <span>Goed</span>
+                              <input type="radio" id="rating-ul-prjct-2-7a" name="understanding-level-prj-2" value="7"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-prjct-2-8a">
+                              <span>😁</span> <span>Erg'goed</span>
+                              <input type="radio" id="rating-ul-prjct-2-8a" name="understanding-level-prj-2" value="8"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-prjct-2-9a">
+                              <span>🤓</span> <span>Uitstekend</span>
+                              <input type="radio" id="rating-ul-prjct-2-9a" name="understanding-level-prj-2" value="9"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-prjct-2-10a">
+                              <span>🧠</span> <span>Meesterlijk</span>
+                              <input type="radio" id="rating-ul-prjct-2-10a" name="understanding-level-prj-2" value="10"
+                                 required>
+                           </label>
+
+                        </section>
+
+                     </div>
+
+                  </section>
+
+               </section>
             </fieldset>
 
 
@@ -349,6 +1433,302 @@
 
             <!-- Course 4 -->
             <fieldset id="field-bt">
+               <!-- Course Name -->
+               <legend>Browser Technologies</legend>
+
+               <!-- Course Description -->
+               <p>
+                  Om de kwaliteit van het vak te verbeteren verzoeken we je om deze enquête in te vullen.
+               </p>
+
+               <!-- Course Teachers -->
+               <h2>Docenten</h2>
+               <p>De docenten die betrokken zijn bij het geven van het vak Project 1.</p>
+
+               <ul>
+                  <!-- Teacher 1 -->
+                  <li>
+                     <figure>
+                        <!-- <img src="" alt="Portret foto van Joost Faber."> -->
+                     </figure>
+
+                     Peter Paul
+                  </li>
+
+                  <!-- Teacher 2 -->
+                  <li>
+                     <figure>
+                        <!-- <img src="" alt="Portret foto van Robert Spier."> -->
+                     </figure>
+
+                     Vasilis
+                  </li>
+               </ul>
+
+               <!-- Form Course Questions -->
+               <section>
+
+                  <article>
+                     <h2><span>1</span>In welke weken heb je het vak ... gevolgd ?</h2>
+                     <p>Vul de start- en einddatum van de periode in waarin je het vak hebt gevolgd.</p>
+                  </article>
+
+                  <!-- Start Week Course -->
+                  <section id="course-date">
+
+                     <!-- Start date input field -->
+                     <label for="course-start-date-bt">
+                        <span>Startdatum <span id="requirement-star">*</span></span>
+                        <div>
+                           <input type="text" inputmode="numeric" id="course-start-date-bt" name="course-start-date-bt"
+                              placeholder="dd- mm- jj" required>
+                           <span class="checkmark">&#10003;</span>
+                        </div>
+                        <p class="error-message">Please enter a valid start date.</p>
+                     </label>
+
+                     <!-- End date input field -->
+                     <label for="course-end-date-bt">
+                        <span>Einddatum <span id="requirement-star">*</span></span>
+                        <div>
+                           <input type="text" inputmode="numeric" id="course-end-date-bt" name="course-end-date-bt"
+                              placeholder="dd- mm- jj" required>
+                           <span class="checkmark">&#10003;</span>
+                        </div>
+                        <p class="error-message">Please enter a valid end date.</p>
+                     </label>
+
+                  </section>
+               </section>
+
+               <!-- Rating Teaching Material -->
+               <section>
+                  <article>
+                     <h2><span>2</span>Hoe uitdagend vond je de lesstof van het vak ... ?</h2>
+                     <p>Beoordeel de moeilijkheidsgraad van de lesstof op een schaal van 1 tot 10. <span
+                           id="requirement-star">*</span></p>
+                  </article>
+
+                  <section id="rating">
+
+                     <!-- Scroll Container -->
+                     <div>
+
+                        <section>
+                           <label for="rating-tm-bt-1a">
+                              1
+                              <input type="radio" id="rating-tm-bt-1a" name="teaching-material-bt" value="1" required>
+                           </label>
+
+                           <label for="rating-tm-bt-2a">
+                              2
+                              <input type="radio" id="rating-tm-bt-2a" name="teaching-material-bt" value="2">
+                           </label>
+
+                           <label for="rating-tm-bt-3a">
+                              3
+                              <input type="radio" id="rating-tm-bt-3a" name="teaching-material-bt" value="3" required>
+                           </label>
+
+                           <label for="rating-tm-bt-4a">
+                              4
+                              <input type="radio" id="rating-tm-bt-4a" name="teaching-material-bt" value="4" required>
+                           </label>
+
+                           <label for="rating-tm-bt-5a">
+                              5
+                              <input type="radio" id="rating-tm-bt-5a" name="teaching-material-bt" value="5" required>
+                           </label>
+
+                           <label for="rating-tm-bt-6a">
+                              6
+                              <input type="radio" id="rating-tm-bt-6a" name="teaching-material-bt" value="6" required>
+                           </label>
+
+                           <label for="rating-tm-bt-7a">
+                              7
+                              <input type="radio" id="rating-tm-bt-7a" name="teaching-material-bt" value="7" required>
+                           </label>
+
+                           <label for="rating-tm-bt-8a">
+                              8
+                              <input type="radio" id="rating-tm-bt-8a" name="teaching-material-bt" value="8" required>
+                           </label>
+
+                           <label for="rating-tm-bt-9a">
+                              9
+                              <input type="radio" id="rating-tm-bt-9a" name="teaching-material-bt" value="9" required>
+                           </label>
+
+                           <label for="rating-tm-bt-10a">
+                              10
+                              <input type="radio" id="rating-tm-bt-10a" name="teaching-material-bt" value="10" required>
+                           </label>
+
+                        </section>
+
+                        <!-- Indicator -->
+
+                        <ul>
+                           <li>Appeltje Eitje 🥱</li>
+                           <li>Heel moeilijk! 🤯</li>
+                        </ul>
+
+                     </div>
+
+                  </section>
+
+               </section>
+
+               <!-- Rating Explaination Of Teaching Material -->
+               <section>
+                  <article>
+                     <h2><span>3</span>Hoe duidelijk vond je de uitleg van de lesstof ... ?</h2>
+                     <p>Geef aan hoe begrijpelijk je de uitleg van de lesstof vond op een schaal van 1 tot 10. <span
+                           id="requirement-star">*</span></p>
+                  </article>
+
+                  <section id="rating">
+
+                     <!-- Scroll Container -->
+                     <div>
+
+                        <section>
+                           <label for="rating-ex-bt-1a">
+                              1
+                              <input type="radio" id="rating-ex-bt-1a" name="explanation-bt" value="1" required>
+                           </label>
+
+                           <label for="rating-ex-bt-2a">
+                              2
+                              <input type="radio" id="rating-ex-bt-2a" name="explanation-bt" value="2">
+                           </label>
+
+                           <label for="rating-ex-bt-3a">
+                              3
+                              <input type="radio" id="rating-ex-bt-3a" name="explanation-bt" value="3" required>
+                           </label>
+
+                           <label for="rating-ex-bt-4a">
+                              4
+                              <input type="radio" id="rating-ex-bt-4a" name="explanation-bt" value="4" required>
+                           </label>
+
+                           <label for="rating-ex-bt-5a">
+                              5
+                              <input type="radio" id="rating-ex-bt-5a" name="explanation-bt" value="5" required>
+                           </label>
+
+                           <label for="rating-ex-bt-6a">
+                              6
+                              <input type="radio" id="rating-ex-bt-6a" name="explanation-bt" value="6" required>
+                           </label>
+
+                           <label for="rating-ex-bt-7a">
+                              7
+                              <input type="radio" id="rating-ex-bt-7a" name="explanation-bt" value="7" required>
+                           </label>
+
+                           <label for="rating-ex-bt-8a">
+                              8
+                              <input type="radio" id="rating-ex-bt-8a" name="explanation-bt" value="8" required>
+                           </label>
+
+                           <label for="rating-ex-bt-9a">
+                              9
+                              <input type="radio" id="rating-ex-bt-9a" name="explanation-bt" value="9" required>
+                           </label>
+
+                           <label for="rating-ex-bt-10a">
+                              10
+                              <input type="radio" id="rating-ex-bt-10a" name="explanation-bt" value="10" required>
+                           </label>
+
+                        </section>
+
+                        <!-- Indicator -->
+                        <ul>
+                           <li>Erg onduidelijk 🤔</li>
+                           <li>Heel duidelijk! 🤓</li>
+                        </ul>
+
+                     </div>
+
+                  </section>
+
+               </section>
+
+
+               <!-- Grading Understanding Level -->
+               <section>
+                  <article>
+                     <h2><span>4</span>Hoe goed begreep je de lesstof aan het einde van het vak .. ?</h2>
+                     <p>Geef aan hoe goed je de lesstof begreep aan het einde van het vak. <span
+                           id="requirement-star">*</span></p>
+                  </article>
+
+                  <section id="grading">
+                     <div>
+                        <section>
+
+                           <label for="rating-ul-bt-1a">
+                              <span>😕</span> <span>Helemaal</span>
+                              <input type="radio" id="rating-ul-bt-1a" name="understanding-level-bt" value="1" required>
+                           </label>
+
+                           <label for="rating-ul-bt-2a">
+                              <span>🤨</span> <span>Niet</span>
+                              <input type="radio" id="rating-ul-bt-2a" name="understanding-level-bt" value="2">
+                           </label>
+
+                           <label for="rating-ul-bt-3a">
+                              <span>😐</span> <span>Mwah</span>
+                              <input type="radio" id="rating-ul-bt-3a" name="understanding-level-bt" value="3" required>
+                           </label>
+
+                           <label for="rating-ul-bt-4a">
+                              <span>😶</span> <span>Nauw'lijks</span>
+                              <input type="radio" id="rating-ul-bt-4a" name="understanding-level-bt" value="4" required>
+                           </label>
+
+                           <label for="rating-ul-bt-5a">
+                              <span>🙂</span> <span>Enigszins</span>
+                              <input type="radio" id="rating-ul-bt-5a" name="understanding-level-bt" value="5" required>
+                           </label>
+
+                           <label for="rating-ul-bt-6a">
+                              <span>😊</span> <span>Redelijk</span>
+                              <input type="radio" id="rating-ul-bt-6a" name="understanding-level-bt" value="6" required>
+                           </label>
+
+                           <label for="rating-ul-bt-7a">
+                              <span>😃</span> <span>Goed</span>
+                              <input type="radio" id="rating-ul-bt-7a" name="understanding-level-bt" value="7" required>
+                           </label>
+
+                           <label for="rating-ul-bt-8a">
+                              <span>😁</span> <span>Erg'goed</span>
+                              <input type="radio" id="rating-ul-bt-8a" name="understanding-level-bt" value="8" required>
+                           </label>
+
+                           <label for="rating-ul-bt-9a">
+                              <span>🤓</span> <span>Uitstekend</span>
+                              <input type="radio" id="rating-ul-bt-9a" name="understanding-level-bt" value="9" required>
+                           </label>
+
+                           <label for="rating-ul-bt-10a">
+                              <span>🧠</span> <span>Meesterlijk</span>
+                              <input type="radio" id="rating-ul-bt-10a" name="understanding-level-bt" value="10"
+                                 required>
+                           </label>
+
+                        </section>
+
+                     </div>
+
+                  </section>
+
+               </section>
             </fieldset>
 
 
@@ -362,8 +1742,311 @@
 
             <!-- Course 5 -->
             <fieldset id="field-pwa">
-               <legend>Progressive Web- Apps</legend>
-               <p>Description Of Course 5</p>
+               <!-- Course Name -->
+               <legend>Progressive Web Apps</legend>
+
+               <!-- Course Description -->
+               <p>
+                  Om de kwaliteit van het vak te verbeteren verzoeken we je om deze enquête in te vullen.
+               </p>
+
+               <!-- Course Teachers -->
+               <h2>Docenten</h2>
+               <p>De docenten die betrokken zijn bij het geven van het vak Project 1.</p>
+
+               <ul>
+                  <!-- Teacher 1 -->
+                  <li>
+                     <figure>
+                        <!-- <img src="" alt="Portret foto van Joost Faber."> -->
+                     </figure>
+
+                     Janno
+                  </li>
+
+                  <!-- Teacher 2 -->
+                  <li>
+                     <figure>
+                        <!-- <img src="" alt="Portret foto van Robert Spier."> -->
+                     </figure>
+
+                     Declan
+                  </li>
+               </ul>
+
+               <!-- Form Course Questions -->
+               <section>
+
+                  <article>
+                     <h2><span>1</span>In welke weken heb je het vak ... gevolgd ?</h2>
+                     <p>Vul de start- en einddatum van de periode in waarin je het vak hebt gevolgd.</p>
+                  </article>
+
+                  <!-- Start Week Course -->
+                  <section id="course-date">
+
+                     <!-- Start date input field -->
+                     <label for="course-start-date-pwa">
+                        <span>Startdatum <span id="requirement-star">*</span></span>
+                        <div>
+                           <input type="text" inputmode="numeric" id="course-start-date-pwa"
+                              name="course-start-date-pwa" placeholder="dd- mm- jj" required>
+                           <span class="checkmark">&#10003;</span>
+                        </div>
+                        <p class="error-message">Please enter a valid start date.</p>
+                     </label>
+
+                     <!-- End date input field -->
+                     <label for="course-end-date-pwa">
+                        <span>Einddatum <span id="requirement-star">*</span></span>
+                        <div>
+                           <input type="text" inputmode="numeric" id="course-end-date-pwa" name="course-end-date-pwa"
+                              placeholder="dd- mm- jj" required>
+                           <span class="checkmark">&#10003;</span>
+                        </div>
+                        <p class="error-message">Please enter a valid end date.</p>
+                     </label>
+
+                  </section>
+               </section>
+
+               <!-- Rating Teaching Material -->
+               <section>
+                  <article>
+                     <h2><span>2</span>Hoe uitdagend vond je de lesstof van het vak ... ?</h2>
+                     <p>Beoordeel de moeilijkheidsgraad van de lesstof op een schaal van 1 tot 10. <span
+                           id="requirement-star">*</span></p>
+                  </article>
+
+                  <section id="rating">
+
+                     <!-- Scroll Container -->
+                     <div>
+
+                        <section>
+                           <label for="rating-tm-pwa-1a">
+                              1
+                              <input type="radio" id="rating-tm-pwa-1a" name="teaching-material-pwa" value="1" required>
+                           </label>
+
+                           <label for="rating-tm-pwa-2a">
+                              2
+                              <input type="radio" id="rating-tm-pwa-2a" name="teaching-material-pwa" value="2">
+                           </label>
+
+                           <label for="rating-tm-pwa-3a">
+                              3
+                              <input type="radio" id="rating-tm-pwa-3a" name="teaching-material-pwa" value="3" required>
+                           </label>
+
+                           <label for="rating-tm-pwa-4a">
+                              4
+                              <input type="radio" id="rating-tm-pwa-4a" name="teaching-material-pwa" value="4" required>
+                           </label>
+
+                           <label for="rating-tm-pwa-5a">
+                              5
+                              <input type="radio" id="rating-tm-pwa-5a" name="teaching-material-pwa" value="5" required>
+                           </label>
+
+                           <label for="rating-tm-pwa-6a">
+                              6
+                              <input type="radio" id="rating-tm-pwa-6a" name="teaching-material-pwa" value="6" required>
+                           </label>
+
+                           <label for="rating-tm-pwa-7a">
+                              7
+                              <input type="radio" id="rating-tm-pwa-7a" name="teaching-material-pwa" value="7" required>
+                           </label>
+
+                           <label for="rating-tm-pwa-8a">
+                              8
+                              <input type="radio" id="rating-tm-pwa-8a" name="teaching-material-pwa" value="8" required>
+                           </label>
+
+                           <label for="rating-tm-pwa-9a">
+                              9
+                              <input type="radio" id="rating-tm-pwa-9a" name="teaching-material-pwa" value="9" required>
+                           </label>
+
+                           <label for="rating-tm-pwa-10a">
+                              10
+                              <input type="radio" id="rating-tm-pwa-10a" name="teaching-material-pwa" value="10"
+                                 required>
+                           </label>
+
+                        </section>
+
+                        <!-- Indicator -->
+
+                        <ul>
+                           <li>Appeltje Eitje 🥱</li>
+                           <li>Heel moeilijk! 🤯</li>
+                        </ul>
+
+                     </div>
+
+                  </section>
+
+               </section>
+
+               <!-- Rating Explaination Of Teaching Material -->
+               <section>
+                  <article>
+                     <h2><span>3</span>Hoe duidelijk vond je de uitleg van de lesstof ... ?</h2>
+                     <p>Geef aan hoe begrijpelijk je de uitleg van de lesstof vond op een schaal van 1 tot 10. <span
+                           id="requirement-star">*</span></p>
+                  </article>
+
+                  <section id="rating">
+
+                     <!-- Scroll Container -->
+                     <div>
+
+                        <section>
+                           <label for="rating-ex-pwa-1a">
+                              1
+                              <input type="radio" id="rating-ex-pwa-1a" name="explanation-pwa" value="1" required>
+                           </label>
+
+                           <label for="rating-ex-pwa-2a">
+                              2
+                              <input type="radio" id="rating-ex-pwa-2a" name="explanation-pwa" value="2">
+                           </label>
+
+                           <label for="rating-ex-pwa-3a">
+                              3
+                              <input type="radio" id="rating-ex-pwa-3a" name="explanation-pwa" value="3" required>
+                           </label>
+
+                           <label for="rating-ex-pwa-4a">
+                              4
+                              <input type="radio" id="rating-ex-pwa-4a" name="explanation-pwa" value="4" required>
+                           </label>
+
+                           <label for="rating-ex-pwa-5a">
+                              5
+                              <input type="radio" id="rating-ex-pwa-5a" name="explanation-pwa" value="5" required>
+                           </label>
+
+                           <label for="rating-ex-pwa-6a">
+                              6
+                              <input type="radio" id="rating-ex-pwa-6a" name="explanation-pwa" value="6" required>
+                           </label>
+
+                           <label for="rating-ex-pwa-7a">
+                              7
+                              <input type="radio" id="rating-ex-pwa-7a" name="explanation-pwa" value="7" required>
+                           </label>
+
+                           <label for="rating-ex-pwa-8a">
+                              8
+                              <input type="radio" id="rating-ex-pwa-8a" name="explanation-pwa" value="8" required>
+                           </label>
+
+                           <label for="rating-ex-pwa-9a">
+                              9
+                              <input type="radio" id="rating-ex-pwa-9a" name="explanation-pwa" value="9" required>
+                           </label>
+
+                           <label for="rating-ex-pwa-10a">
+                              10
+                              <input type="radio" id="rating-ex-pwa-10a" name="explanation-pwa" value="10" required>
+                           </label>
+
+                        </section>
+
+                        <!-- Indicator -->
+                        <ul>
+                           <li>Erg onduidelijk 🤔</li>
+                           <li>Heel duidelijk! 🤓</li>
+                        </ul>
+
+                     </div>
+
+                  </section>
+
+               </section>
+
+
+               <!-- Grading Understanding Level -->
+               <section>
+                  <article>
+                     <h2><span>4</span>Hoe goed begreep je de lesstof aan het einde van het vak .. ?</h2>
+                     <p>Geef aan hoe goed je de lesstof begreep aan het einde van het vak. <span
+                           id="requirement-star">*</span></p>
+                  </article>
+
+                  <section id="grading">
+                     <div>
+                        <section>
+
+                           <label for="rating-ul-pwa-1a">
+                              <span>😕</span> <span>Helemaal</span>
+                              <input type="radio" id="rating-ul-pwa-1a" name="understanding-level-prj-2" value="1"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-pwa-2a">
+                              <span>🤨</span> <span>Niet</span>
+                              <input type="radio" id="rating-ul-pwa-2a" name="understanding-level-prj-2" value="2">
+                           </label>
+
+                           <label for="rating-ul-pwa-3a">
+                              <span>😐</span> <span>Mwah</span>
+                              <input type="radio" id="rating-ul-pwa-3a" name="understanding-level-prj-2" value="3"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-pwa-4a">
+                              <span>😶</span> <span>Nauw'lijks</span>
+                              <input type="radio" id="rating-ul-pwa-4a" name="understanding-level-prj-2" value="4"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-pwa-5a">
+                              <span>🙂</span> <span>Enigszins</span>
+                              <input type="radio" id="rating-ul-pwa-5a" name="understanding-level-prj-2" value="5"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-pwa-6a">
+                              <span>😊</span> <span>Redelijk</span>
+                              <input type="radio" id="rating-ul-pwa-6a" name="understanding-level-prj-2" value="6"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-pwa-7a">
+                              <span>😃</span> <span>Goed</span>
+                              <input type="radio" id="rating-ul-pwa-7a" name="understanding-level-prj-2" value="7"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-pwa-8a">
+                              <span>😁</span> <span>Erg'goed</span>
+                              <input type="radio" id="rating-ul-pwa-8a" name="understanding-level-prj-2" value="8"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-pwa-9a">
+                              <span>🤓</span> <span>Uitstekend</span>
+                              <input type="radio" id="rating-ul-pwa-9a" name="understanding-level-prj-2" value="9"
+                                 required>
+                           </label>
+
+                           <label for="rating-ul-pwa-10a">
+                              <span>🧠</span> <span>Meesterlijk</span>
+                              <input type="radio" id="rating-ul-pwa-10a" name="understanding-level-prj-2" value="10"
+                                 required>
+                           </label>
+
+                        </section>
+
+                     </div>
+
+                  </section>
+
+               </section>
             </fieldset>
 
 
@@ -378,10 +2061,10 @@
 
             <!-- Submit -->
             <fieldset id="field-submit">
-               <legend>Submit</legend>
-               <p>Submit Description</p>
+               <legend>Tijd om af te ronden.</legend>
+               <p>Druk op de onderstaande knop om de enquête in te leveren.</p>
 
-               <button type="submit" aria-label="finish">Finish</button>
+               <button type="submit" aria-label="finish">Enquête inleveren</button>
             </fieldset>
 
 

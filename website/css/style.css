@@ -45,6 +45,7 @@ main > section {
 /* **************** */
 
 main > section > nav {
+  padding-top: var(--M-spacer);
   padding-bottom: var(--L-spacer);
 
   width: 100%;
@@ -74,20 +75,45 @@ main > section > nav ol li a {
   
   --step-indicator-text-color: var(--primary-text-color);
 
-
   list-style: none;
 
   font-family: var(--step-indicator-font-family);
   font-size: var(--step-indicator-font-size);
 
-  color: var(--step-indicator-text-color);
+  padding: .4rem .8rem;
+
+  border: 1px solid #8A8A8A;
+  border-radius: 8rem;
+
+  color: var(--primary-text-color);
+
+  text-decoration: none;
 }
 
-main > section > nav ol li.current a {
-  color: red;
+
+main > section > nav ol li a.current {
+  padding: .4rem .8rem;
+
+  border: none;
+  border-radius: 8rem;
+
+  color: var(--secondary-text-color);
+  background-color: var(--primary-color);
+
+  text-decoration: none;
 }
 
+main > section > nav ol li a:hover {
+  padding: .4rem .8rem;
 
+  border: none;
+  border-radius: 8rem;
+
+  color: var(--secondary-text-color);
+  background-color: var(--primary-color);
+
+  text-decoration: none;
+}
 
 
 /* ***************** */
@@ -583,6 +609,52 @@ form fieldset label input[type="text"] {
   border-radius: var(--form-text-input-border-radius);
 }
 
+form fieldset label input[type="text"] {
+  padding: 0;
+  margin: 0;
+
+  padding-left: var(--S-spacer);
+
+  font-family: var(--form-text-input-font-family);
+  font-size: var(--form-text-input-font-size);
+
+  width: 100%;
+  height: 6rem;
+
+  border: var(--form-text-input-border);
+  border-radius: var(--form-text-input-border-radius);
+}
+
+/* ***************************** */
+/* Input Type Text Placeholders  */
+/* ***************************** */
+
+/* Change the color of the placeholder text */
+input[type="text"]::placeholder {
+  color: var(--tertiary-text-color);
+  font-style: italic;
+}
+
+/* Additional styles for different browsers */
+/* Firefox */
+input[type="text"]::-moz-placeholder {
+  color: var(--tertiary-text-color);
+  font-style: italic;
+}
+
+/* Internet Explorer */
+input[type="text"]:-ms-input-placeholder {
+  color: var(--tertiary-text-color);
+  font-style: italic;
+}
+
+/* Webkit browsers (Chrome, Safari, etc.) */
+input[type="text"]::-webkit-input-placeholder {
+  color: var(--tertiary-text-color);
+  font-style: italic;
+}
+
+
 /* *************************** */
 /* Input Type Text Focus State */
 /* *************************** */
@@ -677,6 +749,7 @@ form fieldset label:has(input[type="radio"][id^="rating-tm"]:checked) {
 
   background-color: rgba(120, 170, 255, 0.50);
 }
+
 
 
 /* ************************* */
@@ -853,27 +926,21 @@ form fieldset label:has(input[type="radio"][id^="rating-ul"]:checked) {
   background-color: rgba(120, 170, 255, 0.50);
 }
 
-form fieldset label.checked {
-  filter: none;
-
-  color: #1A1AFF;
-
-  font-weight: 700;
-
-  border: 2px solid #1A1AFF;
-
-  background-color: #78aaff80;
-}
-
 
 /* ************* */
 /* Radio Buttons */
 /* ************* */
 
 form fieldset input[type="radio"] {
-  appearance: none;
+  opacity: 0;
 
   position: absolute;
+}
+
+input[type="radio"]:focus + label {
+  /* Your focus styles for the label */
+  border-color: blue;
+  outline: none;
 }
 
 
@@ -907,7 +974,7 @@ form fieldset > nav button {
   --form-primary-button-font-family: var(--primary-font-family);
   --form-primary-button-font-size: 1.6rem;
 
-  --form-primary-button-text-color: var(--secondary-text-color);
+  --form-primary-button-text-color: var(--primary-text-color);
 
   --form-primary-button-background-color: var(--primary-color);
 
@@ -944,7 +1011,7 @@ form fieldset > nav button#primary.active {
 
 form fieldset > nav button#secondary {
   --form-primary-button-background-color: transparent;
-  color: black;
+  color: var(--primary-text-color);
   border: 1px solid #acacac;
   background-color: var(--form-primary-button-background-color);
 }
@@ -954,7 +1021,29 @@ form fieldset > nav button:hover {
 }
 
 form fieldset button[type="submit"] {
-  font-size: 2.4rem;
+  --form-primary-button-padding: 2rem 4rem;
+  --form-primary-button-font-family: var(--primary-font-family);
+  --form-primary-button-font-size: 1.6rem;
+
+  --form-primary-button-text-color: var(--primary-text-color);
+
+  --form-primary-button-background-color: var(--primary-color);
+
+  padding: var(--form-primary-button-padding);
+  margin: 0;
+
+  font-family: var(--form-primary-button-font-family);
+  font-size: var(--form-primary-button-font-size);
+
+  text-transform: capitalize;
+
+  color: var(--form-primary-button-text-color);
+
+  border: none;
+  border-radius: .4rem;
+
+  background-color: var(--form-primary-button-background-color);
+
 }
 
 
@@ -965,19 +1054,14 @@ form fieldset button[type="submit"] {
 
 
 /* Validation. */
-
 form fieldset label[for^="personal-details"] div {
   position: relative;
-
-  background-color: blue;
 
   width: 100%;
 }
 
 form fieldset label[for^="course-start-date-bt"] div, form fieldset label[for^="course-end-date-bt"] div {
   position: relative;
-
-  background-color: blue;
 
   width: 100%;
 }
@@ -986,6 +1070,10 @@ form fieldset label[for^="course-start-date-bt"] div, form fieldset label[for^="
   color: red;
   font-size: 12px;
   display: none;
+}
+
+.error-message.show {
+  display: block;
 }
 
 .radio-error {
@@ -1000,6 +1088,10 @@ form fieldset label[for^="course-start-date-bt"] div, form fieldset label[for^="
   bottom: 0;
   right: 1rem;
   display: none;
+}
+
+.checkmark.show {
+  display: block;
 }
 
 
@@ -1022,14 +1114,14 @@ form fieldset label[for^="course-start-date-bt"] div, form fieldset label[for^="
   }
 
   main > aside {
-    flex-basis: 50%;
+    flex-basis: 40%;
 
     display: flex;
     
     align-items: center;
     justify-content: center;
 
-    width: 50%;
+    width: 40%;
     height: auto;
 
     max-height: 100vh;
@@ -1069,7 +1161,11 @@ form fieldset label[for^="course-start-date-bt"] div, form fieldset label[for^="
 
 
   main > section {
-    flex-basis: 50%;
+    flex-basis: 60%;
+  }
+
+  main > section form {
+    width: 70%;
   }
 
 
@@ -1148,4 +1244,14 @@ form fieldset legend + p + h2 + p + ul {
 
   }
 
+}
+
+
+.checked-label {
+  filter: none;
+    color: #1A1AFF;
+    font-weight: bold;
+    border: 10px solid #1A1AFF;
+    background-color: #78aaff;
+    opacity: 1;
 }
