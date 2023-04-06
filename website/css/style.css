@@ -784,7 +784,35 @@ form fieldset section label[for^="rating-ex"] {
   border: var(--rating-tm-border);
   border-radius: var(--rating-tm-border-radius);
 
-  background-color: var(--rating-tm-background-color);
+  background-color: transparent;
+}
+
+form fieldset section label.checked-label {
+  --rating-tm-padding: 1.5rem 3rem;
+
+  --rating-tm-font-family: var(--primary-font-family);
+  --rating-tm-font-size: 1.6rem;
+
+  --rating-tm-border-color: #8a8a8a;
+  --rating-tm-border-thickness: .1rem;
+
+  --rating-tm-border: var(--rating-tm-border-thickness) solid var(--rating-tm-border-color);
+  --rating-tm-border-radius: .4rem;
+
+
+  padding: var(--rating-tm-padding);
+
+  display: inline-flex;
+  
+  align-items: center;
+  justify-content: center;
+
+  font-family: var(--rating-tm-font-family);
+  font-size: var(--rating-tm-font-size);
+
+  color: var(--secondary-text-color);
+
+  background-color: var(--primary-color);
 }
 
 form fieldset label:has(input[type="radio"][id^="rating-ex"]:checked) {
@@ -837,15 +865,6 @@ form fieldset label:has(input[type="radio"][id^="rating-ex"]:checked) {
   gap: 1rem;
 
   width: 100%;
-}
-
-/* Labels */
-#grading label {
-}
-
-/* Input */
-#rating input[type="radio"] {
-
 }
 
 #rating div {
@@ -926,6 +945,40 @@ form fieldset label:has(input[type="radio"][id^="rating-ul"]:checked) {
   background-color: rgba(120, 170, 255, 0.50);
 }
 
+form fieldset section label[for^="rating-ul"].checked-label {
+  --rating-ul-padding: 2rem 1rem;
+
+  --rating-ul-font-family: var(--primary-font-family);
+  --rating-ul-font-size: 1.6rem;
+
+  --rating-ul-border-color: #8a8a8a;
+  --rating-ul-border-thickness: .1rem;
+
+  --rating-ul-border: var(--rating-ul-border-thickness) solid var(--rating-ul-border-color);
+  --rating-ul-border-radius: .4rem;
+
+  --rating-ul-background-color: white;
+
+  filter: none;
+
+  padding: var(--rating-ul-padding);
+
+  display: inline-flex;
+  
+  align-items: center;
+  justify-content: center;
+
+  font-family: var(--rating-ul-font-family);
+  font-size: var(--rating-ul-font-size);
+
+  color: var(--secondary-text-color);
+  font-weight: 600;
+
+  border: var(--rating-ul-border);
+  border-radius: var(--rating-ul-border-radius);
+
+  background-color: var(--primary-color);
+}
 
 /* ************* */
 /* Radio Buttons */
@@ -1247,11 +1300,3 @@ form fieldset legend + p + h2 + p + ul {
 }
 
 
-.checked-label {
-  filter: none;
-    color: #1A1AFF;
-    font-weight: bold;
-    border: 10px solid #1A1AFF;
-    background-color: #78aaff;
-    opacity: 1;
-}
